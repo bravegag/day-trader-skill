@@ -200,7 +200,7 @@ wash sales likely. Nothing here is tax advice.
 ## Files
 
 ```
-trader-scanner/     SKILL.md, scan.py, crypto_*.py, binance.example.ini
+trader-scanner/     SKILL.md, scan.py, crypto_*.py, binance.example.ini, breakout_pit.ini
 trader-news/        SKILL.md, news.py
 trader-entry/       SKILL.md, entry.py
 trader-exit/        SKILL.md, exit.py

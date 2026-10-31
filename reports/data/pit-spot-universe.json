@@ -1,0 +1,6210 @@
+{
+"0GUSDT": {
+"asset_id": "0G",
+"base": "0G",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"1000CATUSDT": {
+"asset_id": "CAT",
+"base": "1000CAT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"1000CHEEMSUSDT": {
+"asset_id": "CHEEMS",
+"base": "1000CHEEMS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"1000SATSUSDT": {
+"asset_id": "SATS",
+"base": "1000SATS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"1INCHDOWNUSDT": {
+"asset_id": "1INCHDOWN",
+"base": "1INCHDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"1INCHUPUSDT": {
+"asset_id": "1INCHUP",
+"base": "1INCHUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"1INCHUSDT": {
+"asset_id": "1INCH",
+"base": "1INCH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"1MBABYDOGEUSDT": {
+"asset_id": "BABYDOGE",
+"base": "1MBABYDOGE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"2ZUSDT": {
+"asset_id": "2Z",
+"base": "2Z",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"A2ZUSDT": {
+"asset_id": "A2Z",
+"base": "A2Z",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AAOIBUSDT": {
+"asset_id": "AAOIB",
+"base": "AAOIB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AAPLBUSDT": {
+"asset_id": "AAPLB",
+"base": "AAPLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AAVEDOWNUSDT": {
+"asset_id": "AAVEDOWN",
+"base": "AAVEDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AAVEUPUSDT": {
+"asset_id": "AAVEUP",
+"base": "AAVEUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AAVEUSDT": {
+"asset_id": "AAVE",
+"base": "AAVE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ACAUSDT": {
+"asset_id": "ACA",
+"base": "ACA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ACEUSDT": {
+"asset_id": "ACE",
+"base": "ACE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ACHUSDT": {
+"asset_id": "ACH",
+"base": "ACH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ACMUSDT": {
+"asset_id": "ACM",
+"base": "ACM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ACTUSDT": {
+"asset_id": "ACT",
+"base": "ACT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ACXUSDT": {
+"asset_id": "ACX",
+"base": "ACX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ADADOWNUSDT": {
+"asset_id": "ADADOWN",
+"base": "ADADOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ADAUPUSDT": {
+"asset_id": "ADAUP",
+"base": "ADAUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ADAUSDT": {
+"asset_id": "ADA",
+"base": "ADA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ADBEBUSDT": {
+"asset_id": "ADBEB",
+"base": "ADBEB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ADXUSDT": {
+"asset_id": "ADX",
+"base": "ADX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AERGOUSDT": {
+"asset_id": "AERGO",
+"base": "AERGO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AEROUSDT": {
+"asset_id": "AERO",
+"base": "AERO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AEURUSDT": {
+"asset_id": "AEUR",
+"base": "AEUR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AEVOUSDT": {
+"asset_id": "AEVO",
+"base": "AEVO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AGIXUSDT": {
+"asset_id": "AGIX",
+"base": "AGIX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AGLDUSDT": {
+"asset_id": "AGLD",
+"base": "AGLD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AGPUBUSDT": {
+"asset_id": "AGPUB",
+"base": "AGPUB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AIGENSYNUSDT": {
+"asset_id": "AIGENSYN",
+"base": "AIGENSYN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AIONUSDT": {
+"asset_id": "AION",
+"base": "AION",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AIUSDT": {
+"asset_id": "AI",
+"base": "AI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AIXBTUSDT": {
+"asset_id": "AIXBT",
+"base": "AIXBT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AKROUSDT": {
+"asset_id": "AKRO",
+"base": "AKRO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ALABBUSDT": {
+"asset_id": "ALABB",
+"base": "ALABB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ALCXUSDT": {
+"asset_id": "ALCX",
+"base": "ALCX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ALGOUSDT": {
+"asset_id": "ALGO",
+"base": "ALGO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ALICEUSDT": {
+"asset_id": "ALICE",
+"base": "ALICE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ALLOUSDT": {
+"asset_id": "ALLO",
+"base": "ALLO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ALPACAUSDT": {
+"asset_id": "ALPACA",
+"base": "ALPACA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ALPHAUSDT": {
+"asset_id": "ALPHA",
+"base": "ALPHA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ALPINEUSDT": {
+"asset_id": "ALPINE",
+"base": "ALPINE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ALTUSDT": {
+"asset_id": "ALT",
+"base": "ALT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AMATBUSDT": {
+"asset_id": "AMATB",
+"base": "AMATB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AMBUSDT": {
+"asset_id": "AMB",
+"base": "AMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AMCBUSDT": {
+"asset_id": "AMCB",
+"base": "AMCB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AMDBUSDT": {
+"asset_id": "AMDB",
+"base": "AMDB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AMPUSDT": {
+"asset_id": "AMP",
+"base": "AMP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AMZNBUSDT": {
+"asset_id": "AMZNB",
+"base": "AMZNB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ANCUSDT": {
+"asset_id": "ANC",
+"base": "ANC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ANIMEUSDT": {
+"asset_id": "ANIME",
+"base": "ANIME",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ANKRUSDT": {
+"asset_id": "ANKR",
+"base": "ANKR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ANTUSDT": {
+"asset_id": "ANT",
+"base": "ANT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ANYUSDT": {
+"asset_id": "ANY",
+"base": "ANY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"APEUSDT": {
+"asset_id": "APE",
+"base": "APE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"API3USDT": {
+"asset_id": "API3",
+"base": "API3",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"APPBUSDT": {
+"asset_id": "APPB",
+"base": "APPB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"APTUSDT": {
+"asset_id": "APT",
+"base": "APT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ARBUSDT": {
+"asset_id": "ARB",
+"base": "ARB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ARDRUSDT": {
+"asset_id": "ARDR",
+"base": "ARDR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ARKMUSDT": {
+"asset_id": "ARKM",
+"base": "ARKM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ARKUSDT": {
+"asset_id": "ARK",
+"base": "ARK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ARMBUSDT": {
+"asset_id": "ARMB",
+"base": "ARMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ARPAUSDT": {
+"asset_id": "ARPA",
+"base": "ARPA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ARUSDT": {
+"asset_id": "AR",
+"base": "AR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ASMLBUSDT": {
+"asset_id": "ASMLB",
+"base": "ASMLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ASRUSDT": {
+"asset_id": "ASR",
+"base": "ASR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ASTERUSDT": {
+"asset_id": "ASTER",
+"base": "ASTER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ASTRUSDT": {
+"asset_id": "ASTR",
+"base": "ASTR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ASTSBUSDT": {
+"asset_id": "ASTSB",
+"base": "ASTSB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ASTUSDT": {
+"asset_id": "AST",
+"base": "AST",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ATAUSDT": {
+"asset_id": "ATA",
+"base": "ATA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ATMUSDT": {
+"asset_id": "ATM",
+"base": "ATM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ATOMUSDT": {
+"asset_id": "ATOM",
+"base": "ATOM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ATUSDT": {
+"asset_id": "AT",
+"base": "AT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AUCTIONUSDT": {
+"asset_id": "AUCTION",
+"base": "AUCTION",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AUDIOUSDT": {
+"asset_id": "AUDIO",
+"base": "AUDIO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AUDUSDT": {
+"asset_id": "AUD",
+"base": "AUD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AUSDT": {
+"asset_id": "A",
+"base": "A",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AUTOUSDT": {
+"asset_id": "AUTO",
+"base": "AUTO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"AVAUSDT": {
+"asset_id": "AVA",
+"base": "AVA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AVAXUSDT": {
+"asset_id": "AVAX",
+"base": "AVAX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AVGOBUSDT": {
+"asset_id": "AVGOB",
+"base": "AVGOB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AVNTUSDT": {
+"asset_id": "AVNT",
+"base": "AVNT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AWEUSDT": {
+"asset_id": "AWE",
+"base": "AWE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AXLUSDT": {
+"asset_id": "AXL",
+"base": "AXL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AXSUSDT": {
+"asset_id": "AXS",
+"base": "AXS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"AXTIBUSDT": {
+"asset_id": "AXTIB",
+"base": "AXTIB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BABABUSDT": {
+"asset_id": "BABAB",
+"base": "BABAB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BABYUSDT": {
+"asset_id": "BABY",
+"base": "BABY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BADGERUSDT": {
+"asset_id": "BADGER",
+"base": "BADGER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BAKEUSDT": {
+"asset_id": "BAKE",
+"base": "BAKE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BALUSDT": {
+"asset_id": "BAL",
+"base": "BAL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BANANAS31USDT": {
+"asset_id": "BANANAS31",
+"base": "BANANAS31",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BANANAUSDT": {
+"asset_id": "BANANA",
+"base": "BANANA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BANDUSDT": {
+"asset_id": "BAND",
+"base": "BAND",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BANKUSDT": {
+"asset_id": "BANK",
+"base": "BANK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BARDUSDT": {
+"asset_id": "BARD",
+"base": "BARD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BARUSDT": {
+"asset_id": "BAR",
+"base": "BAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BATUSDT": {
+"asset_id": "BAT",
+"base": "BAT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BBBUSDT": {
+"asset_id": "BBB",
+"base": "BBB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BBUSDT": {
+"asset_id": "BB",
+"base": "BB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BCCUSDT": {
+"asset_id": "BCC",
+"base": "BCC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BCHABCUSDT": {
+"asset_id": "BCHABC",
+"base": "BCHABC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BCHDOWNUSDT": {
+"asset_id": "BCHDOWN",
+"base": "BCHDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BCHSVUSDT": {
+"asset_id": "BCHSV",
+"base": "BCHSV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BCHUPUSDT": {
+"asset_id": "BCHUP",
+"base": "BCHUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BCHUSDT": {
+"asset_id": "BCH",
+"base": "BCH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BEAMUSDT": {
+"asset_id": "BEAM",
+"base": "BEAM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BEAMXUSDT": {
+"asset_id": "BEAMX",
+"base": "BEAMX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BEARUSDT": {
+"asset_id": "BEAR",
+"base": "BEAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BEBUSDT": {
+"asset_id": "BEB",
+"base": "BEB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BELUSDT": {
+"asset_id": "BEL",
+"base": "BEL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BERAUSDT": {
+"asset_id": "BERA",
+"base": "BERA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BETAUSDT": {
+"asset_id": "BETA",
+"base": "BETA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BETHUSDT": {
+"asset_id": "BETH",
+"base": "BETH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BFUSDUSDT": {
+"asset_id": "BFUSD",
+"base": "BFUSD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BICOUSDT": {
+"asset_id": "BICO",
+"base": "BICO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BIFIUSDT": {
+"asset_id": "BIFI",
+"base": "BIFI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BIGTIMEUSDT": {
+"asset_id": "BIGTIME",
+"base": "BIGTIME",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BIOUSDT": {
+"asset_id": "BIO",
+"base": "BIO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BKRWUSDT": {
+"asset_id": "BKRW",
+"base": "BKRW",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BLURUSDT": {
+"asset_id": "BLUR",
+"base": "BLUR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BLZUSDT": {
+"asset_id": "BLZ",
+"base": "BLZ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BMNRBUSDT": {
+"asset_id": "BMNRB",
+"base": "BMNRB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BMTUSDT": {
+"asset_id": "BMT",
+"base": "BMT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BNBBEARUSDT": {
+"asset_id": "BNBBEAR",
+"base": "BNBBEAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BNBBULLUSDT": {
+"asset_id": "BNBBULL",
+"base": "BNBBULL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BNBDOWNUSDT": {
+"asset_id": "BNBDOWN",
+"base": "BNBDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BNBUPUSDT": {
+"asset_id": "BNBUP",
+"base": "BNBUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BNBUSDT": {
+"asset_id": "BNB",
+"base": "BNB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BNCBUSDT": {
+"asset_id": "BNCB",
+"base": "BNCB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BNSOLUSDT": {
+"asset_id": "BNSOL",
+"base": "BNSOL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BNTUSDT": {
+"asset_id": "BNT",
+"base": "BNT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BNXUSDT": {
+"asset_id": "BNX",
+"base": "BNX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BOMEUSDT": {
+"asset_id": "BOME",
+"base": "BOME",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BONDUSDT": {
+"asset_id": "BOND",
+"base": "BOND",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BONKUSDT": {
+"asset_id": "BONK",
+"base": "BONK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BOTBUSDT": {
+"asset_id": "BOTB",
+"base": "BOTB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BREVUSDT": {
+"asset_id": "BREV",
+"base": "BREV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BRKBBUSDT": {
+"asset_id": "BRKBB",
+"base": "BRKBB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BROCCOLI714USDT": {
+"asset_id": "BROCCOLI714",
+"base": "BROCCOLI714",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BSPBUSDT": {
+"asset_id": "BSPB",
+"base": "BSPB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BSWUSDT": {
+"asset_id": "BSW",
+"base": "BSW",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BTCDOWNUSDT": {
+"asset_id": "BTCDOWN",
+"base": "BTCDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BTCSTUSDT": {
+"asset_id": "BTCST",
+"base": "BTCST",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BTCUPUSDT": {
+"asset_id": "BTCUP",
+"base": "BTCUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BTCUSDT": {
+"asset_id": "BTC",
+"base": "BTC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BTGUSDT": {
+"asset_id": "BTG",
+"base": "BTG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BTSUSDT": {
+"asset_id": "BTS",
+"base": "BTS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BTTCUSDT": {
+"asset_id": "BTTC",
+"base": "BTTC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"BTTUSDT": {
+"asset_id": "BTT",
+"base": "BTT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BULLUSDT": {
+"asset_id": "BULL",
+"base": "BULL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BURGERUSDT": {
+"asset_id": "BURGER",
+"base": "BURGER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BUSDUSDT": {
+"asset_id": "BUSD",
+"base": "BUSD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"BZRXUSDT": {
+"asset_id": "BZRX",
+"base": "BZRX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"C98USDT": {
+"asset_id": "C98",
+"base": "C98",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CAKEUSDT": {
+"asset_id": "CAKE",
+"base": "CAKE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CATIUSDT": {
+"asset_id": "CATI",
+"base": "CATI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CBRSBUSDT": {
+"asset_id": "CBRSB",
+"base": "CBRSB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CELOUSDT": {
+"asset_id": "CELO",
+"base": "CELO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CELRUSDT": {
+"asset_id": "CELR",
+"base": "CELR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CETUSUSDT": {
+"asset_id": "CETUS",
+"base": "CETUS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CFGUSDT": {
+"asset_id": "CFG",
+"base": "CFG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CFXUSDT": {
+"asset_id": "CFX",
+"base": "CFX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CGPTUSDT": {
+"asset_id": "CGPT",
+"base": "CGPT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CHESSUSDT": {
+"asset_id": "CHESS",
+"base": "CHESS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"CHIPUSDT": {
+"asset_id": "CHIP",
+"base": "CHIP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CHRUSDT": {
+"asset_id": "CHR",
+"base": "CHR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CHZUSDT": {
+"asset_id": "CHZ",
+"base": "CHZ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CITYUSDT": {
+"asset_id": "CITY",
+"base": "CITY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CKBUSDT": {
+"asset_id": "CKB",
+"base": "CKB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CLVUSDT": {
+"asset_id": "CLV",
+"base": "CLV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"COCOSUSDT": {
+"asset_id": "COCOS",
+"base": "COCOS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"COHRBUSDT": {
+"asset_id": "COHRB",
+"base": "COHRB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"COINBUSDT": {
+"asset_id": "COINB",
+"base": "COINB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"COMBOUSDT": {
+"asset_id": "COMBO",
+"base": "COMBO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"COMPUSDT": {
+"asset_id": "COMP",
+"base": "COMP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"COOKIEUSDT": {
+"asset_id": "COOKIE",
+"base": "COOKIE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"COSUSDT": {
+"asset_id": "COS",
+"base": "COS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"COTIUSDT": {
+"asset_id": "COTI",
+"base": "COTI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"COWUSDT": {
+"asset_id": "COW",
+"base": "COW",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CRCLBUSDT": {
+"asset_id": "CRCLB",
+"base": "CRCLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CRDOBUSDT": {
+"asset_id": "CRDOB",
+"base": "CRDOB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CREAMUSDT": {
+"asset_id": "CREAM",
+"base": "CREAM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"CRMBUSDT": {
+"asset_id": "CRMB",
+"base": "CRMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CRVUSDT": {
+"asset_id": "CRV",
+"base": "CRV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CRWDBUSDT": {
+"asset_id": "CRWDB",
+"base": "CRWDB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CRWVBUSDT": {
+"asset_id": "CRWVB",
+"base": "CRWVB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CTKUSDT": {
+"asset_id": "CTK",
+"base": "CTK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CTSIUSDT": {
+"asset_id": "CTSI",
+"base": "CTSI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CTXCUSDT": {
+"asset_id": "CTXC",
+"base": "CTXC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"CUSDT": {
+"asset_id": "C",
+"base": "C",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CVCUSDT": {
+"asset_id": "CVC",
+"base": "CVC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CVPUSDT": {
+"asset_id": "CVP",
+"base": "CVP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"CVXUSDT": {
+"asset_id": "CVX",
+"base": "CVX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CYBERUSDT": {
+"asset_id": "CYBER",
+"base": "CYBER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"CYPHBUSDT": {
+"asset_id": "CYPHB",
+"base": "CYPHB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DAIUSDT": {
+"asset_id": "DAI",
+"base": "DAI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DARUSDT": {
+"asset_id": "DAR",
+"base": "DAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DASHUSDT": {
+"asset_id": "DASH",
+"base": "DASH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DATAUSDT": {
+"asset_id": "DATA",
+"base": "DATA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DCRUSDT": {
+"asset_id": "DCR",
+"base": "DCR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DEGOUSDT": {
+"asset_id": "DEGO",
+"base": "DEGO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DELLBUSDT": {
+"asset_id": "DELLB",
+"base": "DELLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DENTUSDT": {
+"asset_id": "DENT",
+"base": "DENT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DEXEUSDT": {
+"asset_id": "DEXE",
+"base": "DEXE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DFUSDT": {
+"asset_id": "DF",
+"base": "DF",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DGBUSDT": {
+"asset_id": "DGB",
+"base": "DGB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DIAUSDT": {
+"asset_id": "DIA",
+"base": "DIA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DJTBUSDT": {
+"asset_id": "DJTB",
+"base": "DJTB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DNTUSDT": {
+"asset_id": "DNT",
+"base": "DNT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DOCKUSDT": {
+"asset_id": "DOCK",
+"base": "DOCK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DODOUSDT": {
+"asset_id": "DODO",
+"base": "DODO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DOGEUSDT": {
+"asset_id": "DOGE",
+"base": "DOGE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DOGSUSDT": {
+"asset_id": "DOGS",
+"base": "DOGS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DOLOUSDT": {
+"asset_id": "DOLO",
+"base": "DOLO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DOTDOWNUSDT": {
+"asset_id": "DOTDOWN",
+"base": "DOTDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DOTUPUSDT": {
+"asset_id": "DOTUP",
+"base": "DOTUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DOTUSDT": {
+"asset_id": "DOT",
+"base": "DOT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DRAMBUSDT": {
+"asset_id": "DRAMB",
+"base": "DRAMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DREPUSDT": {
+"asset_id": "DREP",
+"base": "DREP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DUSDT": {
+"asset_id": "D",
+"base": "D",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"DUSKUSDT": {
+"asset_id": "DUSK",
+"base": "DUSK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DYDXUSDT": {
+"asset_id": "DYDX",
+"base": "DYDX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"DYMUSDT": {
+"asset_id": "DYM",
+"base": "DYM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EDENUSDT": {
+"asset_id": "EDEN",
+"base": "EDEN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EDUUSDT": {
+"asset_id": "EDU",
+"base": "EDU",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EGLDUSDT": {
+"asset_id": "EGLD",
+"base": "EGLD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EIGENUSDT": {
+"asset_id": "EIGEN",
+"base": "EIGEN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ELFUSDT": {
+"asset_id": "ELF",
+"base": "ELF",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ENAUSDT": {
+"asset_id": "ENA",
+"base": "ENA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ENJUSDT": {
+"asset_id": "ENJ",
+"base": "ENJ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ENSOUSDT": {
+"asset_id": "ENSO",
+"base": "ENSO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ENSUSDT": {
+"asset_id": "ENS",
+"base": "ENS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EOSBEARUSDT": {
+"asset_id": "EOSBEAR",
+"base": "EOSBEAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"EOSBULLUSDT": {
+"asset_id": "EOSBULL",
+"base": "EOSBULL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"EOSDOWNUSDT": {
+"asset_id": "EOSDOWN",
+"base": "EOSDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"EOSUPUSDT": {
+"asset_id": "EOSUP",
+"base": "EOSUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"EOSUSDT": {
+"asset_id": "EOS",
+"base": "EOS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"EPICUSDT": {
+"asset_id": "EPIC",
+"base": "EPIC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"EPSUSDT": {
+"asset_id": "EPS",
+"base": "EPS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"EPXUSDT": {
+"asset_id": "EPX",
+"base": "EPX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ERAUSDT": {
+"asset_id": "ERA",
+"base": "ERA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ERDUSDT": {
+"asset_id": "ERD",
+"base": "ERD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ERNUSDT": {
+"asset_id": "ERN",
+"base": "ERN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ESPUSDT": {
+"asset_id": "ESP",
+"base": "ESP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ETCUSDT": {
+"asset_id": "ETC",
+"base": "ETC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ETHBEARUSDT": {
+"asset_id": "ETHBEAR",
+"base": "ETHBEAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ETHBULLUSDT": {
+"asset_id": "ETHBULL",
+"base": "ETHBULL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ETHDOWNUSDT": {
+"asset_id": "ETHDOWN",
+"base": "ETHDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ETHFIUSDT": {
+"asset_id": "ETHFI",
+"base": "ETHFI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ETHUPUSDT": {
+"asset_id": "ETHUP",
+"base": "ETHUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ETHUSDT": {
+"asset_id": "ETH",
+"base": "ETH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EULUSDT": {
+"asset_id": "EUL",
+"base": "EUL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EURIUSDT": {
+"asset_id": "EURI",
+"base": "EURI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EURUSDT": {
+"asset_id": "EUR",
+"base": "EUR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"EWYBUSDT": {
+"asset_id": "EWYB",
+"base": "EWYB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FARMUSDT": {
+"asset_id": "FARM",
+"base": "FARM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FDUSDUSDT": {
+"asset_id": "FDUSD",
+"base": "FDUSD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FETUSDT": {
+"asset_id": "FET",
+"base": "FET",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FFUSDT": {
+"asset_id": "FF",
+"base": "FF",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FIDAUSDT": {
+"asset_id": "FIDA",
+"base": "FIDA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FILDOWNUSDT": {
+"asset_id": "FILDOWN",
+"base": "FILDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FILUPUSDT": {
+"asset_id": "FILUP",
+"base": "FILUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FILUSDT": {
+"asset_id": "FIL",
+"base": "FIL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FIOUSDT": {
+"asset_id": "FIO",
+"base": "FIO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FIROUSDT": {
+"asset_id": "FIRO",
+"base": "FIRO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FISUSDT": {
+"asset_id": "FIS",
+"base": "FIS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FLMUSDT": {
+"asset_id": "FLM",
+"base": "FLM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FLNCBUSDT": {
+"asset_id": "FLNCB",
+"base": "FLNCB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FLOKIUSDT": {
+"asset_id": "FLOKI",
+"base": "FLOKI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FLOWUSDT": {
+"asset_id": "FLOW",
+"base": "FLOW",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FLUXUSDT": {
+"asset_id": "FLUX",
+"base": "FLUX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FOGOUSDT": {
+"asset_id": "FOGO",
+"base": "FOGO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FORMUSDT": {
+"asset_id": "FORM",
+"base": "FORM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FORTHUSDT": {
+"asset_id": "FORTH",
+"base": "FORTH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FORUSDT": {
+"asset_id": "FOR",
+"base": "FOR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FRAXUSDT": {
+"asset_id": "FRAX",
+"base": "FRAX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FRONTUSDT": {
+"asset_id": "FRONT",
+"base": "FRONT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FTMUSDT": {
+"asset_id": "FTM",
+"base": "FTM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FTTUSDT": {
+"asset_id": "FTT",
+"base": "FTT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FUNUSDT": {
+"asset_id": "FUN",
+"base": "FUN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"FUSDT": {
+"asset_id": "F",
+"base": "F",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FWDIBUSDT": {
+"asset_id": "FWDIB",
+"base": "FWDIB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"FXSUSDT": {
+"asset_id": "FXS",
+"base": "FXS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"GALAUSDT": {
+"asset_id": "GALA",
+"base": "GALA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GALUSDT": {
+"asset_id": "GAL",
+"base": "GAL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"GASUSDT": {
+"asset_id": "GAS",
+"base": "GAS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GBPUSDT": {
+"asset_id": "GBP",
+"base": "GBP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"GENIUSUSDT": {
+"asset_id": "GENIUS",
+"base": "GENIUS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GEVBUSDT": {
+"asset_id": "GEVB",
+"base": "GEVB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GFTUSDT": {
+"asset_id": "GFT",
+"base": "GFT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"GHSTUSDT": {
+"asset_id": "GHST",
+"base": "GHST",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"GIGGLEUSDT": {
+"asset_id": "GIGGLE",
+"base": "GIGGLE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GLMRUSDT": {
+"asset_id": "GLMR",
+"base": "GLMR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GLMUSDT": {
+"asset_id": "GLM",
+"base": "GLM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GLWBUSDT": {
+"asset_id": "GLWB",
+"base": "GLWB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GMEBUSDT": {
+"asset_id": "GMEB",
+"base": "GMEB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GMTUSDT": {
+"asset_id": "GMT",
+"base": "GMT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GMXUSDT": {
+"asset_id": "GMX",
+"base": "GMX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GNOUSDT": {
+"asset_id": "GNO",
+"base": "GNO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GNSUSDT": {
+"asset_id": "GNS",
+"base": "GNS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GOOGLBUSDT": {
+"asset_id": "GOOGLB",
+"base": "GOOGLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GPROBUSDT": {
+"asset_id": "GPROB",
+"base": "GPROB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GPSUSDT": {
+"asset_id": "GPS",
+"base": "GPS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GRAMUSDT": {
+"asset_id": "GRAM",
+"base": "GRAM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GRTUSDT": {
+"asset_id": "GRT",
+"base": "GRT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GSBUSDT": {
+"asset_id": "GSB",
+"base": "GSB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GTCUSDT": {
+"asset_id": "GTC",
+"base": "GTC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GTOUSDT": {
+"asset_id": "GTO",
+"base": "GTO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"GUNUSDT": {
+"asset_id": "GUN",
+"base": "GUN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GUSDT": {
+"asset_id": "G",
+"base": "G",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"GXSUSDT": {
+"asset_id": "GXS",
+"base": "GXS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"HAEDALUSDT": {
+"asset_id": "HAEDAL",
+"base": "HAEDAL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HARDUSDT": {
+"asset_id": "HARD",
+"base": "HARD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"HBARUSDT": {
+"asset_id": "HBAR",
+"base": "HBAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HCUSDT": {
+"asset_id": "HC",
+"base": "HC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"HEIUSDT": {
+"asset_id": "HEI",
+"base": "HEI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HEMIUSDT": {
+"asset_id": "HEMI",
+"base": "HEMI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HFTUSDT": {
+"asset_id": "HFT",
+"base": "HFT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"HIFIUSDT": {
+"asset_id": "HIFI",
+"base": "HIFI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"HIGHUSDT": {
+"asset_id": "HIGH",
+"base": "HIGH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"HIMSBUSDT": {
+"asset_id": "HIMSB",
+"base": "HIMSB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HIVEUSDT": {
+"asset_id": "HIVE",
+"base": "HIVE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HMSTRUSDT": {
+"asset_id": "HMSTR",
+"base": "HMSTR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HNTUSDT": {
+"asset_id": "HNT",
+"base": "HNT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"HOLOUSDT": {
+"asset_id": "HOLO",
+"base": "HOLO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HOMEUSDT": {
+"asset_id": "HOME",
+"base": "HOME",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HOODBUSDT": {
+"asset_id": "HOODB",
+"base": "HOODB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HOOKUSDT": {
+"asset_id": "HOOK",
+"base": "HOOK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"HOTUSDT": {
+"asset_id": "HOT",
+"base": "HOT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HPEBUSDT": {
+"asset_id": "HPEB",
+"base": "HPEB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HUMAUSDT": {
+"asset_id": "HUMA",
+"base": "HUMA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HYPERUSDT": {
+"asset_id": "HYPER",
+"base": "HYPER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"HYPEUSDT": {
+"asset_id": "HYPE",
+"base": "HYPE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IBMBUSDT": {
+"asset_id": "IBMB",
+"base": "IBMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ICPUSDT": {
+"asset_id": "ICP",
+"base": "ICP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ICXUSDT": {
+"asset_id": "ICX",
+"base": "ICX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"IDEXUSDT": {
+"asset_id": "IDEX",
+"base": "IDEX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"IDUSDT": {
+"asset_id": "ID",
+"base": "ID",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ILVUSDT": {
+"asset_id": "ILV",
+"base": "ILV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IMXUSDT": {
+"asset_id": "IMX",
+"base": "IMX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"INITUSDT": {
+"asset_id": "INIT",
+"base": "INIT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"INJUSDT": {
+"asset_id": "INJ",
+"base": "INJ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"INTCBUSDT": {
+"asset_id": "INTCB",
+"base": "INTCB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"INTWBUSDT": {
+"asset_id": "INTWB",
+"base": "INTWB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IOSTUSDT": {
+"asset_id": "IOST",
+"base": "IOST",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IOTAUSDT": {
+"asset_id": "IOTA",
+"base": "IOTA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IOTXUSDT": {
+"asset_id": "IOTX",
+"base": "IOTX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IOUSDT": {
+"asset_id": "IO",
+"base": "IO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IQUSDT": {
+"asset_id": "IQ",
+"base": "IQ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IRENBUSDT": {
+"asset_id": "IRENB",
+"base": "IRENB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"IRISUSDT": {
+"asset_id": "IRIS",
+"base": "IRIS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"JASMYUSDT": {
+"asset_id": "JASMY",
+"base": "JASMY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"JOEUSDT": {
+"asset_id": "JOE",
+"base": "JOE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"JPMBUSDT": {
+"asset_id": "JPMB",
+"base": "JPMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"JSTUSDT": {
+"asset_id": "JST",
+"base": "JST",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"JTOUSDT": {
+"asset_id": "JTO",
+"base": "JTO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"JUPUSDT": {
+"asset_id": "JUP",
+"base": "JUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"JUVUSDT": {
+"asset_id": "JUV",
+"base": "JUV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KAIAUSDT": {
+"asset_id": "KAIA",
+"base": "KAIA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KAITOUSDT": {
+"asset_id": "KAITO",
+"base": "KAITO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KATUSDT": {
+"asset_id": "KAT",
+"base": "KAT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KAVAUSDT": {
+"asset_id": "KAVA",
+"base": "KAVA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KDAUSDT": {
+"asset_id": "KDA",
+"base": "KDA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"KEEPUSDT": {
+"asset_id": "KEEP",
+"base": "KEEP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"KERNELUSDT": {
+"asset_id": "KERNEL",
+"base": "KERNEL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KEYUSDT": {
+"asset_id": "KEY",
+"base": "KEY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"KGSTUSDT": {
+"asset_id": "KGST",
+"base": "KGST",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KITEUSDT": {
+"asset_id": "KITE",
+"base": "KITE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KLAYUSDT": {
+"asset_id": "KLAY",
+"base": "KLAY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"KMDUSDT": {
+"asset_id": "KMD",
+"base": "KMD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"KMNOUSDT": {
+"asset_id": "KMNO",
+"base": "KMNO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KNCUSDT": {
+"asset_id": "KNC",
+"base": "KNC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KORUBUSDT": {
+"asset_id": "KORUB",
+"base": "KORUB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KP3RUSDT": {
+"asset_id": "KP3R",
+"base": "KP3R",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"KSMUSDT": {
+"asset_id": "KSM",
+"base": "KSM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"KSTRBUSDT": {
+"asset_id": "KSTRB",
+"base": "KSTRB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LAUSDT": {
+"asset_id": "LA",
+"base": "LA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LAYERUSDT": {
+"asset_id": "LAYER",
+"base": "LAYER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LAZIOUSDT": {
+"asset_id": "LAZIO",
+"base": "LAZIO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LDOUSDT": {
+"asset_id": "LDO",
+"base": "LDO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LENDUSDT": {
+"asset_id": "LEND",
+"base": "LEND",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LEVERUSDT": {
+"asset_id": "LEVER",
+"base": "LEVER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LINAUSDT": {
+"asset_id": "LINA",
+"base": "LINA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LINEAUSDT": {
+"asset_id": "LINEA",
+"base": "LINEA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LINKDOWNUSDT": {
+"asset_id": "LINKDOWN",
+"base": "LINKDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LINKUPUSDT": {
+"asset_id": "LINKUP",
+"base": "LINKUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LINKUSDT": {
+"asset_id": "LINK",
+"base": "LINK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LISTAUSDT": {
+"asset_id": "LISTA",
+"base": "LISTA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LITEBUSDT": {
+"asset_id": "LITEB",
+"base": "LITEB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LITUSDT": {
+"asset_id": "LIT",
+"base": "LIT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LLYBUSDT": {
+"asset_id": "LLYB",
+"base": "LLYB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LOKAUSDT": {
+"asset_id": "LOKA",
+"base": "LOKA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LOOMUSDT": {
+"asset_id": "LOOM",
+"base": "LOOM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LPTUSDT": {
+"asset_id": "LPT",
+"base": "LPT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LQTYUSDT": {
+"asset_id": "LQTY",
+"base": "LQTY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LRCUSDT": {
+"asset_id": "LRC",
+"base": "LRC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LSKUSDT": {
+"asset_id": "LSK",
+"base": "LSK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LTCDOWNUSDT": {
+"asset_id": "LTCDOWN",
+"base": "LTCDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LTCUPUSDT": {
+"asset_id": "LTCUP",
+"base": "LTCUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LTCUSDT": {
+"asset_id": "LTC",
+"base": "LTC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LTOUSDT": {
+"asset_id": "LTO",
+"base": "LTO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"LUMIAUSDT": {
+"asset_id": "LUMIA",
+"base": "LUMIA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LUNAUSDT": {
+"asset_id": "LUNA",
+"base": "LUNA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"LUNCUSDT": {
+"asset_id": "LUNC",
+"base": "LUNC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MAGICUSDT": {
+"asset_id": "MAGIC",
+"base": "MAGIC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MANAUSDT": {
+"asset_id": "MANA",
+"base": "MANA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MANTAUSDT": {
+"asset_id": "MANTA",
+"base": "MANTA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MANTRAUSDT": {
+"asset_id": "MANTRA",
+"base": "MANTRA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MARSCOINUSDT": {
+"asset_id": "MARSCOIN",
+"base": "MARSCOIN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MASKUSDT": {
+"asset_id": "MASK",
+"base": "MASK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MATICUSDT": {
+"asset_id": "MATIC",
+"base": "MATIC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MAVUSDT": {
+"asset_id": "MAV",
+"base": "MAV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MBLUSDT": {
+"asset_id": "MBL",
+"base": "MBL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MBOXUSDT": {
+"asset_id": "MBOX",
+"base": "MBOX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MCOUSDT": {
+"asset_id": "MCO",
+"base": "MCO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MCUSDT": {
+"asset_id": "MC",
+"base": "MC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MDBBUSDT": {
+"asset_id": "MDBB",
+"base": "MDBB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MDTUSDT": {
+"asset_id": "MDT",
+"base": "MDT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MDXUSDT": {
+"asset_id": "MDX",
+"base": "MDX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MEGAUSDT": {
+"asset_id": "MEGA",
+"base": "MEGA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MEMEUSDT": {
+"asset_id": "MEME",
+"base": "MEME",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"METABUSDT": {
+"asset_id": "METAB",
+"base": "METAB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"METISUSDT": {
+"asset_id": "METIS",
+"base": "METIS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"METUSDT": {
+"asset_id": "MET",
+"base": "MET",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MEUSDT": {
+"asset_id": "ME",
+"base": "ME",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MFTUSDT": {
+"asset_id": "MFT",
+"base": "MFT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MINAUSDT": {
+"asset_id": "MINA",
+"base": "MINA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MIRAUSDT": {
+"asset_id": "MIRA",
+"base": "MIRA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MIRUSDT": {
+"asset_id": "MIR",
+"base": "MIR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MITHUSDT": {
+"asset_id": "MITH",
+"base": "MITH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MITOUSDT": {
+"asset_id": "MITO",
+"base": "MITO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MKRUSDT": {
+"asset_id": "MKR",
+"base": "MKR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MLNUSDT": {
+"asset_id": "MLN",
+"base": "MLN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MMTUSDT": {
+"asset_id": "MMT",
+"base": "MMT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MOBUSDT": {
+"asset_id": "MOB",
+"base": "MOB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MORPHOUSDT": {
+"asset_id": "MORPHO",
+"base": "MORPHO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MOVEUSDT": {
+"asset_id": "MOVE",
+"base": "MOVE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MOVRUSDT": {
+"asset_id": "MOVR",
+"base": "MOVR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MRNABUSDT": {
+"asset_id": "MRNAB",
+"base": "MRNAB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MRVLBUSDT": {
+"asset_id": "MRVLB",
+"base": "MRVLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MSFTBUSDT": {
+"asset_id": "MSFTB",
+"base": "MSFTB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MSTRBUSDT": {
+"asset_id": "MSTRB",
+"base": "MSTRB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MTLUSDT": {
+"asset_id": "MTL",
+"base": "MTL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MUBARAKUSDT": {
+"asset_id": "MUBARAK",
+"base": "MUBARAK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MUBUSDT": {
+"asset_id": "MUB",
+"base": "MUB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MULTIUSDT": {
+"asset_id": "MULTI",
+"base": "MULTI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"MUUBUSDT": {
+"asset_id": "MUUB",
+"base": "MUUB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"MVLLBUSDT": {
+"asset_id": "MVLLB",
+"base": "MVLLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NANOUSDT": {
+"asset_id": "NANO",
+"base": "NANO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NBISBUSDT": {
+"asset_id": "NBISB",
+"base": "NBISB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NBSUSDT": {
+"asset_id": "NBS",
+"base": "NBS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NBTUSDT": {
+"asset_id": "NBT",
+"base": "NBT",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"NEARUSDT": {
+"asset_id": "NEAR",
+"base": "NEAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NEBLUSDT": {
+"asset_id": "NEBL",
+"base": "NEBL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NEIROUSDT": {
+"asset_id": "NEIRO",
+"base": "NEIRO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NEOUSDT": {
+"asset_id": "NEO",
+"base": "NEO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NEWTUSDT": {
+"asset_id": "NEWT",
+"base": "NEWT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NEXOUSDT": {
+"asset_id": "NEXO",
+"base": "NEXO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NFLXBUSDT": {
+"asset_id": "NFLXB",
+"base": "NFLXB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NFPUSDT": {
+"asset_id": "NFP",
+"base": "NFP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NIGHTUSDT": {
+"asset_id": "NIGHT",
+"base": "NIGHT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NILUSDT": {
+"asset_id": "NIL",
+"base": "NIL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NKNUSDT": {
+"asset_id": "NKN",
+"base": "NKN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NMRUSDT": {
+"asset_id": "NMR",
+"base": "NMR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NOKBUSDT": {
+"asset_id": "NOKB",
+"base": "NOKB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NOMUSDT": {
+"asset_id": "NOM",
+"base": "NOM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NOTUSDT": {
+"asset_id": "NOT",
+"base": "NOT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NPXSUSDT": {
+"asset_id": "NPXS",
+"base": "NPXS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NTRNUSDT": {
+"asset_id": "NTRN",
+"base": "NTRN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NULSUSDT": {
+"asset_id": "NULS",
+"base": "NULS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NUUSDT": {
+"asset_id": "NU",
+"base": "NU",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"NVDABUSDT": {
+"asset_id": "NVDAB",
+"base": "NVDAB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"NXPCUSDT": {
+"asset_id": "NXPC",
+"base": "NXPC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"OAXUSDT": {
+"asset_id": "OAX",
+"base": "OAX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"OCEANUSDT": {
+"asset_id": "OCEAN",
+"base": "OCEAN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"OGNUSDT": {
+"asset_id": "OGN",
+"base": "OGN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"OGUSDT": {
+"asset_id": "OG",
+"base": "OG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"OMGUSDT": {
+"asset_id": "OMG",
+"base": "OMG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"OMNIUSDT": {
+"asset_id": "OMNI",
+"base": "OMNI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"OMUSDT": {
+"asset_id": "OM",
+"base": "OM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ONDOUSDT": {
+"asset_id": "ONDO",
+"base": "ONDO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ONEUSDT": {
+"asset_id": "ONE",
+"base": "ONE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ONGUSDT": {
+"asset_id": "ONG",
+"base": "ONG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ONTUSDT": {
+"asset_id": "ONT",
+"base": "ONT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"OOKIUSDT": {
+"asset_id": "OOKI",
+"base": "OOKI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"OPENUSDT": {
+"asset_id": "OPEN",
+"base": "OPEN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"OPGUSDT": {
+"asset_id": "OPG",
+"base": "OPG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"OPNUSDT": {
+"asset_id": "OPN",
+"base": "OPN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"OPUSDT": {
+"asset_id": "OP",
+"base": "OP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ORCAUSDT": {
+"asset_id": "ORCA",
+"base": "ORCA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ORCLBUSDT": {
+"asset_id": "ORCLB",
+"base": "ORCLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ORDIUSDT": {
+"asset_id": "ORDI",
+"base": "ORDI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ORNUSDT": {
+"asset_id": "ORN",
+"base": "ORN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"OSMOUSDT": {
+"asset_id": "OSMO",
+"base": "OSMO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"OXTUSDT": {
+"asset_id": "OXT",
+"base": "OXT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PARTIUSDT": {
+"asset_id": "PARTI",
+"base": "PARTI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PAXGUSDT": {
+"asset_id": "PAXG",
+"base": "PAXG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PAXUSDT": {
+"asset_id": "PAX",
+"base": "PAX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PDAUSDT": {
+"asset_id": "PDA",
+"base": "PDA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PDDBUSDT": {
+"asset_id": "PDDB",
+"base": "PDDB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PENDLEUSDT": {
+"asset_id": "PENDLE",
+"base": "PENDLE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PENGBUSDT": {
+"asset_id": "PENGB",
+"base": "PENGB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PENGUUSDT": {
+"asset_id": "PENGU",
+"base": "PENGU",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PEOPLEUSDT": {
+"asset_id": "PEOPLE",
+"base": "PEOPLE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PEPEUSDT": {
+"asset_id": "PEPE",
+"base": "PEPE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PERLUSDT": {
+"asset_id": "PERL",
+"base": "PERL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PERPUSDT": {
+"asset_id": "PERP",
+"base": "PERP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PHAUSDT": {
+"asset_id": "PHA",
+"base": "PHA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PHBUSDT": {
+"asset_id": "PHB",
+"base": "PHB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PIVXUSDT": {
+"asset_id": "PIVX",
+"base": "PIVX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PIXELUSDT": {
+"asset_id": "PIXEL",
+"base": "PIXEL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PLAUSDT": {
+"asset_id": "PLA",
+"base": "PLA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PLTRBUSDT": {
+"asset_id": "PLTRB",
+"base": "PLTRB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PLUMEUSDT": {
+"asset_id": "PLUME",
+"base": "PLUME",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PNTUSDT": {
+"asset_id": "PNT",
+"base": "PNT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PNUTUSDT": {
+"asset_id": "PNUT",
+"base": "PNUT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"POLSUSDT": {
+"asset_id": "POLS",
+"base": "POLS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"POLUSDT": {
+"asset_id": "POL",
+"base": "POL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"POLYUSDT": {
+"asset_id": "POLY",
+"base": "POLY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"POLYXUSDT": {
+"asset_id": "POLYX",
+"base": "POLYX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PONDUSDT": {
+"asset_id": "POND",
+"base": "POND",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PORTALUSDT": {
+"asset_id": "PORTAL",
+"base": "PORTAL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PORTOUSDT": {
+"asset_id": "PORTO",
+"base": "PORTO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"POWRUSDT": {
+"asset_id": "POWR",
+"base": "POWR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PROMUSDT": {
+"asset_id": "PROM",
+"base": "PROM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PROSUSDT": {
+"asset_id": "PROS",
+"base": "PROS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PROVEUSDT": {
+"asset_id": "PROVE",
+"base": "PROVE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PSGUSDT": {
+"asset_id": "PSG",
+"base": "PSG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PUMPUSDT": {
+"asset_id": "PUMP",
+"base": "PUMP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PUNDIXUSDT": {
+"asset_id": "PUNDIX",
+"base": "PUNDIX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PYPLBUSDT": {
+"asset_id": "PYPLB",
+"base": "PYPLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"PYRUSDT": {
+"asset_id": "PYR",
+"base": "PYR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"PYTHUSDT": {
+"asset_id": "PYTH",
+"base": "PYTH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"QCOMBUSDT": {
+"asset_id": "QCOMB",
+"base": "QCOMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"QIUSDT": {
+"asset_id": "QI",
+"base": "QI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"QKCUSDT": {
+"asset_id": "QKC",
+"base": "QKC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"QNTBUSDT": {
+"asset_id": "QNTB",
+"base": "QNTB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"QNTUSDT": {
+"asset_id": "QNT",
+"base": "QNT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"QQQBUSDT": {
+"asset_id": "QQQB",
+"base": "QQQB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"QTUMUSDT": {
+"asset_id": "QTUM",
+"base": "QTUM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"QUICKUSDT": {
+"asset_id": "QUICK",
+"base": "QUICK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"RADUSDT": {
+"asset_id": "RAD",
+"base": "RAD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RAMPUSDT": {
+"asset_id": "RAMP",
+"base": "RAMP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"RAREUSDT": {
+"asset_id": "RARE",
+"base": "RARE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RAYUSDT": {
+"asset_id": "RAY",
+"base": "RAY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RDDTBUSDT": {
+"asset_id": "RDDTB",
+"base": "RDDTB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RDNTUSDT": {
+"asset_id": "RDNT",
+"base": "RDNT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"REDUSDT": {
+"asset_id": "RED",
+"base": "RED",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"REEFUSDT": {
+"asset_id": "REEF",
+"base": "REEF",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"REIUSDT": {
+"asset_id": "REI",
+"base": "REI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"RENDERUSDT": {
+"asset_id": "RENDER",
+"base": "RENDER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RENUSDT": {
+"asset_id": "REN",
+"base": "REN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"REPUSDT": {
+"asset_id": "REP",
+"base": "REP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"REQUSDT": {
+"asset_id": "REQ",
+"base": "REQ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RESOLVUSDT": {
+"asset_id": "RESOLV",
+"base": "RESOLV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"REUSDT": {
+"asset_id": "RE",
+"base": "RE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"REZUSDT": {
+"asset_id": "REZ",
+"base": "REZ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RGTUSDT": {
+"asset_id": "RGT",
+"base": "RGT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"RIFUSDT": {
+"asset_id": "RIF",
+"base": "RIF",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RKLBBUSDT": {
+"asset_id": "RKLBB",
+"base": "RKLBB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RLCUSDT": {
+"asset_id": "RLC",
+"base": "RLC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RLUSDUSDT": {
+"asset_id": "RLUSD",
+"base": "RLUSD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RNDRUSDT": {
+"asset_id": "RNDR",
+"base": "RNDR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"ROBOUSDT": {
+"asset_id": "ROBO",
+"base": "ROBO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RONINUSDT": {
+"asset_id": "RONIN",
+"base": "RONIN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ROSEUSDT": {
+"asset_id": "ROSE",
+"base": "ROSE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RPLUSDT": {
+"asset_id": "RPL",
+"base": "RPL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RSRUSDT": {
+"asset_id": "RSR",
+"base": "RSR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RUNEUSDT": {
+"asset_id": "RUNE",
+"base": "RUNE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RVNUSDT": {
+"asset_id": "RVN",
+"base": "RVN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"RWUSDUSDT": {
+"asset_id": "RWUSD",
+"base": "RWUSD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SAGAUSDT": {
+"asset_id": "SAGA",
+"base": "SAGA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SAHARAUSDT": {
+"asset_id": "SAHARA",
+"base": "SAHARA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SANDUSDT": {
+"asset_id": "SAND",
+"base": "SAND",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SANTOSUSDT": {
+"asset_id": "SANTOS",
+"base": "SANTOS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SAPIENUSDT": {
+"asset_id": "SAPIEN",
+"base": "SAPIEN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SCRTUSDT": {
+"asset_id": "SCRT",
+"base": "SCRT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SCRUSDT": {
+"asset_id": "SCR",
+"base": "SCR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SCUSDT": {
+"asset_id": "SC",
+"base": "SC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SECZBUSDT": {
+"asset_id": "SECZB",
+"base": "SECZB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SEIUSDT": {
+"asset_id": "SEI",
+"base": "SEI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SENTUSDT": {
+"asset_id": "SENT",
+"base": "SENT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SFPUSDT": {
+"asset_id": "SFP",
+"base": "SFP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SHAZBUSDT": {
+"asset_id": "SHAZB",
+"base": "SHAZB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SHELLUSDT": {
+"asset_id": "SHELL",
+"base": "SHELL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SHIBUSDT": {
+"asset_id": "SHIB",
+"base": "SHIB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SIGNUSDT": {
+"asset_id": "SIGN",
+"base": "SIGN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SKDDBUSDT": {
+"asset_id": "SKDDB",
+"base": "SKDDB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SKHYBUSDT": {
+"asset_id": "SKHYB",
+"base": "SKHYB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SKLUSDT": {
+"asset_id": "SKL",
+"base": "SKL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SKUUBUSDT": {
+"asset_id": "SKUUB",
+"base": "SKUUB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SKYUSDT": {
+"asset_id": "SKY",
+"base": "SKY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SLFUSDT": {
+"asset_id": "SLF",
+"base": "SLF",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SLPUSDT": {
+"asset_id": "SLP",
+"base": "SLP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SMCIBUSDT": {
+"asset_id": "SMCIB",
+"base": "SMCIB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SMHBUSDT": {
+"asset_id": "SMHB",
+"base": "SMHB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SNDKBUSDT": {
+"asset_id": "SNDKB",
+"base": "SNDKB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SNTUSDT": {
+"asset_id": "SNT",
+"base": "SNT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SNXUSDT": {
+"asset_id": "SNX",
+"base": "SNX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SNXXBUSDT": {
+"asset_id": "SNXXB",
+"base": "SNXXB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SOLUSDT": {
+"asset_id": "SOL",
+"base": "SOL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SOLVUSDT": {
+"asset_id": "SOLV",
+"base": "SOLV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SOMIUSDT": {
+"asset_id": "SOMI",
+"base": "SOMI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SOPHUSDT": {
+"asset_id": "SOPH",
+"base": "SOPH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SOXLBUSDT": {
+"asset_id": "SOXLB",
+"base": "SOXLB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SOXSBUSDT": {
+"asset_id": "SOXSB",
+"base": "SOXSB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SPCXBUSDT": {
+"asset_id": "SPCXB",
+"base": "SPCXB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SPELLUSDT": {
+"asset_id": "SPELL",
+"base": "SPELL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SPKUSDT": {
+"asset_id": "SPK",
+"base": "SPK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SPYBUSDT": {
+"asset_id": "SPYB",
+"base": "SPYB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SQQQBUSDT": {
+"asset_id": "SQQQB",
+"base": "SQQQB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SRMUSDT": {
+"asset_id": "SRM",
+"base": "SRM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SSVUSDT": {
+"asset_id": "SSV",
+"base": "SSV",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"STEEMUSDT": {
+"asset_id": "STEEM",
+"base": "STEEM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"STGUSDT": {
+"asset_id": "STG",
+"base": "STG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"STMXUSDT": {
+"asset_id": "STMX",
+"base": "STMX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"STORJUSDT": {
+"asset_id": "STORJ",
+"base": "STORJ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"STORMUSDT": {
+"asset_id": "STORM",
+"base": "STORM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"STOUSDT": {
+"asset_id": "STO",
+"base": "STO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"STPTUSDT": {
+"asset_id": "STPT",
+"base": "STPT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"STRATUSDT": {
+"asset_id": "STRAT",
+"base": "STRAT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"STRAXUSDT": {
+"asset_id": "STRAX",
+"base": "STRAX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"STRKUSDT": {
+"asset_id": "STRK",
+"base": "STRK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"STXBUSDT": {
+"asset_id": "STXB",
+"base": "STXB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"STXUSDT": {
+"asset_id": "STX",
+"base": "STX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SUIUSDT": {
+"asset_id": "SUI",
+"base": "SUI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SUNUSDT": {
+"asset_id": "SUN",
+"base": "SUN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SUPERUSDT": {
+"asset_id": "SUPER",
+"base": "SUPER",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SUSDT": {
+"asset_id": "S",
+"base": "S",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SUSDUSDT": {
+"asset_id": "SUSD",
+"base": "SUSD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SUSHIDOWNUSDT": {
+"asset_id": "SUSHIDOWN",
+"base": "SUSHIDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SUSHIUPUSDT": {
+"asset_id": "SUSHIUP",
+"base": "SUSHIUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SUSHIUSDT": {
+"asset_id": "SUSHI",
+"base": "SUSHI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SXPDOWNUSDT": {
+"asset_id": "SXPDOWN",
+"base": "SXPDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SXPUPUSDT": {
+"asset_id": "SXPUP",
+"base": "SXPUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SXPUSDT": {
+"asset_id": "SXP",
+"base": "SXP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"SXTUSDT": {
+"asset_id": "SXT",
+"base": "SXT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SYNUSDT": {
+"asset_id": "SYN",
+"base": "SYN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SYRUPUSDT": {
+"asset_id": "SYRUP",
+"base": "SYRUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"SYSUSDT": {
+"asset_id": "SYS",
+"base": "SYS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TAOUSDT": {
+"asset_id": "TAO",
+"base": "TAO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TCTUSDT": {
+"asset_id": "TCT",
+"base": "TCT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TFUELUSDT": {
+"asset_id": "TFUEL",
+"base": "TFUEL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"THETAUSDT": {
+"asset_id": "THETA",
+"base": "THETA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"THEUSDT": {
+"asset_id": "THE",
+"base": "THE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TIAUSDT": {
+"asset_id": "TIA",
+"base": "TIA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TKOUSDT": {
+"asset_id": "TKO",
+"base": "TKO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TLMUSDT": {
+"asset_id": "TLM",
+"base": "TLM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TMFBUSDT": {
+"asset_id": "TMFB",
+"base": "TMFB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TNSRUSDT": {
+"asset_id": "TNSR",
+"base": "TNSR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TOMOUSDT": {
+"asset_id": "TOMO",
+"base": "TOMO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TONUSDT": {
+"asset_id": "TON",
+"base": "TON",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TORNUSDT": {
+"asset_id": "TORN",
+"base": "TORN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TOWNSUSDT": {
+"asset_id": "TOWNS",
+"base": "TOWNS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TQQQBUSDT": {
+"asset_id": "TQQQB",
+"base": "TQQQB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TRBUSDT": {
+"asset_id": "TRB",
+"base": "TRB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TREEUSDT": {
+"asset_id": "TREE",
+"base": "TREE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TRIBEUSDT": {
+"asset_id": "TRIBE",
+"base": "TRIBE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TROYUSDT": {
+"asset_id": "TROY",
+"base": "TROY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TRUMPUSDT": {
+"asset_id": "TRUMP",
+"base": "TRUMP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TRUUSDT": {
+"asset_id": "TRU",
+"base": "TRU",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TRXDOWNUSDT": {
+"asset_id": "TRXDOWN",
+"base": "TRXDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TRXUPUSDT": {
+"asset_id": "TRXUP",
+"base": "TRXUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TRXUSDT": {
+"asset_id": "TRX",
+"base": "TRX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TSLABUSDT": {
+"asset_id": "TSLAB",
+"base": "TSLAB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TSMBUSDT": {
+"asset_id": "TSMB",
+"base": "TSMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TSTUSDT": {
+"asset_id": "TST",
+"base": "TST",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TURBOUSDT": {
+"asset_id": "TURBO",
+"base": "TURBO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TURTLEUSDT": {
+"asset_id": "TURTLE",
+"base": "TURTLE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TUSDT": {
+"asset_id": "T",
+"base": "T",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TUSDUSDT": {
+"asset_id": "TUSD",
+"base": "TUSD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TUTUSDT": {
+"asset_id": "TUT",
+"base": "TUT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"TVKUSDT": {
+"asset_id": "TVK",
+"base": "TVK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"TWTUSDT": {
+"asset_id": "TWT",
+"base": "TWT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"UFTUSDT": {
+"asset_id": "UFT",
+"base": "UFT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"UMAUSDT": {
+"asset_id": "UMA",
+"base": "UMA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"UNFIUSDT": {
+"asset_id": "UNFI",
+"base": "UNFI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"UNIDOWNUSDT": {
+"asset_id": "UNIDOWN",
+"base": "UNIDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"UNIUPUSDT": {
+"asset_id": "UNIUP",
+"base": "UNIUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"UNIUSDT": {
+"asset_id": "UNI",
+"base": "UNI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"USARBUSDT": {
+"asset_id": "USARB",
+"base": "USARB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"USD1USDT": {
+"asset_id": "USD1",
+"base": "USD1",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"USDCUSDT": {
+"asset_id": "USDC",
+"base": "USDC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"USDEBUSDT": {
+"asset_id": "USDEB",
+"base": "USDEB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"USDEUSDT": {
+"asset_id": "USDE",
+"base": "USDE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"USDPUSDT": {
+"asset_id": "USDP",
+"base": "USDP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"USDSBUSDT": {
+"asset_id": "USDSB",
+"base": "USDSB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"USDSOLDUSDT": {
+"asset_id": "USDSOLD",
+"base": "USDSOLD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"USDSUSDT": {
+"asset_id": "USDS",
+"base": "USDS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"USTCUSDT": {
+"asset_id": "USTC",
+"base": "USTC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"USTUSDT": {
+"asset_id": "UST",
+"base": "UST",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"USUALUSDT": {
+"asset_id": "USUAL",
+"base": "USUAL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"UTKUSDT": {
+"asset_id": "UTK",
+"base": "UTK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"UUSDT": {
+"asset_id": "U",
+"base": "U",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"UVXYBUSDT": {
+"asset_id": "UVXYB",
+"base": "UVXYB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"VANAUSDT": {
+"asset_id": "VANA",
+"base": "VANA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"VANRYUSDT": {
+"asset_id": "VANRY",
+"base": "VANRY",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"VELODROMEUSDT": {
+"asset_id": "VELODROME",
+"base": "VELODROME",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"VENUSDT": {
+"asset_id": "VEN",
+"base": "VEN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"VETUSDT": {
+"asset_id": "VET",
+"base": "VET",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"VGXUSDT": {
+"asset_id": "VGX",
+"base": "VGX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"VIBUSDT": {
+"asset_id": "VIB",
+"base": "VIB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"VICUSDT": {
+"asset_id": "VIC",
+"base": "VIC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"VIDTUSDT": {
+"asset_id": "VIDT",
+"base": "VIDT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"VIRTUALUSDT": {
+"asset_id": "VIRTUAL",
+"base": "VIRTUAL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"VITEUSDT": {
+"asset_id": "VITE",
+"base": "VITE",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"VOXELUSDT": {
+"asset_id": "VOXEL",
+"base": "VOXEL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"VSTBUSDT": {
+"asset_id": "VSTB",
+"base": "VSTB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"VTHOUSDT": {
+"asset_id": "VTHO",
+"base": "VTHO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WALUSDT": {
+"asset_id": "WAL",
+"base": "WAL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WANUSDT": {
+"asset_id": "WAN",
+"base": "WAN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"WAVESUSDT": {
+"asset_id": "WAVES",
+"base": "WAVES",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"WAXPUSDT": {
+"asset_id": "WAXP",
+"base": "WAXP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WBETHUSDT": {
+"asset_id": "WBETH",
+"base": "WBETH",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WBTCUSDT": {
+"asset_id": "WBTC",
+"base": "WBTC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WCTUSDT": {
+"asset_id": "WCT",
+"base": "WCT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WDCBUSDT": {
+"asset_id": "WDCB",
+"base": "WDCB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WENBUSDT": {
+"asset_id": "WENB",
+"base": "WENB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WIFUSDT": {
+"asset_id": "WIF",
+"base": "WIF",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WINGUSDT": {
+"asset_id": "WING",
+"base": "WING",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"WINUSDT": {
+"asset_id": "WIN",
+"base": "WIN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WLDUSDT": {
+"asset_id": "WLD",
+"base": "WLD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WLFIUSDT": {
+"asset_id": "WLFI",
+"base": "WLFI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WNXMUSDT": {
+"asset_id": "WNXM",
+"base": "WNXM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"WOOUSDT": {
+"asset_id": "WOO",
+"base": "WOO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"WRXUSDT": {
+"asset_id": "WRX",
+"base": "WRX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"WTCUSDT": {
+"asset_id": "WTC",
+"base": "WTC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"WUSDT": {
+"asset_id": "W",
+"base": "W",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XAIUSDT": {
+"asset_id": "XAI",
+"base": "XAI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XAUTUSDT": {
+"asset_id": "XAUT",
+"base": "XAUT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XECUSDT": {
+"asset_id": "XEC",
+"base": "XEC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XEMUSDT": {
+"asset_id": "XEM",
+"base": "XEM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XLMDOWNUSDT": {
+"asset_id": "XLMDOWN",
+"base": "XLMDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XLMUPUSDT": {
+"asset_id": "XLMUP",
+"base": "XLMUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XLMUSDT": {
+"asset_id": "XLM",
+"base": "XLM",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XMRUSDT": {
+"asset_id": "XMR",
+"base": "XMR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XNOUSDT": {
+"asset_id": "XNO",
+"base": "XNO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XPLUSDT": {
+"asset_id": "XPL",
+"base": "XPL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XRPBEARUSDT": {
+"asset_id": "XRPBEAR",
+"base": "XRPBEAR",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XRPBULLUSDT": {
+"asset_id": "XRPBULL",
+"base": "XRPBULL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XRPDOWNUSDT": {
+"asset_id": "XRPDOWN",
+"base": "XRPDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XRPUPUSDT": {
+"asset_id": "XRPUP",
+"base": "XRPUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XRPUSDT": {
+"asset_id": "XRP",
+"base": "XRP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XTZDOWNUSDT": {
+"asset_id": "XTZDOWN",
+"base": "XTZDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XTZUPUSDT": {
+"asset_id": "XTZUP",
+"base": "XTZUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"XTZUSDT": {
+"asset_id": "XTZ",
+"base": "XTZ",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XUSDUSDT": {
+"asset_id": "XUSD",
+"base": "XUSD",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XVGUSDT": {
+"asset_id": "XVG",
+"base": "XVG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XVSUSDT": {
+"asset_id": "XVS",
+"base": "XVS",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"XZCUSDT": {
+"asset_id": "XZC",
+"base": "XZC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"YBUSDT": {
+"asset_id": "YB",
+"base": "YB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"YFIDOWNUSDT": {
+"asset_id": "YFIDOWN",
+"base": "YFIDOWN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"YFIIUSDT": {
+"asset_id": "YFII",
+"base": "YFII",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"YFIUPUSDT": {
+"asset_id": "YFIUP",
+"base": "YFIUP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "BREAK",
+"underlying_type": null
+},
+"YFIUSDT": {
+"asset_id": "YFI",
+"base": "YFI",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"YGGUSDT": {
+"asset_id": "YGG",
+"base": "YGG",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZAMAUSDT": {
+"asset_id": "ZAMA",
+"base": "ZAMA",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZBTUSDT": {
+"asset_id": "ZBT",
+"base": "ZBT",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZECUSDT": {
+"asset_id": "ZEC",
+"base": "ZEC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZENUSDT": {
+"asset_id": "ZEN",
+"base": "ZEN",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZILUSDT": {
+"asset_id": "ZIL",
+"base": "ZIL",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZKCUSDT": {
+"asset_id": "ZKC",
+"base": "ZKC",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZKPUSDT": {
+"asset_id": "ZKP",
+"base": "ZKP",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZKUSDT": {
+"asset_id": "ZK",
+"base": "ZK",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZMBUSDT": {
+"asset_id": "ZMB",
+"base": "ZMB",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZROUSDT": {
+"asset_id": "ZRO",
+"base": "ZRO",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"ZRXUSDT": {
+"asset_id": "ZRX",
+"base": "ZRX",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"\u5e01\u5b89\u4eba\u751fUSDT": {
+"asset_id": "\u5e01\u5b89\u4eba\u751f",
+"base": "\u5e01\u5b89\u4eba\u751f",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+},
+"\u725b\u6765USDT": {
+"asset_id": "\u725b\u6765",
+"base": "\u725b\u6765",
+"contract_type": "SPOT",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": null
+}
+}

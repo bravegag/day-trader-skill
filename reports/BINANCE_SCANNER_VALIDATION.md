@@ -155,7 +155,13 @@ that sample size and the comparisons below, it is noise until shown otherwise.
   and the SKILL.md says no rule has a demonstrated edge.
 - Hence `estimated_probability` stays `null` and the ranking is a count of matched rules.
 
-To promote the breakout from hypothesis to evidence: a point-in-time universe (all USDT markets
+**Update (point-in-time test, `BREAKOUT_HYPOTHESIS_VERDICT.md`): not supported.** On every USDT
+market Binance Spot ever listed, delisted ones included, the breakout's excess on the untouched
+2018-2022 holdout is +0.33 % (95 % -0.24 % to +1.07 %, median -2.6 %) and on 2022-2026 it is
+-0.33 % (significant). The result above was survivorship. The audit of this section's method is in
+that report's section 5.
+
+The original plan read: a point-in-time universe (all USDT markets
 listed at each date, including later delistings, which the exchange's `BREAK` symbols and
 Binance's public data archive make possible), a pre-registered rule and horizon, and an
 untouched final period.

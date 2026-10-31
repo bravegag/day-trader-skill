@@ -237,9 +237,11 @@ What to tell the user, every time:
   probability, and `estimated_probability` is always null. No rule has a
   demonstrated edge. In the walk-forward check
   (reports/BINANCE_SCANNER_VALIDATION.md) the 1h rules lost money after
-  costs; on 1d only the closing-high breakout beat the market over 5 to 10
-  days, on a hand-picked, survivorship-biased list of coins: a hypothesis,
-  not an edge. Say so if asked whether a setup "works".
+  costs. The daily closing-high breakout looked positive on 16 hand-picked
+  coins, but a pre-registered test on every Binance Spot market, delisted
+  ones included (reports/BREAKOUT_HYPOTHESIS_VERDICT.md), did not support
+  it: the typical breakout trailed the market. Say so if asked whether a
+  setup "works".
 - Futures context (funding, basis, open interest) is context. Never turn it
   into a leverage or position-size suggestion.
 - A crypto hit goes to the user's own judgement. The

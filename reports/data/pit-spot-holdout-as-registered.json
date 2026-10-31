@@ -1,0 +1,961 @@
+{
+ "market": "spot",
+ "period": "holdout",
+ "signal_days": [
+  "2018-01-01",
+  "2022-09-23"
+ ],
+ "coverage": {
+  "symbols": 776,
+  "with_candles": 776,
+  "archive_only": 1,
+  "delisted": 257,
+  "empty": 0,
+  "funding_missing": 0
+ },
+ "eligible_symbol_days": 117097,
+ "eligible_symbols": 348,
+ "signals": 13125,
+ "trades": 5979,
+ "missing_entry": 0,
+ "delist_affected_trades": 1,
+ "gap_affected_trades": 1,
+ "results": {
+  "primary": {
+   "n": 5979,
+   "days_with_events": 933,
+   "assets": 331,
+   "mean_excess_pct": -1148.676,
+   "median_excess_pct": -2.783,
+   "mean_net_pct": 2.128,
+   "median_net_pct": -0.896,
+   "hit_rate_net": 0.464,
+   "beat_benchmark_rate": 0.369,
+   "ci95_pct": [
+    -2510.19,
+    -170.461
+   ],
+   "ci90_pct": [
+    -2257.601,
+    -280.124
+   ],
+   "newey_west_t": -2.33,
+   "top_assets_excess_share": [
+    [
+     "CHR",
+     null,
+     361.9
+    ],
+    [
+     "ETC",
+     null,
+     332.6
+    ],
+    [
+     "VET",
+     null,
+     255.7
+    ],
+    [
+     "TFUEL",
+     null,
+     233.4
+    ],
+    [
+     "BOND",
+     null,
+     230.0
+    ],
+    [
+     "HOT",
+     null,
+     175.6
+    ],
+    [
+     "BTT",
+     null,
+     169.3
+    ],
+    [
+     "ZIL",
+     null,
+     166.5
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1162.694,
+    "ADA"
+   ]
+  },
+  "S2_excluding_original_16": {
+   "n": 5547,
+   "days_with_events": 892,
+   "assets": 322,
+   "mean_excess_pct": -1158.373,
+   "median_excess_pct": -3.009,
+   "mean_net_pct": 1.959,
+   "median_net_pct": -1.067,
+   "hit_rate_net": 0.459,
+   "beat_benchmark_rate": 0.361,
+   "ci95_pct": [
+    -2505.907,
+    -182.16
+   ],
+   "ci90_pct": [
+    -2257.542,
+    -289.969
+   ],
+   "newey_west_t": -2.33,
+   "top_assets_excess_share": [
+    [
+     "CHR",
+     null,
+     361.9
+    ],
+    [
+     "ETC",
+     null,
+     332.6
+    ],
+    [
+     "VET",
+     null,
+     255.7
+    ],
+    [
+     "TFUEL",
+     null,
+     233.4
+    ],
+    [
+     "BOND",
+     null,
+     230.0
+    ],
+    [
+     "HOT",
+     null,
+     175.6
+    ],
+    [
+     "BTT",
+     null,
+     169.3
+    ],
+    [
+     "ZIL",
+     null,
+     166.5
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1173.625,
+    "ADA"
+   ]
+  },
+  "S3_delisting_total_loss": {
+   "n": 5979,
+   "days_with_events": 933,
+   "assets": 331,
+   "mean_excess_pct": -1148.672,
+   "median_excess_pct": -2.773,
+   "mean_net_pct": 2.111,
+   "median_net_pct": -0.899,
+   "hit_rate_net": 0.463,
+   "beat_benchmark_rate": 0.37,
+   "ci95_pct": [
+    -2510.173,
+    -170.449
+   ],
+   "ci90_pct": [
+    -2257.575,
+    -280.137
+   ],
+   "newey_west_t": -2.33,
+   "top_assets_excess_share": [
+    [
+     "CHR",
+     null,
+     361.9
+    ],
+    [
+     "ETC",
+     null,
+     332.6
+    ],
+    [
+     "VET",
+     null,
+     260.1
+    ],
+    [
+     "TFUEL",
+     null,
+     233.4
+    ],
+    [
+     "BOND",
+     null,
+     230.0
+    ],
+    [
+     "HOT",
+     null,
+     176.5
+    ],
+    [
+     "BTT",
+     null,
+     173.8
+    ],
+    [
+     "ZIL",
+     null,
+     170.9
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1162.69,
+    "ADA"
+   ]
+  },
+  "S4_without_top_1pct": {
+   "n": 5919,
+   "days_with_events": 931,
+   "assets": 331,
+   "mean_excess_pct": -1161.753,
+   "median_excess_pct": -2.9,
+   "mean_net_pct": 0.629,
+   "median_net_pct": -1.039,
+   "hit_rate_net": 0.458,
+   "beat_benchmark_rate": 0.363,
+   "ci95_pct": [
+    -2535.833,
+    -173.238
+   ],
+   "ci90_pct": [
+    -2282.159,
+    -285.568
+   ],
+   "newey_west_t": -2.33,
+   "top_assets_excess_share": [
+    [
+     "VET",
+     null,
+     178.7
+    ],
+    [
+     "TFUEL",
+     null,
+     150.3
+    ],
+    [
+     "ERD",
+     null,
+     141.8
+    ],
+    [
+     "ETC",
+     null,
+     140.3
+    ],
+    [
+     "ADA",
+     null,
+     104.0
+    ],
+    [
+     "LAZIO",
+     null,
+     85.9
+    ],
+    [
+     "YFII",
+     null,
+     71.6
+    ],
+    [
+     "BTT",
+     null,
+     69.7
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1176.076,
+    "ADA"
+   ]
+  },
+  "delisting_minus_30pct": {
+   "n": 5979,
+   "days_with_events": 933,
+   "assets": 331,
+   "mean_excess_pct": -1148.675,
+   "median_excess_pct": -2.804,
+   "mean_net_pct": 2.123,
+   "median_net_pct": -0.899,
+   "hit_rate_net": 0.463,
+   "beat_benchmark_rate": 0.369,
+   "ci95_pct": [
+    -2510.185,
+    -170.457
+   ],
+   "ci90_pct": [
+    -2257.593,
+    -280.128
+   ],
+   "newey_west_t": -2.33,
+   "top_assets_excess_share": [
+    [
+     "CHR",
+     null,
+     361.9
+    ],
+    [
+     "ETC",
+     null,
+     332.6
+    ],
+    [
+     "VET",
+     null,
+     257.0
+    ],
+    [
+     "TFUEL",
+     null,
+     233.4
+    ],
+    [
+     "BOND",
+     null,
+     230.0
+    ],
+    [
+     "HOT",
+     null,
+     175.9
+    ],
+    [
+     "BTT",
+     null,
+     170.6
+    ],
+    [
+     "ZIL",
+     null,
+     167.8
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1162.693,
+    "ADA"
+   ]
+  },
+  "costs_doubled": {
+   "n": 5979,
+   "days_with_events": 933,
+   "assets": 331,
+   "mean_excess_pct": -1145.235,
+   "median_excess_pct": -2.775,
+   "mean_net_pct": 1.822,
+   "median_net_pct": -1.193,
+   "hit_rate_net": 0.454,
+   "beat_benchmark_rate": 0.369,
+   "ci95_pct": [
+    -2502.671,
+    -169.95
+   ],
+   "ci90_pct": [
+    -2250.838,
+    -279.285
+   ],
+   "newey_west_t": -2.33,
+   "top_assets_excess_share": [
+    [
+     "CHR",
+     null,
+     360.8
+    ],
+    [
+     "ETC",
+     null,
+     331.6
+    ],
+    [
+     "VET",
+     null,
+     255.0
+    ],
+    [
+     "TFUEL",
+     null,
+     232.7
+    ],
+    [
+     "BOND",
+     null,
+     229.3
+    ],
+    [
+     "HOT",
+     null,
+     175.1
+    ],
+    [
+     "BTT",
+     null,
+     168.8
+    ],
+    [
+     "ZIL",
+     null,
+     166.0
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1159.212,
+    "ADA"
+   ]
+  },
+  "late_entry_counted": {
+   "n": 5979,
+   "days_with_events": 933,
+   "assets": 331,
+   "mean_excess_pct": -1148.676,
+   "median_excess_pct": -2.783,
+   "mean_net_pct": 2.128,
+   "median_net_pct": -0.896,
+   "hit_rate_net": 0.464,
+   "beat_benchmark_rate": 0.369,
+   "ci95_pct": [
+    -2510.19,
+    -170.461
+   ],
+   "ci90_pct": [
+    -2257.601,
+    -280.124
+   ],
+   "newey_west_t": -2.33,
+   "top_assets_excess_share": [
+    [
+     "CHR",
+     null,
+     361.9
+    ],
+    [
+     "ETC",
+     null,
+     332.6
+    ],
+    [
+     "VET",
+     null,
+     255.7
+    ],
+    [
+     "TFUEL",
+     null,
+     233.4
+    ],
+    [
+     "BOND",
+     null,
+     230.0
+    ],
+    [
+     "HOT",
+     null,
+     175.6
+    ],
+    [
+     "BTT",
+     null,
+     169.3
+    ],
+    [
+     "ZIL",
+     null,
+     166.5
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1162.694,
+    "ADA"
+   ]
+  },
+  "leveraged_tokens_excluded": {
+   "n": 5684,
+   "days_with_events": 906,
+   "assets": 298,
+   "mean_excess_pct": -3.503,
+   "median_excess_pct": -2.663,
+   "mean_net_pct": 2.389,
+   "median_net_pct": -0.8,
+   "hit_rate_net": 0.467,
+   "beat_benchmark_rate": 0.371,
+   "ci95_pct": [
+    -12.896,
+    0.752
+   ],
+   "ci90_pct": [
+    -11.078,
+    0.601
+   ],
+   "newey_west_t": -0.82,
+   "top_assets_excess_share": [
+    [
+     "CHZ",
+     null,
+     577.2
+    ],
+    [
+     "FTM",
+     null,
+     519.1
+    ],
+    [
+     "DOGE",
+     null,
+     424.8
+    ],
+    [
+     "WRX",
+     null,
+     369.2
+    ],
+    [
+     "CHR",
+     null,
+     358.9
+    ],
+    [
+     "ETC",
+     null,
+     325.9
+    ],
+    [
+     "WAVES",
+     null,
+     255.7
+    ],
+    [
+     "WIN",
+     null,
+     249.4
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -3.629,
+    "CHZ"
+   ]
+  },
+  "stable_like_excluded": {
+   "n": 5947,
+   "days_with_events": 921,
+   "assets": 330,
+   "mean_excess_pct": -1157.888,
+   "median_excess_pct": -2.865,
+   "mean_net_pct": 2.141,
+   "median_net_pct": -0.957,
+   "hit_rate_net": 0.466,
+   "beat_benchmark_rate": 0.369,
+   "ci95_pct": [
+    -2535.459,
+    -171.241
+   ],
+   "ci90_pct": [
+    -2276.84,
+    -282.064
+   ],
+   "newey_west_t": -2.33,
+   "top_assets_excess_share": [
+    [
+     "CHR",
+     null,
+     360.7
+    ],
+    [
+     "ETC",
+     null,
+     328.4
+    ],
+    [
+     "VET",
+     null,
+     254.0
+    ],
+    [
+     "TFUEL",
+     null,
+     230.5
+    ],
+    [
+     "BOND",
+     null,
+     229.9
+    ],
+    [
+     "HOT",
+     null,
+     174.0
+    ],
+    [
+     "BTT",
+     null,
+     167.7
+    ],
+    [
+     "ZIL",
+     null,
+     165.6
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1172.095,
+    "ADA"
+   ]
+  },
+  "btc_adjusted": {
+   "n": 5979,
+   "days_with_events": 933,
+   "assets": 331,
+   "mean_excess_pct": 2.161,
+   "median_excess_pct": -0.932,
+   "mean_net_pct": 2.128,
+   "median_net_pct": -0.896,
+   "hit_rate_net": 0.464,
+   "beat_benchmark_rate": 0.452,
+   "ci95_pct": [
+    0.4,
+    4.056
+   ],
+   "ci90_pct": [
+    0.678,
+    3.734
+   ],
+   "newey_west_t": 2.12,
+   "top_assets_excess_share": [
+    [
+     "CHZ",
+     0.05,
+     642.0
+    ],
+    [
+     "FTM",
+     0.048,
+     619.7
+    ],
+    [
+     "WRX",
+     0.038,
+     493.7
+    ],
+    [
+     "DOGE",
+     0.038,
+     490.7
+    ],
+    [
+     "CHR",
+     0.033,
+     425.3
+    ],
+    [
+     "WIN",
+     0.031,
+     403.0
+    ],
+    [
+     "ETC",
+     0.031,
+     402.1
+    ],
+    [
+     "ONE",
+     0.029,
+     373.1
+    ]
+   ],
+   "max_asset_share": 0.05,
+   "leave_one_asset_out_min_pct": [
+    2.067,
+    "CHZ"
+   ]
+  },
+  "original_16_only_pit_benchmark": {
+   "n": 432,
+   "days_with_events": 303,
+   "assets": 9,
+   "mean_excess_pct": -1024.163,
+   "median_excess_pct": -0.831,
+   "mean_net_pct": 4.289,
+   "median_net_pct": 0.509,
+   "hit_rate_net": 0.521,
+   "beat_benchmark_rate": 0.47,
+   "ci95_pct": [
+    -2738.663,
+    0.896
+   ],
+   "ci90_pct": [
+    -2410.31,
+    -15.515
+   ],
+   "newey_west_t": -1.51,
+   "top_assets_excess_share": [
+    [
+     "XRP",
+     null,
+     131.3
+    ],
+    [
+     "BNB",
+     null,
+     -45910.3
+    ],
+    [
+     "BTC",
+     null,
+     -46059.1
+    ],
+    [
+     "ZEC",
+     null,
+     -47886.6
+    ],
+    [
+     "ETH",
+     null,
+     -52779.0
+    ],
+    [
+     "INJ",
+     null,
+     -52844.1
+    ],
+    [
+     "SOL",
+     null,
+     -53863.6
+    ],
+    [
+     "DOGE",
+     null,
+     -61762.6
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1167.73,
+    "XRP"
+   ]
+  },
+  "original_16_only_own_benchmark": {
+   "n": 432,
+   "days_with_events": 303,
+   "assets": 9,
+   "mean_excess_pct": 1.0,
+   "median_excess_pct": -0.221,
+   "mean_net_pct": 4.289,
+   "median_net_pct": 0.509,
+   "hit_rate_net": 0.521,
+   "beat_benchmark_rate": 0.491,
+   "ci95_pct": [
+    -0.091,
+    2.215
+   ],
+   "ci90_pct": [
+    0.083,
+    1.95
+   ],
+   "newey_west_t": 1.57,
+   "top_assets_excess_share": [
+    [
+     "DOGE",
+     0.812,
+     350.8
+    ],
+    [
+     "SOL",
+     0.238,
+     102.9
+    ],
+    [
+     "XRP",
+     0.205,
+     88.7
+    ],
+    [
+     "BNB",
+     0.165,
+     71.4
+    ],
+    [
+     "ZEC",
+     0.162,
+     69.8
+    ],
+    [
+     "PAXG",
+     0.109,
+     46.9
+    ],
+    [
+     "INJ",
+     -0.138,
+     -59.6
+    ],
+    [
+     "BTC",
+     -0.193,
+     -83.5
+    ]
+   ],
+   "max_asset_share": 0.812,
+   "leave_one_asset_out_min_pct": [
+    0.199,
+    "DOGE"
+   ]
+  },
+  "overlap_allowed": {
+   "n": 13125,
+   "days_with_events": 1082,
+   "assets": 331,
+   "mean_excess_pct": -1008.515,
+   "median_excess_pct": -2.956,
+   "mean_net_pct": 2.385,
+   "median_net_pct": -1.026,
+   "hit_rate_net": 0.463,
+   "beat_benchmark_rate": 0.371,
+   "ci95_pct": [
+    -2253.38,
+    -163.045
+   ],
+   "ci90_pct": [
+    -1981.728,
+    -257.088
+   ],
+   "newey_west_t": -2.32,
+   "top_assets_excess_share": [
+    [
+     "BOND",
+     null,
+     678.3
+    ],
+    [
+     "CHR",
+     null,
+     663.2
+    ],
+    [
+     "ZIL",
+     null,
+     623.5
+    ],
+    [
+     "TFUEL",
+     null,
+     607.7
+    ],
+    [
+     "NPXS",
+     null,
+     387.0
+    ],
+    [
+     "STMX",
+     null,
+     316.5
+    ],
+    [
+     "SANTOS",
+     null,
+     299.6
+    ],
+    [
+     "ERD",
+     null,
+     292.3
+    ]
+   ],
+   "max_asset_share": null,
+   "leave_one_asset_out_min_pct": [
+    -1020.091,
+    "LINK"
+   ]
+  },
+  "by_year": {
+   "2018": {
+    "n": 29,
+    "mean_excess_pct": 0.337,
+    "median_excess_pct": -0.65,
+    "ci90_pct": [
+     -0.561,
+     1.921
+    ],
+    "mean_net_pct": -2.537,
+    "beat_benchmark_rate": 0.483
+   },
+   "2019": {
+    "n": 235,
+    "mean_excess_pct": 0.477,
+    "median_excess_pct": -0.91,
+    "ci90_pct": [
+     -0.132,
+     1.271
+    ],
+    "mean_net_pct": 1.466,
+    "beat_benchmark_rate": 0.43
+   },
+   "2020": {
+    "n": 919,
+    "mean_excess_pct": 1.706,
+    "median_excess_pct": -1.066,
+    "ci90_pct": [
+     1.012,
+     2.224
+    ],
+    "mean_net_pct": 3.809,
+    "beat_benchmark_rate": 0.44
+   },
+   "2021": {
+    "n": 2826,
+    "mean_excess_pct": -2430.557,
+    "median_excess_pct": -4.147,
+    "ci90_pct": [
+     -4870.997,
+     -729.81
+    ],
+    "mean_net_pct": 4.105,
+    "beat_benchmark_rate": 0.344
+   },
+   "2022": {
+    "n": 1970,
+    "mean_excess_pct": -0.44,
+    "median_excess_pct": -2.423,
+    "ci90_pct": [
+     -0.985,
+     0.239
+    ],
+    "mean_net_pct": -1.345,
+    "beat_benchmark_rate": 0.363
+   }
+  }
+ },
+ "criteria": {
+  "S1_ci95_above_0": false,
+  "S2_excl16_mean_and_ci90_above_0": false,
+  "S3_delist_total_loss_mean_above_0": false,
+  "S4_trimmed_mean_above_0": false,
+  "S5_max_asset_share_le_25pct": false
+ },
+ "verdict": "NOT SUPPORTED"
+}
