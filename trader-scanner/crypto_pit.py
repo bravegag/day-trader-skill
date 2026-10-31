@@ -195,6 +195,10 @@ def cmd_fetch(a, ini):
             p = os.path.join(folder, "funding", sym + ".json")
             if os.path.exists(p):
                 continue
+            kp = os.path.join(folder, "klines", sym + ".json")
+            if (uni[sym].get("underlying_type") in NON_COIN or "_" in sym or not os.path.exists(kp)
+                    or os.path.getsize(kp) < 250 * 60):
+                continue  # can never be eligible (equity/index perp, or under 250 daily candles)
             try:
                 rates = funding_history(provider, sym, end_ms)
             except cp.HttpError as e:
@@ -210,9 +214,14 @@ def cmd_fetch(a, ini):
     return 0 if not errors else 1
 
 
+FUNDING_START_MS = 1567296000000  # 2019-09-01, before USD-M Futures existed
+
+
 def funding_history(provider, sym, end_ms):
-    """GET /fapi/v1/fundingRate forwards from 0. Its own limit (500 requests / 5 min / IP): paced."""
-    out, start = [], 0
+    """GET /fapi/v1/fundingRate forwards from 2019-09-01, 1000 a page. A startTime of 0 is read by the
+    endpoint as 'not given' and answers only the latest 500 records, so a real date is required.
+    Its own limit (500 requests / 5 min / IP): paced."""
+    out, start = [], FUNDING_START_MS
     while True:
         time.sleep(0.7)
         rows = provider.client.get("/fapi/v1/fundingRate", {"symbol": sym, "startTime": start, "endTime": end_ms,
