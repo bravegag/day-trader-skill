@@ -229,7 +229,7 @@ def day(ms):
 
 
 def iso_day(d):
-    return datetime.datetime.utcfromtimestamp(d * 86400).strftime("%Y-%m-%d")
+    return (datetime.datetime(1970, 1, 1) + datetime.timedelta(days=d)).strftime("%Y-%m-%d")
 
 
 def parse_day(text):
@@ -335,7 +335,7 @@ def apply_overlap(rows, allow_overlap=False):
 
 def stats(rows, key, lo_day, hi_day, ini, keep=lambda r: True, bench_keep=None, btc=False, top_trim=0.0,
           intervals=(0.95, 0.90)):
-    bench_keep = bench_keep or keep
+    bench_keep = bench_keep or (lambda r: True)  # pre-registered benchmark: every eligible market of the day
     bench = {}
     btc_net = {}
     for r in rows:
