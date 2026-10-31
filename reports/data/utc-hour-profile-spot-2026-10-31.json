@@ -1,0 +1,145 @@
+{
+ "market": "spot",
+ "end": "2026-10-31T00:00:00Z",
+ "days": 90,
+ "symbols": [
+  "BTCUSDT",
+  "ETHUSDT",
+  "SUIUSDT",
+  "INJUSDT",
+  "XRPUSDT",
+  "SOLUSDT",
+  "BNBUSDT",
+  "PAXGUSDT",
+  "PENGUUSDT",
+  "WALUSDT",
+  "ONDOUSDT",
+  "ZECUSDT",
+  "HYPEUSDT",
+  "DOGEUSDT",
+  "TAOUSDT"
+ ],
+ "by_utc_hour": [
+  {
+   "hour": 0,
+   "volume_share_pct": 3.87,
+   "mean_abs_return_pct": 0.522
+  },
+  {
+   "hour": 1,
+   "volume_share_pct": 3.92,
+   "mean_abs_return_pct": 0.605
+  },
+  {
+   "hour": 2,
+   "volume_share_pct": 4.24,
+   "mean_abs_return_pct": 0.58
+  },
+  {
+   "hour": 3,
+   "volume_share_pct": 3.45,
+   "mean_abs_return_pct": 0.456
+  },
+  {
+   "hour": 4,
+   "volume_share_pct": 3.4,
+   "mean_abs_return_pct": 0.466
+  },
+  {
+   "hour": 5,
+   "volume_share_pct": 3.87,
+   "mean_abs_return_pct": 0.511
+  },
+  {
+   "hour": 6,
+   "volume_share_pct": 3.43,
+   "mean_abs_return_pct": 0.436
+  },
+  {
+   "hour": 7,
+   "volume_share_pct": 3.83,
+   "mean_abs_return_pct": 0.461
+  },
+  {
+   "hour": 8,
+   "volume_share_pct": 4.32,
+   "mean_abs_return_pct": 0.51
+  },
+  {
+   "hour": 9,
+   "volume_share_pct": 4.14,
+   "mean_abs_return_pct": 0.457
+  },
+  {
+   "hour": 10,
+   "volume_share_pct": 3.91,
+   "mean_abs_return_pct": 0.456
+  },
+  {
+   "hour": 11,
+   "volume_share_pct": 3.76,
+   "mean_abs_return_pct": 0.439
+  },
+  {
+   "hour": 12,
+   "volume_share_pct": 5.21,
+   "mean_abs_return_pct": 0.588
+  },
+  {
+   "hour": 13,
+   "volume_share_pct": 5.88,
+   "mean_abs_return_pct": 0.546
+  },
+  {
+   "hour": 14,
+   "volume_share_pct": 6.97,
+   "mean_abs_return_pct": 0.782
+  },
+  {
+   "hour": 15,
+   "volume_share_pct": 6.34,
+   "mean_abs_return_pct": 0.732
+  },
+  {
+   "hour": 16,
+   "volume_share_pct": 5.17,
+   "mean_abs_return_pct": 0.554
+  },
+  {
+   "hour": 17,
+   "volume_share_pct": 4.14,
+   "mean_abs_return_pct": 0.468
+  },
+  {
+   "hour": 18,
+   "volume_share_pct": 4.01,
+   "mean_abs_return_pct": 0.553
+  },
+  {
+   "hour": 19,
+   "volume_share_pct": 3.39,
+   "mean_abs_return_pct": 0.463
+  },
+  {
+   "hour": 20,
+   "volume_share_pct": 3.37,
+   "mean_abs_return_pct": 0.478
+  },
+  {
+   "hour": 21,
+   "volume_share_pct": 3.17,
+   "mean_abs_return_pct": 0.524
+  },
+  {
+   "hour": 22,
+   "volume_share_pct": 3.22,
+   "mean_abs_return_pct": 0.531
+  },
+  {
+   "hour": 23,
+   "volume_share_pct": 2.99,
+   "mean_abs_return_pct": 0.453
+  }
+ ],
+ "seconds": 102.0
+}

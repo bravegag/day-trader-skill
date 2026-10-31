@@ -39,8 +39,9 @@ class Repo(unittest.TestCase):
         self.assertEqual(found, sorted(SKILLS))
 
     def test_root_matches_the_reel(self):
-        root = sorted(d for d in os.listdir(ROOT) if not d.startswith(".git"))
-        self.assertEqual(root, sorted([".claude-plugin", "LICENSE", "README.md", "tests"] + SKILLS))
+        # tool caches (.pytest_cache) are not part of the repo; reports/ holds the fork's audit reports
+        root = sorted(d for d in os.listdir(ROOT) if not d.startswith((".git", ".pytest_cache")))
+        self.assertEqual(root, sorted([".claude-plugin", "LICENSE", "README.md", "reports", "tests"] + SKILLS))
 
     def test_frontmatter_name_and_description(self):
         for s in SKILLS:

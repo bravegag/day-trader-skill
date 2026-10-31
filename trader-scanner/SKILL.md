@@ -12,7 +12,11 @@ description: >-
   "what is breaking out", "opening range breakouts", "scan for bull flags",
   "oversold stocks", "pre-market scan", "build my watchlist", "what should I
   look at today", or at the start of a trading day before /trader-news.
-argument-hint: "[universe | daily | orb] [--at HH:MM]"
+  Also scans crypto on Binance Spot and USD-M Futures (public data, no key,
+  INI-configured): "scan Binance Spot for bullish opportunities", "scan
+  Binance Futures for breakouts", "find oversold SUI ecosystem assets",
+  "strongest bullish candidates with 1D and 1H alignment".
+argument-hint: "[universe | daily | orb | crypto] [--at HH:MM | --market spot|usdm]"
 ---
 
 # trader-scanner
@@ -177,6 +181,69 @@ charts) tags BLK, CI, XOM and HD a 20-day breakout, CCL a bull flag, F, JPM
 and GE a reclaim of the 20-day average, and BAC, MS, RIVN and PLUG oversold,
 as the reel did. On closes it also tags KO (breakout), RCL (flag) and PNC (an
 oversold bounce).
+
+## Crypto: Binance Spot and USD-M Futures (`scan.py crypto`)
+
+A separate scan with its own rules, for 24/7 markets. The equity commands
+above are unchanged. Public market-data endpoints only: no API key, and there
+is no order endpoint anywhere in the code.
+
+```bash
+python3 "${CLAUDE_SKILL_DIR}/scan.py" crypto                          # trader/binance.ini, else built-in defaults
+python3 "${CLAUDE_SKILL_DIR}/scan.py" crypto --market usdm            # USD-M Futures (perpetuals)
+python3 "${CLAUDE_SKILL_DIR}/scan.py" crypto --symbols SUI,DEEP,WAL   # an allowlist for this run
+python3 "${CLAUDE_SKILL_DIR}/scan.py" crypto --symbols @sui_ecosystem # a [groups] entry of the INI
+python3 "${CLAUDE_SKILL_DIR}/scan.py" crypto --symbols top:40         # the 40 most traded markets
+python3 "${CLAUDE_SKILL_DIR}/scan.py" crypto --json --no-write        # the full document on stdout
+```
+
+Configuration is an INI file, not flags: copy
+`${CLAUDE_SKILL_DIR}/binance.example.ini` to `trader/binance.ini` (provider
+and market, universe, groups, quote asset, timeframes, liquidity filters,
+setups and their parameters, network limits, output, cache).
+`--now 2026-10-31T12:00Z` replays a past moment (UTC, not New York), and
+`--offline DIR` reads a recorded folder.
+
+Mapping requests to commands:
+
+| the user says | run |
+| --- | --- |
+| scan Binance Spot for bullish opportunities | `crypto --market spot`, then show the candidates with bullish rules |
+| scan Binance Futures for breakouts | `crypto --market usdm`, then the `breakout_close_high` (and `utc_orb` if enabled) matches |
+| find oversold SUI ecosystem assets | `crypto --symbols @sui_ecosystem`, then `rsi_oversold` / `oversold_bounce` |
+| strongest bullish candidates with 1D and 1H alignment | `crypto`, then the candidates with `aligned: true` (they rank first) |
+
+The rules, all on CLOSED candles (the newest closed candle at Binance's server
+time; the open candle is never read). Equity names are not reused for crypto
+rules, so a match always says which definition it used (`origin`, `params`):
+
+| rule | origin | on closed bars of each timeframe |
+| --- | --- | --- |
+| `breakout_close_high` | ported from `breakout_20d` | close above the highest close of the prior 20 bars (20 days on 1d, 20 hours on 1h) |
+| `bull_flag` | ported | up >10 % over 10 bars, then 5 closes inside 5 % |
+| `reclaim_ma` | ported from `reclaim_ma20` | close back above the 20-bar average |
+| `rsi_oversold` | ported from `oversold` | RSI 14 (Wilder) under 30: a condition, not a trigger |
+| `oversold_bounce` | ported | RSI under 30 on the bar before, then an up close |
+| `rvol_expansion` | new | the bar's quote volume at least 2x the 20-bar median (up or down bar) |
+| `momentum_accel` | new | 5-bar return positive and 2 points above the 5 bars before |
+| `utc_orb` | experimental, off | a range from a UTC clock time; crypto has no opening bell |
+
+What to tell the user, every time:
+
+- Coverage and freshness first: requested, eligible, scanned, matched; the
+  UTC time of the data; COMPLETE or PARTIAL (and what failed); every
+  excluded market with its reason (not listed, illiquid, stale, short history).
+- `descriptive_score` is a count of matched bullish rules. It is not a
+  probability, and `estimated_probability` is always null. No rule has a
+  demonstrated edge. In the walk-forward check
+  (reports/BINANCE_SCANNER_VALIDATION.md) the 1h rules lost money after
+  costs; on 1d only the closing-high breakout beat the market over 5 to 10
+  days, on a hand-picked, survivorship-biased list of coins: a hypothesis,
+  not an edge. Say so if asked whether a setup "works".
+- Futures context (funding, basis, open interest) is context. Never turn it
+  into a leverage or position-size suggestion.
+- A crypto hit goes to the user's own judgement. The
+  equity skills downstream (news, entry, risk, broker) are built for US stocks.
 
 ## Rules
 
