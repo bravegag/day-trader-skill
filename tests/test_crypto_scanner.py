@@ -8,6 +8,7 @@ import random
 import shutil
 import tempfile
 import unittest
+import unittest.mock
 from contextlib import redirect_stdout, redirect_stderr
 
 from _load import load, FIX, ROOT
@@ -630,6 +631,164 @@ class Contract(unittest.TestCase):
         self.assertEqual(cscan.parse_now_utc("2026-10-31T02:00+02:00"), T0)
         with self.assertRaises(cscan.CryptoScanError):
             cscan.parse_now_utc("yesterday")
+
+
+# ---------------------------------------------------------------- paths and external evidence
+
+ce = cscan.ce
+NO_ENV = {k: "" for k in (cscan.ENV_CONFIG_FILE, cscan.ENV_OUTPUT_DIR, cscan.ENV_EVIDENCE_DIR)}
+
+
+def evidence_file(folder, name, assets, version=1, source="ext"):
+    with open(os.path.join(folder, name), "w") as fh:
+        json.dump({"schema": "trader-evidence", "schema_version": version, "source": source,
+                   "generated_at": "2026-10-31T13:00:00Z", "assets": assets}, fh)
+
+
+class PathsAndEvidence(unittest.TestCase):
+    def test_paths_without_environment_are_unchanged(self):
+        self.assertEqual(cscan.resolve_path("trader/crypto_watchlist.json", "spot", env={}), "trader/crypto_watchlist.json")
+        self.assertEqual(cscan.resolve_path("trader/scan-{market}.json", "usdm", env={}), "trader/scan-usdm.json")
+        self.assertEqual(cscan.evidence_dir(cfg(), env={}), ("trader/evidence", False))
+        self.assertIsNone(cscan.config_path(None, env={}) if not os.path.exists(cscan.DEFAULT_CONFIG) else None)
+
+    def test_output_dir_moves_the_trader_folder_but_not_absolute_paths(self):
+        env = {cscan.ENV_OUTPUT_DIR: "/data/desk"}
+        self.assertEqual(cscan.resolve_path("trader/crypto-scan-{market}.json", "spot", env=env),
+                         "/data/desk/crypto-scan-spot.json")
+        self.assertEqual(cscan.resolve_path("trader/cache/binance", None, env=env), "/data/desk/cache/binance")
+        self.assertEqual(cscan.resolve_path("other/x.json", None, env=env), "/data/desk/other/x.json")
+        self.assertEqual(cscan.resolve_path("/abs/x.json", None, env=env), "/abs/x.json")
+        self.assertEqual(cscan.evidence_dir(cfg(), env=env), ("/data/desk/evidence", False))
+
+    def test_precedence_flag_then_environment_then_ini(self):
+        env = {cscan.ENV_CONFIG_FILE: "/etc/x.ini", cscan.ENV_EVIDENCE_DIR: "/ev", cscan.ENV_OUTPUT_DIR: "/o"}
+        self.assertEqual(cscan.config_path("mine.ini", env=env), "mine.ini")
+        self.assertEqual(cscan.config_path(None, env=env), "/etc/x.ini")
+        self.assertEqual(cscan.evidence_dir(cfg("[evidence]\ndir = /ini/ev\n"), env=env), ("/ev", True))
+        self.assertEqual(cscan.evidence_dir(cfg("[evidence]\ndir = /ini/ev\n"), env={}), ("/ini/ev", True))
+
+    def test_cli_writes_under_the_output_dir_with_the_environment_config(self):
+        tmp = tempfile.mkdtemp()
+        try:
+            ini = os.path.join(tmp, "desk.ini")
+            with open(INI) as fh, open(ini, "w") as out:
+                out.write(fh.read().replace("path = trader/crypto_watchlist.json", "path = trader/crypto-scan-{market}.json"))
+            env = dict(NO_ENV, TRADER_CONFIG_FILE=ini, TRADER_OUTPUT_DIR=os.path.join(tmp, "desk"))
+            with unittest.mock.patch.dict(os.environ, env):
+                code, text, err = run_cli(["crypto", "--offline", USDM, "--market", "usdm"])
+            self.assertEqual(code, 0, err)
+            path = os.path.join(tmp, "desk", "crypto-scan-usdm.json")
+            self.assertIn("Wrote %s" % path, text)
+            with open(path) as fh:
+                doc = json.load(fh)
+            self.assertEqual((doc["config_source"], doc["evidence"]["dir"]), (ini, os.path.join(tmp, "desk", "evidence")))
+            self.assertEqual(doc["evidence"]["sources"], [])
+        finally:
+            shutil.rmtree(tmp)
+
+    def test_standalone_scan_has_no_evidence_and_the_same_ranking(self):
+        with unittest.mock.patch.dict(os.environ, NO_ENV):
+            d = offline_scan(SPOT, "spot")
+        self.assertEqual(d["evidence"], {"dir": "trader/evidence", "sources": [], "notes": []})
+        self.assertTrue(all(c["evidence"] == {} for c in d["candidates"]))
+        self.assertTrue(all("candles" not in v for c in d["candidates"] for v in c["timeframes"].values()))
+
+    def test_candles_are_copied_when_asked(self):
+        with unittest.mock.patch.dict(os.environ, NO_ENV):
+            d = offline_scan(SPOT, "spot", "[output]\ncandles = 30\n")
+        tf = d["candidates"][0]["timeframes"]["1d"]
+        self.assertEqual(len(tf["candles"]), 30)
+        self.assertEqual(tf["candles"][-1][0] + D, cscan.parse_now_utc(tf["last_closed_close"]))
+        self.assertEqual(d["config_fingerprint"], offline_scan(SPOT, "spot")["config_fingerprint"])
+
+    def test_unmatched_markets_are_listed_apart_and_never_ranked(self):
+        with unittest.mock.patch.dict(os.environ, NO_ENV):
+            base = offline_scan(SPOT, "spot")
+            d = offline_scan(SPOT, "spot", "[output]\nunmatched = true\ncandles = 5\n")
+        self.assertNotIn("observed", base)
+        self.assertEqual([(c["symbol"], c["rank"]) for c in d["candidates"]],
+                         [(c["symbol"], c["rank"]) for c in base["candidates"]])
+        self.assertTrue(d["observed"])
+        self.assertTrue(all(o["matched_rules"] == 0 and "rank" not in o for o in d["observed"]))
+        self.assertEqual(d["coverage"]["scanned"], len(d["candidates"]) + len(d["observed"]))
+        with unittest.mock.patch.dict(os.environ, NO_ENV):
+            some = offline_scan(SPOT, "spot", "[groups]\nmine = %s\n[output]\nunmatched = @mine, ZZZ\n"
+                                % d["observed"][0]["asset_id"])
+        self.assertEqual([o["asset_id"] for o in some["observed"]], [d["observed"][0]["asset_id"]])
+        self.assertEqual(cscan.unmatched_filter(cfg("[output]\nunmatched = sui, BTCUSDT\n")), {"SUI", "BTCUSDT"})
+        with self.assertRaises(cscan.CryptoScanError):
+            cscan.unmatched_filter(cfg("[output]\nunmatched = @nope\n"))
+
+    def test_evidence_states_and_ranking_unchanged(self):
+        with unittest.mock.patch.dict(os.environ, NO_ENV):
+            base = offline_scan(SPOT, "spot")
+        first = base["candidates"][0]
+        a, close_1d = first["asset_id"], first["timeframes"]["1d"]["last_closed_close"]
+        close_1h = first["timeframes"]["1h"]["last_closed_close"]
+        b = base["candidates"][1]["asset_id"]
+        tmp = tempfile.mkdtemp()
+        try:
+            evidence_file(tmp, "a.json", {
+                a: {"timeframes": {"1d": {"direction": -1, "label": "SELL", "decision_close": close_1d,
+                                          "details": {"win_rate": 0.55, "trades": 40}},
+                                   "1h": {"direction": 2, "label": "STRONG BUY", "decision_close": "2026-10-31T09:00:00Z"}}},
+                b: {"timeframes": {"1d": {"direction": None, "label": "UNAVAILABLE", "decision_close": close_1d}}}})
+            evidence_file(tmp, "old.json", {}, version=7, source="future")
+            with open(os.path.join(tmp, "other.json"), "w") as fh:
+                json.dump({"not": "evidence"}, fh)
+            with unittest.mock.patch.dict(os.environ, dict(NO_ENV, TRADER_EVIDENCE_DIR=tmp)):
+                d = offline_scan(SPOT, "spot")
+        finally:
+            shutil.rmtree(tmp)
+        self.assertEqual([c["symbol"] for c in d["candidates"]], [c["symbol"] for c in base["candidates"]])
+        self.assertEqual([s["source"] for s in d["evidence"]["sources"]], ["ext"])
+        self.assertEqual(len(d["evidence"]["notes"]), 1)
+        self.assertIn("incompatible schema_version 7", d["evidence"]["notes"][0])
+        ev = d["candidates"][0]["evidence"]["ext"]["timeframes"]
+        self.assertEqual(ev["1d"]["state"], "current")
+        self.assertEqual(ev["1d"]["details"], {"win_rate": 0.55, "trades": 40})
+        self.assertEqual(ev["1d"].get("relation"), "disagrees" if "1d" in first["bullish_timeframes"] else None)
+        behind = (cscan.parse_now_utc(close_1h) - cscan.parse_now_utc("2026-10-31T09:00:00Z")) // H
+        self.assertEqual((ev["1h"]["state"], ev["1h"]["candles_behind"]), ("stale", behind))
+        self.assertNotIn("relation", ev["1h"])
+        ev_b = d["candidates"][1]["evidence"]["ext"]["timeframes"]
+        self.assertEqual((ev_b["1d"]["state"], ev_b["1h"]["state"]), ("unavailable", "missing"))
+        self.assertTrue(all(c["evidence"]["ext"]["timeframes"]["1d"]["state"] == "missing"
+                            for c in d["candidates"][2:] if c["asset_id"] not in (a, b)))
+        self.assertIn("ext: 1d SELL current", cscan.render(d, 1))
+
+    def test_assess_is_never_neutral_when_missing_or_stale(self):
+        self.assertEqual(ce.assess(None, "1h", 0, True), {"state": "missing"})
+        stale = ce.assess({"direction": -2, "decision_close": "2026-10-31T00:00:00Z"}, "1h", T0 + 3 * H, True)
+        self.assertEqual((stale["state"], stale["candles_behind"], "relation" in stale), ("stale", 3, False))
+        ahead = ce.assess({"direction": 1, "decision_close": "2026-10-31T02:00:00Z"}, "1h", T0, True)
+        self.assertEqual((ahead["state"], ahead["candles_behind"]), ("ahead", -2))
+        neutral = ce.assess({"direction": 0, "decision_close": "2026-10-31T00:00:00Z"}, "1d", T0, True)
+        self.assertEqual(neutral["relation"], "neutral")
+
+    def test_scanner_is_standalone_and_points_at_no_other_project(self):
+        import ast
+        import re
+        import sys
+        folder = os.path.join(ROOT, "trader-scanner")
+        local = {f[:-3] for f in os.listdir(folder) if f.endswith(".py")}
+        stdlib = set(getattr(sys, "stdlib_module_names", ())) or None
+        for f in sorted(os.listdir(folder)):
+            path = os.path.join(folder, f)
+            if f.endswith(".py"):
+                with open(path, encoding="utf-8") as fh:
+                    tree = ast.parse(fh.read())
+                for node in ast.walk(tree):
+                    names = [a.name for a in node.names] if isinstance(node, ast.Import) else (
+                        [node.module] if isinstance(node, ast.ImportFrom) and node.module else [])
+                    for n in names:
+                        top = n.split(".")[0]
+                        self.assertTrue(top in local or stdlib is None or top in stdlib, "%s imports %s" % (f, n))
+            if f.endswith((".py", ".ini", ".md")):
+                with open(path, encoding="utf-8") as fh:
+                    text = fh.read()
+                self.assertIsNone(re.search(r"(/home/|/Users/|~/code)", text), "%s names a machine path" % f)
 
 
 if __name__ == "__main__":

@@ -204,6 +204,36 @@ setups and their parameters, network limits, output, cache).
 `--now 2026-10-31T12:00Z` replays a past moment (UTC, not New York), and
 `--offline DIR` reads a recorded folder.
 
+Paths can come from the environment, so another project can host the crypto
+scan's files without flags on every run (the equity commands do not read
+these). Precedence, highest first: the flag, the environment, the INI, the
+built-in default.
+
+| variable | effect |
+| --- | --- |
+| `TRADER_CONFIG_FILE` | the INI used when `--config` is not given |
+| `TRADER_OUTPUT_DIR` | stands in for the `trader/` folder: relative `[output] path`, `record_dir` and `[cache] dir` resolve under it |
+| `TRADER_EVIDENCE_DIR` | folder of external evidence files; wins over `[evidence] dir` |
+
+`[output] path` may contain `{market}` so Spot and Futures results sit side by
+side; `[output] candles = N` copies the last N closed candles of each
+timeframe into each candidate (for charts elsewhere), and `[output]
+unmatched = true` (or a list of assets, or `@group`) also lists those scanned
+markets that matched no rule, under `observed` (never ranked, never
+candidates). Check
+`echo $TRADER_OUTPUT_DIR` before telling the user where a scan was written:
+the CLI prints the real path on its `Wrote` line.
+
+External evidence (optional, `crypto_evidence.py`): any analytics system may
+drop `trader-evidence` v1 JSON files into the evidence folder. Each candidate
+then carries that source's view per timeframe, copied as is, with a state:
+`current`, `stale` (decided on an older candle than the scan's newest closed
+one), `ahead`, `unavailable` (no view), `missing` (nothing for that asset).
+Only a `current` view is compared with the scan (`agrees`, `disagrees`,
+`neutral`). Report missing or stale evidence as missing or stale, never as
+neutral or as disagreement. Evidence never changes the ranking, and a scan
+without any evidence folder works exactly as before.
+
 Mapping requests to commands:
 
 | the user says | run |

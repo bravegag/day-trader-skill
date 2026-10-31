@@ -41,12 +41,19 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
+import crypto_evidence as ce  # noqa: E402
 import crypto_providers as cp  # noqa: E402
 import crypto_setups as cs  # noqa: E402
 
 SCHEMA = "day-trader-skill/crypto-scan"
 SCHEMA_VERSION = 1
 DEFAULT_CONFIG = "trader/binance.ini"
+# Paths only; behaviour stays in the INI. Precedence, highest first: the command-line flag (--config, --out),
+# then the environment, then the INI, then the built-in defaults. TRADER_OUTPUT_DIR stands in for the trader/
+# folder: every relative path of [output] and [cache] resolves under it (an absolute path in the INI is kept).
+ENV_CONFIG_FILE = "TRADER_CONFIG_FILE"      # the INI used when --config is not given
+ENV_OUTPUT_DIR = "TRADER_OUTPUT_DIR"        # where scan results, recordings and the cache go
+ENV_EVIDENCE_DIR = "TRADER_EVIDENCE_DIR"    # external evidence files (crypto_evidence.py); wins over [evidence] dir
 NOTE = "A scan is a list of charts that match a rule, not a list of coins to buy."
 SCORE_NOTE = ("descriptive_score counts matched bullish rules across timeframes. It is not a probability of "
               "success, and no probability is estimated (estimated_probability is null).")
@@ -66,7 +73,9 @@ DEFAULTS = {
     "setups": {"enabled": ", ".join(cs.BAR_SETUPS)},
     "network": {"max_workers": "4", "weight_safety": "0.6", "retries": "4", "backoff_seconds": "1.0",
                 "timeout_seconds": "20", "max_context_requests": "40"},
-    "output": {"path": "trader/crypto_watchlist.json", "show": "20", "record_dir": ""},
+    "output": {"path": "trader/crypto_watchlist.json", "show": "20", "record_dir": "", "candles": "0",
+               "unmatched": "false"},
+    "evidence": {"dir": "trader/evidence"},
     "cache": {"dir": "trader/cache/binance", "exchange_info_ttl_seconds": "3600"},
     "setup.utc_orb": {"enabled": "false", "interval": "15m"},
 }
@@ -139,9 +148,67 @@ class Config(object):
     def fingerprint(self):
         """sha256 of the effective configuration, minus paths that do not change what is scanned."""
         d = self.as_dict()
-        for s, k in (("output", "path"), ("output", "show"), ("output", "record_dir"), ("cache", "dir")):
+        for s, k in (("output", "path"), ("output", "show"), ("output", "record_dir"), ("output", "candles"), ("output", "unmatched"),
+                     ("cache", "dir"), ("evidence", "dir")):
             d.get(s, {}).pop(k, None)
         return hashlib.sha256(json.dumps(d, sort_keys=True).encode("utf-8")).hexdigest()[:16]
+
+
+# ---------------------------------------------------------------- paths
+
+def resolve_path(path, market=None, env=None):
+    """An INI path as written, with {market} filled in; a relative one moves under TRADER_OUTPUT_DIR when set."""
+    env = os.environ if env is None else env
+    if not path:
+        return path
+    if market:
+        path = path.replace("{market}", market)
+    path = os.path.expanduser(path)
+    root = env.get(ENV_OUTPUT_DIR)
+    if os.path.isabs(path) or not root:
+        return path
+    rel = os.path.normpath(path)
+    if rel == "trader" or rel.startswith("trader" + os.sep):
+        rel = rel[len("trader") + 1:]
+    return os.path.join(os.path.expanduser(root), rel)
+
+
+def evidence_dir(cfg, env=None):
+    """-> (folder, explicit). TRADER_EVIDENCE_DIR first, else [evidence] dir resolved like an output path."""
+    env = os.environ if env is None else env
+    if env.get(ENV_EVIDENCE_DIR):
+        return os.path.expanduser(env[ENV_EVIDENCE_DIR]), True
+    folder = cfg.get("evidence", "dir")
+    return resolve_path(folder, env=env), folder != DEFAULTS["evidence"]["dir"]
+
+
+def config_path(flag, env=None):
+    """--config, else TRADER_CONFIG_FILE, else trader/binance.ini when it exists, else the built-in defaults."""
+    env = os.environ if env is None else env
+    if flag:
+        return flag
+    if env.get(ENV_CONFIG_FILE):
+        return os.path.expanduser(env[ENV_CONFIG_FILE])
+    return DEFAULT_CONFIG if os.path.exists(DEFAULT_CONFIG) else None
+
+
+def unmatched_filter(cfg):
+    """[output] unmatched: false (default), true (every scanned market), or base assets / symbols / @group entries."""
+    value = (cfg.get("output", "unmatched") or "").strip()
+    if value.lower() in ("", "0", "false", "no", "off"):
+        return False
+    if value.lower() in ("1", "true", "yes", "on"):
+        return True
+    names = set()
+    for part in cfg.items("output", "unmatched"):
+        if part.startswith("@"):
+            grp = cfg.get("groups", part[1:])
+            if grp is None:
+                raise CryptoScanError("[output] unmatched: no [groups] %s in the config" % part[1:])
+            names |= {x.strip().upper() for x in grp.replace("\n", ",").split(",") if x.strip()}
+        else:
+            names.add(part.upper())
+    return names
 
 
 # ---------------------------------------------------------------- time
@@ -290,6 +357,8 @@ def run_scan(provider, cfg, now_ms=None, log=None):
         if s not in cs.BAR_SETUPS:
             raise CryptoScanError("[setups] unknown setup %s (one of %s)" % (s, ", ".join(cs.BAR_SETUPS)))
     orb_on = cfg.flag("setup.utc_orb", "enabled")
+    keep_candles = int(cfg.num("output", "candles"))
+    keep_unmatched, observed = unmatched_filter(cfg), []
 
     log("Binance %s: exchange info and 24h tickers..." % market)
     instruments = provider.instruments()
@@ -370,6 +439,9 @@ def run_scan(provider, cfg, now_ms=None, log=None):
             any_ok = True
             hits, ind = scan_timeframe(candles, tf, enabled, cfg)
             tfs[tf] = dict(base, status="ok", setups=hits, indicators=ind)
+            if keep_candles > 0:
+                tfs[tf]["candles"] = [[k.open_ms, k.open, k.high, k.low, k.close, k.volume]
+                                      for k in candles[-keep_candles:]]
         if orb_on and (inst.symbol, "orb:" + orb_tf) in results:
             oc, _ = results[(inst.symbol, "orb:" + orb_tf)]
             hit, status = cs.utc_orb(oc, cp.INTERVAL_MS[orb_tf], now_ms, cfg.setup_params("utc_orb", orb_tf))
@@ -382,11 +454,12 @@ def run_scan(provider, cfg, now_ms=None, log=None):
         bull_tfs = sorted(tf for tf, v in tfs.items() if any(h["direction"] == "bullish" for h in v.get("setups", [])))
         n_bull = sum(1 for v in tfs.values() for h in v.get("setups", []) if h["direction"] == "bullish")
         n_all = sum(len(v.get("setups", [])) for v in tfs.values())
-        if not n_all:
-            continue
         ok_tfs = [tf for tf in intervals if tfs[tf]["status"] == "ok"]
         aligned = len(ok_tfs) >= 2 and all(tf in bull_tfs for tf in ok_tfs)
-        candidates.append({
+        if not n_all and not (keep_unmatched is True or (keep_unmatched and (
+                inst.asset_id.upper() in keep_unmatched or inst.symbol.upper() in keep_unmatched))):
+            continue
+        (candidates if n_all else observed).append({
             "instrument_id": inst.instrument_id, "exchange": "binance", "market": inst.market,
             "symbol": inst.symbol, "base_asset": inst.base, "quote_asset": inst.quote, "asset_id": inst.asset_id,
             "multiplier": inst.multiplier, "contract_type": inst.contract_type,
@@ -408,6 +481,11 @@ def run_scan(provider, cfg, now_ms=None, log=None):
                                    -c["quote_volume_24h"], c["instrument_id"]))
     for k, c in enumerate(candidates):
         c["rank"] = k + 1
+    ev_folder, ev_explicit = evidence_dir(cfg)
+    sources, ev_notes = ce.load_dir(ev_folder) if os.path.isdir(ev_folder or "") else ([], [])
+    if ev_explicit and not os.path.isdir(ev_folder or ""):
+        ev_notes.append("no evidence folder at %s" % ev_folder)
+    ce.annotate(candidates + observed, sources)
     excluded.sort(key=lambda e: (e["symbol"] or "", e["requested"] or ""))
     reasons = {}
     for e in excluded:
@@ -426,10 +504,15 @@ def run_scan(provider, cfg, now_ms=None, log=None):
                      "excluded": len(excluded), "failed_fetches": len(failed), "candidates": len(candidates)},
         "exclusion_reasons": reasons, "network": stats, "seconds": round(time.time() - t0, 1),
         "score_note": SCORE_NOTE, "note": NOTE,
+        "evidence": {"dir": ev_folder, "sources": [{k: s[k] for k in ("source", "file", "generated_at")}
+                                                   for s in sources], "notes": ev_notes},
         "candidates": candidates, "excluded": excluded, "failed": failed,
         "hits": [{"symbol": c["symbol"], "setups": sorted({h["id"] for v in c["timeframes"].values()
                                                            for h in v.get("setups", [])})} for c in candidates],
     }
+    if keep_unmatched:
+        observed.sort(key=lambda c: c["instrument_id"])
+        doc["observed"] = observed
     if replay:
         doc["replay_note"] = ("replay: candles are as of --now, but the universe, 24h liquidity and prices are "
                               "today's (survivorship and liquidity are not point-in-time)")
@@ -470,10 +553,10 @@ def build_provider(cfg, offline=None, now_ms=None, sleep=time.sleep):
     else:
         transport = cp.LiveTransport(timeout=cfg.num("network", "timeout_seconds"))
         if cfg.get("cache", "dir"):
-            transport = CachedExchangeInfo(transport, cfg.get("cache", "dir"), market,
+            transport = CachedExchangeInfo(transport, resolve_path(cfg.get("cache", "dir"), market), market,
                                            cfg.num("cache", "exchange_info_ttl_seconds"))
         if cfg.get("output", "record_dir"):
-            transport = cp.RecordingTransport(transport, cfg.get("output", "record_dir"))
+            transport = cp.RecordingTransport(transport, resolve_path(cfg.get("output", "record_dir"), market))
     return cp.make_provider(cfg.get("provider", "name"), market, transport,
                             safety=cfg.num("network", "weight_safety"), retries=int(cfg.num("network", "retries")),
                             backoff=cfg.num("network", "backoff_seconds"), sleep=sleep)
@@ -527,6 +610,8 @@ def render(doc, show):
         d = c.get("derivatives")
         if d and d.get("funding_rate_last") is not None:
             extra = " fund %+.4f%%" % (d["funding_rate_last"] * 100)
+        if c.get("evidence"):
+            extra += "\n      " + ce.cell(c["evidence"])
         out.append("%3d %-12s %12s  vol24h %7s  %s%s%s" % (
             c["rank"], c["symbol"], _price(c["last_price"]), _human(c["quote_volume_24h"]),
             "ALIGNED " if c["aligned"] else "", " ".join(parts), extra))
@@ -536,6 +621,8 @@ def render(doc, show):
         out.append("Excluded %d: %s." % (len(doc["excluded"]), "; ".join(
             "%s (%s)" % (e["symbol"] or e["requested"], e["reason"]) for e in doc["excluded"][:8])
             + (" ..." if len(doc["excluded"]) > 8 else "")))
+    for n in (doc.get("evidence") or {}).get("notes") or []:
+        out.append("Evidence note: %s" % n)
     out.append(SCORE_NOTE)
     out.append(NOTE)
     return "\n".join(out)
@@ -559,12 +646,13 @@ def write_json(path, doc):
 
 
 def add_arguments(p):
-    p.add_argument("--config", help="INI file (default %s if it exists, else the built-in defaults)" % DEFAULT_CONFIG)
+    p.add_argument("--config", help="INI file (default $%s, else %s if it exists, else the built-in defaults)"
+                   % (ENV_CONFIG_FILE, DEFAULT_CONFIG))
     p.add_argument("--market", choices=["spot", "usdm", "futures"], help="override [provider] market")
     p.add_argument("--symbols", help="'SUI,DEEP' allowlist, '@group' from [groups], or 'top:N'")
     p.add_argument("--offline", metavar="DIR", help="a recorded fixture folder instead of the network")
     p.add_argument("--now", help="UTC time to scan as of (replay), e.g. 2026-10-31T12:00Z")
-    p.add_argument("--out", help="override [output] path")
+    p.add_argument("--out", help="override [output] path (taken as given, no $%s)" % ENV_OUTPUT_DIR)
     p.add_argument("--no-write", action="store_true")
     p.add_argument("--show", type=int, help="candidates to print (all are written)")
     p.add_argument("--quiet", action="store_true")
@@ -572,13 +660,10 @@ def add_arguments(p):
 
 
 def cmd_crypto(a):
-    path = a.config or (DEFAULT_CONFIG if os.path.exists(DEFAULT_CONFIG) else None)
-    cfg = Config(path)
+    cfg = Config(config_path(a.config))
     if a.market:
         cfg.set("provider", "market", "usdm" if a.market == "futures" else a.market)
     apply_symbols(cfg, a.symbols)
-    if a.out:
-        cfg.set("output", "path", a.out)
     now_ms = parse_now_utc(a.now)
     log = (lambda m: None) if (a.json or a.quiet) else (lambda m: print(m, file=sys.stderr))
     provider = build_provider(cfg, a.offline, now_ms)
@@ -592,7 +677,7 @@ def cmd_crypto(a):
         log("Recorded %d markets into %s" % (len(keep), t.folder))
     if a.offline:
         doc["offline"] = os.path.basename(a.offline.rstrip("/"))
-    out = cfg.get("output", "path")
+    out = a.out or resolve_path(cfg.get("output", "path"), provider.market)
     if not a.no_write:
         write_json(out, doc)
     if a.json:
