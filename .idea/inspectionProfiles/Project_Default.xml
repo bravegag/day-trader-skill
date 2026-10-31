@@ -1,0 +1,99 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="49" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="cuda-bindings" />
+          <option value="cuda-pathfinder" />
+          <option value="cuda-python" />
+          <option value="cudf-cu12" />
+          <option value="cuml-cu12" />
+          <option value="cupy-cuda12x" />
+          <option value="cuvs-cu12" />
+          <option value="dask-cuda" />
+          <option value="dask-cudf-cu12" />
+          <option value="distributed-ucxx-cu12" />
+          <option value="docutils" />
+          <option value="executing" />
+          <option value="libcudf-cu12" />
+          <option value="libcuml-cu12" />
+          <option value="libcuvs-cu12" />
+          <option value="libkvikio-cu12" />
+          <option value="libraft-cu12" />
+          <option value="librmm-cu12" />
+          <option value="libucx-cu12" />
+          <option value="libucxx-cu12" />
+          <option value="numba-cuda" />
+          <option value="nvidia-cublas-cu12" />
+          <option value="nvidia-cuda-cupti-cu12" />
+          <option value="nvidia-cuda-nvcc-cu12" />
+          <option value="nvidia-cuda-nvrtc-cu12" />
+          <option value="nvidia-cuda-runtime-cu12" />
+          <option value="nvidia-cudnn-cu12" />
+          <option value="nvidia-cufft-cu12" />
+          <option value="nvidia-cufile-cu12" />
+          <option value="nvidia-curand-cu12" />
+          <option value="nvidia-cusolver-cu12" />
+          <option value="nvidia-cusparse-cu12" />
+          <option value="nvidia-cusparselt-cu12" />
+          <option value="nvidia-ml-py" />
+          <option value="nvidia-nccl-cu12" />
+          <option value="nvidia-nvjitlink-cu12" />
+          <option value="nvidia-nvshmem-cu12" />
+          <option value="nvidia-nvtx-cu12" />
+          <option value="pylibcudf-cu12" />
+          <option value="pylibraft-cu12" />
+          <option value="pynvjitlink-cu12" />
+          <option value="raft-dask-cu12" />
+          <option value="rmm-cu12" />
+          <option value="ucx-py-cu12" />
+          <option value="ucxx-cu12" />
+          <option value="backtesting" />
+          <option value="curl_cffi" />
+          <option value="dpcpp-cpp-rt" />
+          <option value="imbalanced-learn" />
+          <option value="intel-cmplr-lib-rt" />
+          <option value="intel-cmplr-lib-ur" />
+          <option value="intel-cmplr-lic-rt" />
+          <option value="intel-opencl-rt" />
+          <option value="intel-openmp" />
+          <option value="intel-sycl-rt" />
+          <option value="joblib" />
+          <option value="keras" />
+          <option value="numpy" />
+          <option value="pandas" />
+          <option value="python-binance" />
+          <option value="scikit-learn" />
+          <option value="scipy" />
+          <option value="ta-lib" />
+          <option value="tbb" />
+          <option value="tcmlib" />
+          <option value="typing_extensions" />
+          <option value="umf" />
+          <option value="narwhals" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="pandas" />
+          <option value="scipy" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="forecasts" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

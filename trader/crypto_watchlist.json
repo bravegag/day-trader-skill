@@ -1,0 +1,1215 @@
+{
+  "schema": "day-trader-skill/crypto-scan",
+  "schema_version": 1,
+  "created_by": "trader-scanner",
+  "mode": "crypto",
+  "created_at": "2026-10-31T17:34:08Z",
+  "as_of_ms": 1793468048701,
+  "server_time": "2026-10-31T17:34:08Z",
+  "replay": false,
+  "provider": "binance",
+  "exchange": "binance",
+  "market": "usdm",
+  "quote_asset": "USDT",
+  "timeframes": [
+    "1d",
+    "1h"
+  ],
+  "setups_enabled": [
+    "breakout_close_high",
+    "bull_flag",
+    "reclaim_ma",
+    "rsi_oversold",
+    "oversold_bounce",
+    "rvol_expansion",
+    "momentum_accel"
+  ],
+  "config_source": "trader-scanner/binance.example.ini",
+  "config_fingerprint": "b871c57bb7cb89eb",
+  "status": "complete",
+  "stopped": null,
+  "coverage": {
+    "requested": 16,
+    "eligible": 15,
+    "scanned": 15,
+    "excluded": 1,
+    "failed_fetches": 0,
+    "candidates": 9
+  },
+  "exclusion_reasons": {
+    "24h quote volume 618.6K": 1
+  },
+  "network": {
+    "requests": 44,
+    "weight": 171,
+    "retries": 0,
+    "http_429": 0,
+    "http_5xx": 0,
+    "network": 0
+  },
+  "seconds": 7.5,
+  "score_note": "descriptive_score counts matched bullish rules across timeframes. It is not a probability of success, and no probability is estimated (estimated_probability is null).",
+  "note": "A scan is a list of charts that match a rule, not a list of coins to buy.",
+  "candidates": [
+    {
+      "instrument_id": "binance:usdm:ONDOUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "ONDOUSDT",
+      "base_asset": "ONDO",
+      "quote_asset": "USDT",
+      "asset_id": "ONDO",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 0.4127,
+      "price_time": "2026-10-31T17:34:05Z",
+      "price_age_seconds": 3.0,
+      "quote_volume_24h": 68009530.15,
+      "trades_24h": 402748,
+      "change_24h_pct": 4.27,
+      "spread_bps": 2.42,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "momentum_accel",
+              "label": "5-bar return positive and 2 pts above the 5 bars before",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "bars": 5,
+                "min_delta_pct": 2.0
+              },
+              "evidence": {
+                "ret_last_pct": 1.889,
+                "ret_prev_pct": -10.042
+              }
+            }
+          ],
+          "indicators": {
+            "close": 0.4153,
+            "rsi14": 44.9,
+            "ma20": 0.43828,
+            "atr14": 0.03488595,
+            "atr14_pct": 8.4,
+            "rvol20": 1.553,
+            "quote_volume_last_bar": 111690270.17
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "momentum_accel",
+              "label": "5-bar return positive and 2 pts above the 5 bars before",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "bars": 5,
+                "min_delta_pct": 2.0
+              },
+              "evidence": {
+                "ret_last_pct": 1.571,
+                "ret_prev_pct": -2.466
+              }
+            }
+          ],
+          "indicators": {
+            "close": 0.4137,
+            "rsi14": 56.67,
+            "ma20": 0.41209,
+            "atr14": 0.005659,
+            "atr14_pct": 1.368,
+            "rvol20": 0.771,
+            "quote_volume_last_bar": 2053339.75
+          }
+        }
+      },
+      "bullish_timeframes": [
+        "1d",
+        "1h"
+      ],
+      "aligned": true,
+      "descriptive_score": 2,
+      "matched_rules": 2,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 0.4129,
+        "index_price": 0.4131155,
+        "basis_bps": -5.22,
+        "funding_rate_last": 5e-05,
+        "next_funding_time": "2026-10-31T20:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 101003154.0,
+        "open_interest_notional": 41704202.29,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 1
+    },
+    {
+      "instrument_id": "binance:usdm:PENGUUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "PENGUUSDT",
+      "base_asset": "PENGU",
+      "quote_asset": "USDT",
+      "asset_id": "PENGU",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 0.007337,
+      "price_time": "2026-10-31T17:34:03Z",
+      "price_age_seconds": 5.0,
+      "quote_volume_24h": 34271787.81,
+      "trades_24h": 320708,
+      "change_24h_pct": 0.603,
+      "spread_bps": 1.36,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "momentum_accel",
+              "label": "5-bar return positive and 2 pts above the 5 bars before",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "bars": 5,
+                "min_delta_pct": 2.0
+              },
+              "evidence": {
+                "ret_last_pct": 0.427,
+                "ret_prev_pct": -5.953
+              }
+            }
+          ],
+          "indicators": {
+            "close": 0.00752,
+            "rsi14": 44.55,
+            "ma20": 0.00768145,
+            "atr14": 0.00064844,
+            "atr14_pct": 8.623,
+            "rvol20": 1.805,
+            "quote_volume_last_bar": 87825150.73
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "momentum_accel",
+              "label": "5-bar return positive and 2 pts above the 5 bars before",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "bars": 5,
+                "min_delta_pct": 2.0
+              },
+              "evidence": {
+                "ret_last_pct": 1.129,
+                "ret_prev_pct": -1.224
+              }
+            }
+          ],
+          "indicators": {
+            "close": 0.007344,
+            "rsi14": 51.37,
+            "ma20": 0.0073501,
+            "atr14": 9.297e-05,
+            "atr14_pct": 1.266,
+            "rvol20": 1.092,
+            "quote_volume_last_bar": 1467591.52
+          }
+        }
+      },
+      "bullish_timeframes": [
+        "1d",
+        "1h"
+      ],
+      "aligned": true,
+      "descriptive_score": 2,
+      "matched_rules": 2,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 0.00733649,
+        "index_price": 0.00733627,
+        "basis_bps": 0.3,
+        "funding_rate_last": 5e-05,
+        "next_funding_time": "2026-10-31T20:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 4129087587.0,
+        "open_interest_notional": 30293009.79,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 2
+    },
+    {
+      "instrument_id": "binance:usdm:HYPEUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "HYPEUSDT",
+      "base_asset": "HYPE",
+      "quote_asset": "USDT",
+      "asset_id": "HYPE",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 87.572,
+      "price_time": "2026-10-31T17:34:05Z",
+      "price_age_seconds": 3.0,
+      "quote_volume_24h": 868861267.2,
+      "trades_24h": 2517871,
+      "change_24h_pct": -3.417,
+      "spread_bps": 0.11,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "breakout_close_high",
+              "label": "close above the highest close of the prior 20 bars",
+              "origin": "ported:breakout_20d",
+              "direction": "bullish",
+              "params": {
+                "lookback": 20
+              },
+              "evidence": {
+                "close": 90.0,
+                "prior_close_high": 89.039,
+                "pct_over": 1.079
+              }
+            },
+            {
+              "id": "rvol_expansion",
+              "label": "quote volume >= 2x the 20-bar median",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "lookback": 20,
+                "min_rvol": 2.0
+              },
+              "evidence": {
+                "rvol": 3.093,
+                "bar_change_pct": 1.08
+              }
+            },
+            {
+              "id": "momentum_accel",
+              "label": "5-bar return positive and 2 pts above the 5 bars before",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "bars": 5,
+                "min_delta_pct": 2.0
+              },
+              "evidence": {
+                "ret_last_pct": 17.948,
+                "ret_prev_pct": -5.079
+              }
+            }
+          ],
+          "indicators": {
+            "close": 90.0,
+            "rsi14": 64.26,
+            "ma20": 80.81225,
+            "atr14": 5.04440127,
+            "atr14_pct": 5.605,
+            "rvol20": 3.093,
+            "quote_volume_last_bar": 1448314705.95
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [],
+          "indicators": {
+            "close": 87.306,
+            "rsi14": 41.22,
+            "ma20": 88.37805,
+            "atr14": 1.29323772,
+            "atr14_pct": 1.481,
+            "rvol20": 0.664,
+            "quote_volume_last_bar": 18726279.41
+          }
+        }
+      },
+      "bullish_timeframes": [
+        "1d"
+      ],
+      "aligned": false,
+      "descriptive_score": 3,
+      "matched_rules": 3,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 87.57383333,
+        "index_price": 87.55833333,
+        "basis_bps": 1.77,
+        "funding_rate_last": 5e-05,
+        "next_funding_time": "2026-10-31T20:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 4509340.71,
+        "open_interest_notional": 394900251.77,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 3
+    },
+    {
+      "instrument_id": "binance:usdm:WALUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "WALUSDT",
+      "base_asset": "WAL",
+      "quote_asset": "USDT",
+      "asset_id": "WAL",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 0.03021,
+      "price_time": "2026-10-31T17:34:05Z",
+      "price_age_seconds": 3.2,
+      "quote_volume_24h": 4595938.77,
+      "trades_24h": 93970,
+      "change_24h_pct": -0.033,
+      "spread_bps": 3.31,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [],
+          "indicators": {
+            "close": 0.03083,
+            "rsi14": 39.7,
+            "ma20": 0.0383715,
+            "atr14": 0.00392761,
+            "atr14_pct": 12.74,
+            "rvol20": 0.437,
+            "quote_volume_last_bar": 4741380.75
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "reclaim_ma",
+              "label": "closed back above the 20-bar average",
+              "origin": "ported:reclaim_ma20",
+              "direction": "bullish",
+              "params": {
+                "period": 20
+              },
+              "evidence": {
+                "close": 0.03034,
+                "ma": 0.0302605,
+                "prev_close": 0.03017,
+                "prev_ma": 0.030257
+              }
+            },
+            {
+              "id": "momentum_accel",
+              "label": "5-bar return positive and 2 pts above the 5 bars before",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "bars": 5,
+                "min_delta_pct": 2.0
+              },
+              "evidence": {
+                "ret_last_pct": 1.336,
+                "ret_prev_pct": -2.348
+              }
+            }
+          ],
+          "indicators": {
+            "close": 0.03034,
+            "rsi14": 50.12,
+            "ma20": 0.0302605,
+            "atr14": 0.00038299,
+            "atr14_pct": 1.262,
+            "rvol20": 1.085,
+            "quote_volume_last_bar": 181000.38
+          }
+        }
+      },
+      "bullish_timeframes": [
+        "1h"
+      ],
+      "aligned": false,
+      "descriptive_score": 2,
+      "matched_rules": 2,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 0.03022,
+        "index_price": 0.03026114,
+        "basis_bps": -13.59,
+        "funding_rate_last": 5e-05,
+        "next_funding_time": "2026-10-31T20:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 116511481.0,
+        "open_interest_notional": 3520976.96,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 4
+    },
+    {
+      "instrument_id": "binance:usdm:INJUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "INJUSDT",
+      "base_asset": "INJ",
+      "quote_asset": "USDT",
+      "asset_id": "INJ",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 7.336,
+      "price_time": "2026-10-31T17:34:04Z",
+      "price_age_seconds": 4.6,
+      "quote_volume_24h": 54094225.8,
+      "trades_24h": 460984,
+      "change_24h_pct": 3.513,
+      "spread_bps": 1.36,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [],
+          "indicators": {
+            "close": 7.18,
+            "rsi14": 42.14,
+            "ma20": 8.0743,
+            "atr14": 0.72065086,
+            "atr14_pct": 10.037,
+            "rvol20": 0.882,
+            "quote_volume_last_bar": 88517284.41
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "rvol_expansion",
+              "label": "quote volume >= 2x the 20-bar median",
+              "origin": "new",
+              "direction": "bearish",
+              "params": {
+                "lookback": 20,
+                "min_rvol": 2.0
+              },
+              "evidence": {
+                "rvol": 3.855,
+                "bar_change_pct": -1.003
+              }
+            },
+            {
+              "id": "momentum_accel",
+              "label": "5-bar return positive and 2 pts above the 5 bars before",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "bars": 5,
+                "min_delta_pct": 2.0
+              },
+              "evidence": {
+                "ret_last_pct": 4.649,
+                "ret_prev_pct": -0.66
+              }
+            }
+          ],
+          "indicators": {
+            "close": 7.406,
+            "rsi14": 61.88,
+            "ma20": 7.15475,
+            "atr14": 0.12205265,
+            "atr14_pct": 1.648,
+            "rvol20": 3.855,
+            "quote_volume_last_bar": 5412018.32
+          }
+        }
+      },
+      "bullish_timeframes": [
+        "1h"
+      ],
+      "aligned": false,
+      "descriptive_score": 1,
+      "matched_rules": 2,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 7.335,
+        "index_price": 7.33659591,
+        "basis_bps": -2.18,
+        "funding_rate_last": 6.929e-05,
+        "next_funding_time": "2026-11-01T00:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 2739629.7,
+        "open_interest_notional": 20095183.85,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 5
+    },
+    {
+      "instrument_id": "binance:usdm:ZECUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "ZECUSDT",
+      "base_asset": "ZEC",
+      "quote_asset": "USDT",
+      "asset_id": "ZEC",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 1279.94,
+      "price_time": "2026-10-31T17:34:06Z",
+      "price_age_seconds": 2.5,
+      "quote_volume_24h": 1022637523.09,
+      "trades_24h": 3284045,
+      "change_24h_pct": 4.232,
+      "spread_bps": 0.08,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "momentum_accel",
+              "label": "5-bar return positive and 2 pts above the 5 bars before",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "bars": 5,
+                "min_delta_pct": 2.0
+              },
+              "evidence": {
+                "ret_last_pct": 4.652,
+                "ret_prev_pct": -3.461
+              }
+            }
+          ],
+          "indicators": {
+            "close": 1269.43,
+            "rsi14": 51.78,
+            "ma20": 1216.1505,
+            "atr14": 115.30392747,
+            "atr14_pct": 9.083,
+            "rvol20": 1.091,
+            "quote_volume_last_bar": 1853820715.34
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [],
+          "indicators": {
+            "close": 1281.24,
+            "rsi14": 56.81,
+            "ma20": 1269.841,
+            "atr14": 17.58187142,
+            "atr14_pct": 1.372,
+            "rvol20": 0.68,
+            "quote_volume_last_bar": 26889619.0
+          }
+        }
+      },
+      "bullish_timeframes": [
+        "1d"
+      ],
+      "aligned": false,
+      "descriptive_score": 1,
+      "matched_rules": 1,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 1279.92,
+        "index_price": 1280.15806803,
+        "basis_bps": -1.86,
+        "funding_rate_last": -2.5e-07,
+        "next_funding_time": "2026-11-01T00:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 428275.664,
+        "open_interest_notional": 548158587.87,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 6
+    },
+    {
+      "instrument_id": "binance:usdm:SOLUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "SOLUSDT",
+      "base_asset": "SOL",
+      "quote_asset": "USDT",
+      "asset_id": "SOL",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 95.91,
+      "price_time": "2026-10-31T17:34:04Z",
+      "price_age_seconds": 3.7,
+      "quote_volume_24h": 775041063.91,
+      "trades_24h": 1267790,
+      "change_24h_pct": 1.417,
+      "spread_bps": 1.04,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "oversold_bounce",
+              "label": "RSI 14 under 30 on the bar before, then an up close",
+              "origin": "ported:oversold_bounce",
+              "direction": "bullish",
+              "params": {
+                "period": 14,
+                "threshold": 30.0
+              },
+              "evidence": {
+                "rsi_prev": 29.26,
+                "close": 96.3,
+                "prev_close": 95.62
+              }
+            }
+          ],
+          "indicators": {
+            "close": 96.3,
+            "rsi14": 31.24,
+            "ma20": 103.5135,
+            "atr14": 4.65571833,
+            "atr14_pct": 4.835,
+            "rvol20": 1.675,
+            "quote_volume_last_bar": 2236234309.41
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [],
+          "indicators": {
+            "close": 95.83,
+            "rsi14": 47.9,
+            "ma20": 95.905,
+            "atr14": 0.6611669,
+            "atr14_pct": 0.69,
+            "rvol20": 0.456,
+            "quote_volume_last_bar": 12928909.45
+          }
+        }
+      },
+      "bullish_timeframes": [
+        "1d"
+      ],
+      "aligned": false,
+      "descriptive_score": 1,
+      "matched_rules": 1,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 95.92,
+        "index_price": 95.9594242,
+        "basis_bps": -4.11,
+        "funding_rate_last": 9.062e-05,
+        "next_funding_time": "2026-11-01T00:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 8758807.22,
+        "open_interest_notional": 840144788.54,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 7
+    },
+    {
+      "instrument_id": "binance:usdm:BNBUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "BNBUSDT",
+      "base_asset": "BNB",
+      "quote_asset": "USDT",
+      "asset_id": "BNB",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 706.13,
+      "price_time": "2026-10-31T17:34:05Z",
+      "price_age_seconds": 3.2,
+      "quote_volume_24h": 310601143.76,
+      "trades_24h": 864320,
+      "change_24h_pct": 0.706,
+      "spread_bps": 0.14,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "rvol_expansion",
+              "label": "quote volume >= 2x the 20-bar median",
+              "origin": "new",
+              "direction": "bullish",
+              "params": {
+                "lookback": 20,
+                "min_rvol": 2.0
+              },
+              "evidence": {
+                "rvol": 3.365,
+                "bar_change_pct": 0.918
+              }
+            }
+          ],
+          "indicators": {
+            "close": 704.37,
+            "rsi14": 38.72,
+            "ma20": 733.8805,
+            "atr14": 25.75195974,
+            "atr14_pct": 3.656,
+            "rvol20": 3.365,
+            "quote_volume_last_bar": 873859116.37
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [],
+          "indicators": {
+            "close": 705.81,
+            "rsi14": 50.36,
+            "ma20": 703.921,
+            "atr14": 4.21140873,
+            "atr14_pct": 0.597,
+            "rvol20": 0.791,
+            "quote_volume_last_bar": 8914295.52
+          }
+        }
+      },
+      "bullish_timeframes": [
+        "1d"
+      ],
+      "aligned": false,
+      "descriptive_score": 1,
+      "matched_rules": 1,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 706.13,
+        "index_price": 705.91245199,
+        "basis_bps": 3.08,
+        "funding_rate_last": 0.0,
+        "next_funding_time": "2026-11-01T00:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 575674.78,
+        "open_interest_notional": 406501232.4,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 8
+    },
+    {
+      "instrument_id": "binance:usdm:PAXGUSDT",
+      "exchange": "binance",
+      "market": "usdm",
+      "symbol": "PAXGUSDT",
+      "base_asset": "PAXG",
+      "quote_asset": "USDT",
+      "asset_id": "PAXG",
+      "multiplier": 1,
+      "contract_type": "PERPETUAL",
+      "last_price": 3897.5,
+      "price_time": "2026-10-31T17:34:06Z",
+      "price_age_seconds": 2.3,
+      "quote_volume_24h": 34475345.62,
+      "trades_24h": 101078,
+      "change_24h_pct": -0.079,
+      "spread_bps": 0.03,
+      "timeframes": {
+        "1d": {
+          "bars": 250,
+          "quality": {
+            "received": 251,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 250
+          },
+          "last_closed_open": "2026-10-30T00:00:00Z",
+          "last_closed_close": "2026-10-31T00:00:00Z",
+          "status": "ok",
+          "setups": [
+            {
+              "id": "rsi_oversold",
+              "label": "RSI 14 under 30",
+              "origin": "ported:oversold",
+              "direction": "condition",
+              "params": {
+                "period": 14,
+                "threshold": 30.0
+              },
+              "evidence": {
+                "rsi": 26.17
+              }
+            },
+            {
+              "id": "rvol_expansion",
+              "label": "quote volume >= 2x the 20-bar median",
+              "origin": "new",
+              "direction": "bearish",
+              "params": {
+                "lookback": 20,
+                "min_rvol": 2.0
+              },
+              "evidence": {
+                "rvol": 2.33,
+                "bar_change_pct": -2.808
+              }
+            }
+          ],
+          "indicators": {
+            "close": 3899.9,
+            "rsi14": 26.17,
+            "ma20": 4087.9115,
+            "atr14": 56.31956966,
+            "atr14_pct": 1.444,
+            "rvol20": 2.33,
+            "quote_volume_last_bar": 142361271.46
+          }
+        },
+        "1h": {
+          "bars": 500,
+          "quality": {
+            "received": 501,
+            "invalid": 0,
+            "off_grid": 0,
+            "duplicates": 0,
+            "unordered": false,
+            "incomplete_dropped": 1,
+            "future_dropped": 0,
+            "missing_bars": 0,
+            "zero_volume_bars": 0,
+            "closed": 500
+          },
+          "last_closed_open": "2026-10-31T16:00:00Z",
+          "last_closed_close": "2026-10-31T17:00:00Z",
+          "status": "ok",
+          "setups": [],
+          "indicators": {
+            "close": 3898.01,
+            "rsi14": 33.05,
+            "ma20": 3897.322,
+            "atr14": 5.87928042,
+            "atr14_pct": 0.151,
+            "rvol20": 0.288,
+            "quote_volume_last_bar": 243613.98
+          }
+        }
+      },
+      "bullish_timeframes": [],
+      "aligned": false,
+      "descriptive_score": 0,
+      "matched_rules": 2,
+      "estimated_probability": null,
+      "derivatives": {
+        "mark_price": 3897.50809026,
+        "index_price": 3898.73123586,
+        "basis_bps": -3.14,
+        "funding_rate_last": 3.074e-05,
+        "next_funding_time": "2026-10-31T20:00:00Z",
+        "as_of": "2026-10-31T17:34:12Z",
+        "open_interest": 27200.759,
+        "open_interest_notional": 106015178.26,
+        "note": "context only: no leverage or execution advice"
+      },
+      "rank": 9
+    }
+  ],
+  "excluded": [
+    {
+      "requested": "DEEP",
+      "symbol": "DEEPUSDT",
+      "reason": "24h quote volume 618.6K under 2.0M"
+    }
+  ],
+  "failed": {},
+  "hits": [
+    {
+      "symbol": "ONDOUSDT",
+      "setups": [
+        "momentum_accel"
+      ]
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "setups": [
+        "momentum_accel"
+      ]
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "setups": [
+        "breakout_close_high",
+        "momentum_accel",
+        "rvol_expansion"
+      ]
+    },
+    {
+      "symbol": "WALUSDT",
+      "setups": [
+        "momentum_accel",
+        "reclaim_ma"
+      ]
+    },
+    {
+      "symbol": "INJUSDT",
+      "setups": [
+        "momentum_accel",
+        "rvol_expansion"
+      ]
+    },
+    {
+      "symbol": "ZECUSDT",
+      "setups": [
+        "momentum_accel"
+      ]
+    },
+    {
+      "symbol": "SOLUSDT",
+      "setups": [
+        "oversold_bounce"
+      ]
+    },
+    {
+      "symbol": "BNBUSDT",
+      "setups": [
+        "rvol_expansion"
+      ]
+    },
+    {
+      "symbol": "PAXGUSDT",
+      "setups": [
+        "rsi_oversold",
+        "rvol_expansion"
+      ]
+    }
+  ]
+}
