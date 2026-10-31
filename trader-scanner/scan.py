@@ -1027,6 +1027,15 @@ def _p(x):
     return "{:,.2f}".format(x)
 
 
+def _crypto_module():
+    """The crypto scan lives next to this file; the Yahoo commands never import it beyond argparse wiring."""
+    here = os.path.dirname(os.path.abspath(__file__))
+    if here not in sys.path:
+        sys.path.insert(0, here)
+    import crypto_scan
+    return crypto_scan
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Chart Scanner (trader-scanner): daily setups and opening-range breakouts.")
     sub = ap.add_subparsers(dest="cmd")
@@ -1065,10 +1074,22 @@ def main(argv=None):
     p.add_argument("--at", help="cut the clock at this New York time, HH:MM")
     p.add_argument("--until", help="no new entries after HH:MM (default: config no_entries_after, 15:30)")
     p.add_argument("--config", default="trader/config.json")
+    p = sub.add_parser("crypto", help="Binance Spot / USD-M Futures setups (crypto_scan.py, INI-configured)")
+    try:
+        crypto = _crypto_module()
+        crypto.add_arguments(p)
+    except Exception as e:  # the Yahoo commands must keep working whatever happens to the crypto files
+        crypto = e
+        p.add_argument("rest", nargs=argparse.REMAINDER)
     a = ap.parse_args(argv)
     if not a.cmd:
         ap.print_help()
         return 1
+    if a.cmd == "crypto":
+        if isinstance(crypto, Exception):
+            print("scan.py crypto: unavailable (%s: %s)" % (type(crypto).__name__, crypto), file=sys.stderr)
+            return 1
+        return crypto.run_cli(a)
     try:
         return {"universe": cmd_universe, "daily": cmd_daily, "orb": cmd_orb}[a.cmd](a)
     except ScanError as e:
