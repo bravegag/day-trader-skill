@@ -1,0 +1,7426 @@
+{
+"0GUSDT": {
+"asset_id": "0G",
+"base": "0G",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000000BOBUSDT": {
+"asset_id": "BOB",
+"base": "1000000BOB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"1000000MOGUSDT": {
+"asset_id": "MOG",
+"base": "1000000MOG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000BONKUSDT": {
+"asset_id": "BONK",
+"base": "1000BONK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000BTTCUSDT": {
+"asset_id": "BTTC",
+"base": "1000BTTC",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"1000CATUSDT": {
+"asset_id": "CAT",
+"base": "1000CAT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000CHEEMSUSDT": {
+"asset_id": "CHEEMS",
+"base": "1000CHEEMS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000FLOKIUSDT": {
+"asset_id": "FLOKI",
+"base": "1000FLOKI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000LUNCUSDT": {
+"asset_id": "LUNC",
+"base": "1000LUNC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000PEPEUSDT": {
+"asset_id": "PEPE",
+"base": "1000PEPE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000RATSUSDT": {
+"asset_id": "RATS",
+"base": "1000RATS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000SATSUSDT": {
+"asset_id": "SATS",
+"base": "1000SATS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000SHIBUSDT": {
+"asset_id": "SHIB",
+"base": "1000SHIB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000WHYUSDT": {
+"asset_id": "WHY",
+"base": "1000WHY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"1000XECUSDT": {
+"asset_id": "XEC",
+"base": "1000XEC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1000XUSDT": {
+"asset_id": "X",
+"base": "1000X",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"1INCHUSDT": {
+"asset_id": "1INCH",
+"base": "1INCH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"1MBABYDOGEUSDT": {
+"asset_id": "BABYDOGE",
+"base": "1MBABYDOGE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"2ZUSDT": {
+"asset_id": "2Z",
+"base": "2Z",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"42USDT": {
+"asset_id": "42",
+"base": "42",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"4USDT": {
+"asset_id": "4",
+"base": "4",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"A2ZUSDT": {
+"asset_id": "A2Z",
+"base": "A2Z",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"AAOIUSDT": {
+"asset_id": "AAOI",
+"base": "AAOI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AAPLUSDT": {
+"asset_id": "AAPL",
+"base": "AAPL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AAVEUSDT": {
+"asset_id": "AAVE",
+"base": "AAVE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ABBVUSDT": {
+"asset_id": "ABBV",
+"base": "ABBV",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ACEUSDT": {
+"asset_id": "ACE",
+"base": "ACE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ACHUSDT": {
+"asset_id": "ACH",
+"base": "ACH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ACNUSDT": {
+"asset_id": "ACN",
+"base": "ACN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ACTUSDT": {
+"asset_id": "ACT",
+"base": "ACT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ACUUSDT": {
+"asset_id": "ACU",
+"base": "ACU",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ACXUSDT": {
+"asset_id": "ACX",
+"base": "ACX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"ADAUSDT": {
+"asset_id": "ADA",
+"base": "ADA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ADBEUSDT": {
+"asset_id": "ADBE",
+"base": "ADBE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AERGOUSDT": {
+"asset_id": "AERGO",
+"base": "AERGO",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"AEROUSDT": {
+"asset_id": "AERO",
+"base": "AERO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AEVOUSDT": {
+"asset_id": "AEVO",
+"base": "AEVO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AGIXUSDT": {
+"asset_id": "AGIX",
+"base": "AGIX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"AGLDUSDT": {
+"asset_id": "AGLD",
+"base": "AGLD",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AGPUUSDT": {
+"asset_id": "AGPU",
+"base": "AGPU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AGTUSDT": {
+"asset_id": "AGT",
+"base": "AGT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AI16ZUSDT": {
+"asset_id": "AI16Z",
+"base": "AI16Z",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"AIAUSDT": {
+"asset_id": "AIA",
+"base": "AIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AIGENSYNUSDT": {
+"asset_id": "AIGENSYN",
+"base": "AIGENSYN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AINUSDT": {
+"asset_id": "AIN",
+"base": "AIN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AIOTUSDT": {
+"asset_id": "AIOT",
+"base": "AIOT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AIOUSDT": {
+"asset_id": "AIO",
+"base": "AIO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AIUSDT": {
+"asset_id": "AI",
+"base": "AI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"AIXBTUSDT": {
+"asset_id": "AIXBT",
+"base": "AIXBT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AKAMUSDT": {
+"asset_id": "AKAM",
+"base": "AKAM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AKEUSDT": {
+"asset_id": "AKE",
+"base": "AKE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AKROUSDT": {
+"asset_id": "AKRO",
+"base": "AKRO",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"AKTUSDT": {
+"asset_id": "AKT",
+"base": "AKT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ALABUSDT": {
+"asset_id": "ALAB",
+"base": "ALAB",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ALCHUSDT": {
+"asset_id": "ALCH",
+"base": "ALCH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ALGOUSDT": {
+"asset_id": "ALGO",
+"base": "ALGO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ALICEUSDT": {
+"asset_id": "ALICE",
+"base": "ALICE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ALLOUSDT": {
+"asset_id": "ALLO",
+"base": "ALLO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ALLUSDT": {
+"asset_id": "ALL",
+"base": "ALL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "INDEX"
+},
+"ALPACAUSDT": {
+"asset_id": "ALPACA",
+"base": "ALPACA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"ALPHAUSDT": {
+"asset_id": "ALPHA",
+"base": "ALPHA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"ALPINEUSDT": {
+"asset_id": "ALPINE",
+"base": "ALPINE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ALTUSDT": {
+"asset_id": "ALT",
+"base": "ALT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AMATUSDT": {
+"asset_id": "AMAT",
+"base": "AMAT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AMBUSDT": {
+"asset_id": "AMB",
+"base": "AMB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"AMCUSDT": {
+"asset_id": "AMC",
+"base": "AMC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AMDUSDT": {
+"asset_id": "AMD",
+"base": "AMD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AMGNUSDT": {
+"asset_id": "AMGN",
+"base": "AMGN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AMZNUSDT": {
+"asset_id": "AMZN",
+"base": "AMZN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ANCUSDT": {
+"asset_id": "ANC",
+"base": "ANC",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"ANETUSDT": {
+"asset_id": "ANET",
+"base": "ANET",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ANIMEUSDT": {
+"asset_id": "ANIME",
+"base": "ANIME",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ANKRUSDT": {
+"asset_id": "ANKR",
+"base": "ANKR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ANTHROPICUSDT": {
+"asset_id": "ANTHROPIC",
+"base": "ANTHROPIC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "PREMARKET"
+},
+"ANTUSDT": {
+"asset_id": "ANT",
+"base": "ANT",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"APEUSDT": {
+"asset_id": "APE",
+"base": "APE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"API3USDT": {
+"asset_id": "API3",
+"base": "API3",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"APLDUSDT": {
+"asset_id": "APLD",
+"base": "APLD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"APPUSDT": {
+"asset_id": "APP",
+"base": "APP",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"APRUSDT": {
+"asset_id": "APR",
+"base": "APR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"APTUSDT": {
+"asset_id": "APT",
+"base": "APT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ARBUSDT": {
+"asset_id": "ARB",
+"base": "ARB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ARCUSDT": {
+"asset_id": "ARC",
+"base": "ARC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ARIAUSDT": {
+"asset_id": "ARIA",
+"base": "ARIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ARKMUSDT": {
+"asset_id": "ARKM",
+"base": "ARKM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ARKUSDT": {
+"asset_id": "ARK",
+"base": "ARK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ARMUSDT": {
+"asset_id": "ARM",
+"base": "ARM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ARPAUSDT": {
+"asset_id": "ARPA",
+"base": "ARPA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ARUSDT": {
+"asset_id": "AR",
+"base": "AR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ARXUSDT": {
+"asset_id": "ARX",
+"base": "ARX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ASMLUSDT": {
+"asset_id": "ASML",
+"base": "ASML",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ASRUSDT": {
+"asset_id": "ASR",
+"base": "ASR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ASTERUSDT": {
+"asset_id": "ASTER",
+"base": "ASTER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ASTRUSDT": {
+"asset_id": "ASTR",
+"base": "ASTR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ASTSUSDT": {
+"asset_id": "ASTS",
+"base": "ASTS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ATAUSDT": {
+"asset_id": "ATA",
+"base": "ATA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"ATHUSDT": {
+"asset_id": "ATH",
+"base": "ATH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ATOMUSDT": {
+"asset_id": "ATOM",
+"base": "ATOM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ATUSDT": {
+"asset_id": "AT",
+"base": "AT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AUCTIONUSDT": {
+"asset_id": "AUCTION",
+"base": "AUCTION",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AUDIOUSDT": {
+"asset_id": "AUDIO",
+"base": "AUDIO",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"AUSDT": {
+"asset_id": "A",
+"base": "A",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AVAAIUSDT": {
+"asset_id": "AVAAI",
+"base": "AVAAI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AVAUSDT": {
+"asset_id": "AVA",
+"base": "AVA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AVAXUSDT": {
+"asset_id": "AVAX",
+"base": "AVAX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AVGOUSDT": {
+"asset_id": "AVGO",
+"base": "AVGO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AVNTUSDT": {
+"asset_id": "AVNT",
+"base": "AVNT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AWEUSDT": {
+"asset_id": "AWE",
+"base": "AWE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AXLUSDT": {
+"asset_id": "AXL",
+"base": "AXL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AXSUSDT": {
+"asset_id": "AXS",
+"base": "AXS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"AXTIUSDT": {
+"asset_id": "AXTI",
+"base": "AXTI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"AZTECUSDT": {
+"asset_id": "AZTEC",
+"base": "AZTEC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"B2USDT": {
+"asset_id": "B2",
+"base": "B2",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"B3USDT": {
+"asset_id": "B3",
+"base": "B3",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BABAUSDT": {
+"asset_id": "BABA",
+"base": "BABA",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BABYUSDT": {
+"asset_id": "BABY",
+"base": "BABY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BACUSDT": {
+"asset_id": "BAC",
+"base": "BAC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BADGERUSDT": {
+"asset_id": "BADGER",
+"base": "BADGER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BAKEUSDT": {
+"asset_id": "BAKE",
+"base": "BAKE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BALUSDT": {
+"asset_id": "BAL",
+"base": "BAL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BANANAS31USDT": {
+"asset_id": "BANANAS31",
+"base": "BANANAS31",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BANANAUSDT": {
+"asset_id": "BANANA",
+"base": "BANANA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BANDUSDT": {
+"asset_id": "BAND",
+"base": "BAND",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BANKUSDT": {
+"asset_id": "BANK",
+"base": "BANK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BANUSDT": {
+"asset_id": "BAN",
+"base": "BAN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BARDUSDT": {
+"asset_id": "BARD",
+"base": "BARD",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BASEDUSDT": {
+"asset_id": "BASED",
+"base": "BASED",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BASUSDT": {
+"asset_id": "BAS",
+"base": "BAS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BATUSDT": {
+"asset_id": "BAT",
+"base": "BAT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BBUSDT": {
+"asset_id": "BB",
+"base": "BB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BBXUSDT": {
+"asset_id": "BBX",
+"base": "BBX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BCHUSDT": {
+"asset_id": "BCH",
+"base": "BCH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BDXNUSDT": {
+"asset_id": "BDXN",
+"base": "BDXN",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"BEAMXUSDT": {
+"asset_id": "BEAMX",
+"base": "BEAMX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BEATUSDT": {
+"asset_id": "BEAT",
+"base": "BEAT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BELUSDT": {
+"asset_id": "BEL",
+"base": "BEL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BERAUSDT": {
+"asset_id": "BERA",
+"base": "BERA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BEUSDT": {
+"asset_id": "BE",
+"base": "BE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BICOUSDT": {
+"asset_id": "BICO",
+"base": "BICO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BIDUSDT": {
+"asset_id": "BID",
+"base": "BID",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BIGTIMEUSDT": {
+"asset_id": "BIGTIME",
+"base": "BIGTIME",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BILLUSDT": {
+"asset_id": "BILL",
+"base": "BILL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BIOUSDT": {
+"asset_id": "BIO",
+"base": "BIO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BIRBUSDT": {
+"asset_id": "BIRB",
+"base": "BIRB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BITOUSDT": {
+"asset_id": "BITO",
+"base": "BITO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BLESSUSDT": {
+"asset_id": "BLESS",
+"base": "BLESS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BLUAIUSDT": {
+"asset_id": "BLUAI",
+"base": "BLUAI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BLUEBIRDUSDT": {
+"asset_id": "BLUEBIRD",
+"base": "BLUEBIRD",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"BLURUSDT": {
+"asset_id": "BLUR",
+"base": "BLUR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BLZUSDT": {
+"asset_id": "BLZ",
+"base": "BLZ",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BMNRUSDT": {
+"asset_id": "BMNR",
+"base": "BMNR",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BMTUSDT": {
+"asset_id": "BMT",
+"base": "BMT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BNBUSDT": {
+"asset_id": "BNB",
+"base": "BNB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BNCUSDT": {
+"asset_id": "BNC",
+"base": "BNC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BNTUSDT": {
+"asset_id": "BNT",
+"base": "BNT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BNXUSDT": {
+"asset_id": "BNX",
+"base": "BNX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BOBUSDT": {
+"asset_id": "BOB",
+"base": "BOB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BOMEUSDT": {
+"asset_id": "BOME",
+"base": "BOME",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BONDUSDT": {
+"asset_id": "BOND",
+"base": "BOND",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BOTUSDT": {
+"asset_id": "BOT",
+"base": "BOT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BRETTUSDT": {
+"asset_id": "BRETT",
+"base": "BRETT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BREVUSDT": {
+"asset_id": "BREV",
+"base": "BREV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BRKBUSDT": {
+"asset_id": "BRKB",
+"base": "BRKB",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BROCCOLI714USDT": {
+"asset_id": "BROCCOLI714",
+"base": "BROCCOLI714",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BROCCOLIF3BUSDT": {
+"asset_id": "BROCCOLIF3B",
+"base": "BROCCOLIF3B",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BRUSDT": {
+"asset_id": "BR",
+"base": "BR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BSBUSDT": {
+"asset_id": "BSB",
+"base": "BSB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BSPUSDT": {
+"asset_id": "BSP",
+"base": "BSP",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BSVUSDT": {
+"asset_id": "BSV",
+"base": "BSV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BSWUSDT": {
+"asset_id": "BSW",
+"base": "BSW",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"BTCDOMUSDT": {
+"asset_id": "BTCDOM",
+"base": "BTCDOM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "INDEX"
+},
+"BTCSTUSDT": {
+"asset_id": "BTCST",
+"base": "BTCST",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"BTCUSDT": {
+"asset_id": "BTC",
+"base": "BTC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BTCUSDT_261225": {
+"asset_id": "BTC",
+"base": "BTC",
+"contract_type": "CURRENT_QUARTER",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BTCUSDT_270326": {
+"asset_id": "BTC",
+"base": "BTC",
+"contract_type": "NEXT_QUARTER",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BTRUSDT": {
+"asset_id": "BTR",
+"base": "BTR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BTSUSDT": {
+"asset_id": "BTS",
+"base": "BTS",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"BTTUSDT": {
+"asset_id": "BTT",
+"base": "BTT",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"BTWUSDT": {
+"asset_id": "BTW",
+"base": "BTW",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BULLAUSDT": {
+"asset_id": "BULLA",
+"base": "BULLA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BUSDT": {
+"asset_id": "B",
+"base": "B",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"BWETUSDT": {
+"asset_id": "BWET",
+"base": "BWET",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BXUSDT": {
+"asset_id": "BX",
+"base": "BX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"BYDUSDT": {
+"asset_id": "BYD",
+"base": "BYD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"BZRXUSDT": {
+"asset_id": "BZRX",
+"base": "BZRX",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"BZUSDT": {
+"asset_id": "BZ",
+"base": "BZ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COMMODITY"
+},
+"C98USDT": {
+"asset_id": "C98",
+"base": "C98",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CAKEUSDT": {
+"asset_id": "CAKE",
+"base": "CAKE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CAPUSDT": {
+"asset_id": "CAP",
+"base": "CAP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CARVUSDT": {
+"asset_id": "CARV",
+"base": "CARV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CATIUSDT": {
+"asset_id": "CATI",
+"base": "CATI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CATUSDT": {
+"asset_id": "CAT",
+"base": "CAT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CBRSUSDT": {
+"asset_id": "CBRS",
+"base": "CBRS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CCUSDT": {
+"asset_id": "CC",
+"base": "CC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CEGUSDT": {
+"asset_id": "CEG",
+"base": "CEG",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CELOUSDT": {
+"asset_id": "CELO",
+"base": "CELO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CELRUSDT": {
+"asset_id": "CELR",
+"base": "CELR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CETUSUSDT": {
+"asset_id": "CETUS",
+"base": "CETUS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CFGUSDT": {
+"asset_id": "CFG",
+"base": "CFG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CFXUSDT": {
+"asset_id": "CFX",
+"base": "CFX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CGPTUSDT": {
+"asset_id": "CGPT",
+"base": "CGPT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CHESSUSDT": {
+"asset_id": "CHESS",
+"base": "CHESS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"CHILLGUYUSDT": {
+"asset_id": "CHILLGUY",
+"base": "CHILLGUY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CHIPUSDT": {
+"asset_id": "CHIP",
+"base": "CHIP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CHRUSDT": {
+"asset_id": "CHR",
+"base": "CHR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CHZUSDT": {
+"asset_id": "CHZ",
+"base": "CHZ",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CIENUSDT": {
+"asset_id": "CIEN",
+"base": "CIEN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CKBUSDT": {
+"asset_id": "CKB",
+"base": "CKB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CLANKERUSDT": {
+"asset_id": "CLANKER",
+"base": "CLANKER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CLOUSDT": {
+"asset_id": "CLO",
+"base": "CLO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CLUSDT": {
+"asset_id": "CL",
+"base": "CL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COMMODITY"
+},
+"COAIUSDT": {
+"asset_id": "COAI",
+"base": "COAI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"COCOSUSDT": {
+"asset_id": "COCOS",
+"base": "COCOS",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"COHRUSDT": {
+"asset_id": "COHR",
+"base": "COHR",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"COINUSDT": {
+"asset_id": "COIN",
+"base": "COIN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"COLLECTUSDT": {
+"asset_id": "COLLECT",
+"base": "COLLECT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"COMBOUSDT": {
+"asset_id": "COMBO",
+"base": "COMBO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"COMMONUSDT": {
+"asset_id": "COMMON",
+"base": "COMMON",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"COMPUSDT": {
+"asset_id": "COMP",
+"base": "COMP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"COOKIEUSDT": {
+"asset_id": "COOKIE",
+"base": "COOKIE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"COPPERUSDT": {
+"asset_id": "COPPER",
+"base": "COPPER",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COMMODITY"
+},
+"COSTUSDT": {
+"asset_id": "COST",
+"base": "COST",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"COSUSDT": {
+"asset_id": "COS",
+"base": "COS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"COTIUSDT": {
+"asset_id": "COTI",
+"base": "COTI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"COWUSDT": {
+"asset_id": "COW",
+"base": "COW",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CRCLUSDT": {
+"asset_id": "CRCL",
+"base": "CRCL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CRDOUSDT": {
+"asset_id": "CRDO",
+"base": "CRDO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CRMLUSDT": {
+"asset_id": "CRML",
+"base": "CRML",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CRMUSDT": {
+"asset_id": "CRM",
+"base": "CRM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CROSSUSDT": {
+"asset_id": "CROSS",
+"base": "CROSS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CRVUSDT": {
+"asset_id": "CRV",
+"base": "CRV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CRWDUSDT": {
+"asset_id": "CRWD",
+"base": "CRWD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CRWVUSDT": {
+"asset_id": "CRWV",
+"base": "CRWV",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CSCOUSDT": {
+"asset_id": "CSCO",
+"base": "CSCO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CSOPSAMSUNG2LUSDT": {
+"asset_id": "CSOPSAMSUNG2L",
+"base": "CSOPSAMSUNG2L",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"CSOPSKHYNIX2LUSDT": {
+"asset_id": "CSOPSKHYNIX2L",
+"base": "CSOPSKHYNIX2L",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"CTKUSDT": {
+"asset_id": "CTK",
+"base": "CTK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CTRUSDT": {
+"asset_id": "CTR",
+"base": "CTR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CTSIUSDT": {
+"asset_id": "CTSI",
+"base": "CTSI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CTUSDT": {
+"asset_id": "CT",
+"base": "CT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CUDISUSDT": {
+"asset_id": "CUDIS",
+"base": "CUDIS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"CUSDT": {
+"asset_id": "C",
+"base": "C",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CVCUSDT": {
+"asset_id": "CVC",
+"base": "CVC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CVNAUSDT": {
+"asset_id": "CVNA",
+"base": "CVNA",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CVXUSDT": {
+"asset_id": "CVX",
+"base": "CVX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CXMTUSDT": {
+"asset_id": "CXMT",
+"base": "CXMT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "CN_EQUITY"
+},
+"CYBERUSDT": {
+"asset_id": "CYBER",
+"base": "CYBER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"CYPHUSDT": {
+"asset_id": "CYPH",
+"base": "CYPH",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"CYSUSDT": {
+"asset_id": "CYS",
+"base": "CYS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DAMUSDT": {
+"asset_id": "DAM",
+"base": "DAM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DARUSDT": {
+"asset_id": "DAR",
+"base": "DAR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DASHUSDT": {
+"asset_id": "DASH",
+"base": "DASH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DATAIPUSDT": {
+"asset_id": "DATAIP",
+"base": "DATAIP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DDOGUSDT": {
+"asset_id": "DDOG",
+"base": "DDOG",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"DEEPUSDT": {
+"asset_id": "DEEP",
+"base": "DEEP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DEFIUSDT": {
+"asset_id": "DEFI",
+"base": "DEFI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "INDEX"
+},
+"DEGENUSDT": {
+"asset_id": "DEGEN",
+"base": "DEGEN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DEGOUSDT": {
+"asset_id": "DEGO",
+"base": "DEGO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DELLUSDT": {
+"asset_id": "DELL",
+"base": "DELL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"DENTUSDT": {
+"asset_id": "DENT",
+"base": "DENT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DEXEUSDT": {
+"asset_id": "DEXE",
+"base": "DEXE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DFUSDT": {
+"asset_id": "DF",
+"base": "DF",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DGBUSDT": {
+"asset_id": "DGB",
+"base": "DGB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DIAUSDT": {
+"asset_id": "DIA",
+"base": "DIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DISUSDT": {
+"asset_id": "DIS",
+"base": "DIS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"DJTUSDT": {
+"asset_id": "DJT",
+"base": "DJT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"DKNGUSDT": {
+"asset_id": "DKNG",
+"base": "DKNG",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"DMCUSDT": {
+"asset_id": "DMC",
+"base": "DMC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DODOUSDT": {
+"asset_id": "DODO",
+"base": "DODO",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"DODOXUSDT": {
+"asset_id": "DODOX",
+"base": "DODOX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DOGEUSDT": {
+"asset_id": "DOGE",
+"base": "DOGE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DOGSUSDT": {
+"asset_id": "DOGS",
+"base": "DOGS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DOLOUSDT": {
+"asset_id": "DOLO",
+"base": "DOLO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DOODUSDT": {
+"asset_id": "DOOD",
+"base": "DOOD",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DOSUSDT": {
+"asset_id": "DOS",
+"base": "DOS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DOTECOUSDT": {
+"asset_id": "DOTECO",
+"base": "DOTECO",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"DOTUSDT": {
+"asset_id": "DOT",
+"base": "DOT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DRAMUSDT": {
+"asset_id": "DRAM",
+"base": "DRAM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"DRIFTUSDT": {
+"asset_id": "DRIFT",
+"base": "DRIFT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DUSDT": {
+"asset_id": "D",
+"base": "D",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"DUSKUSDT": {
+"asset_id": "DUSK",
+"base": "DUSK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DYDXUSDT": {
+"asset_id": "DYDX",
+"base": "DYDX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"DYMUSDT": {
+"asset_id": "DYM",
+"base": "DYM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EBAYUSDT": {
+"asset_id": "EBAY",
+"base": "EBAY",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"EDENUSDT": {
+"asset_id": "EDEN",
+"base": "EDEN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EDGEUSDT": {
+"asset_id": "EDGE",
+"base": "EDGE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EDUUSDT": {
+"asset_id": "EDU",
+"base": "EDU",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EGLDUSDT": {
+"asset_id": "EGLD",
+"base": "EGLD",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EIDOUSDT": {
+"asset_id": "EIDO",
+"base": "EIDO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"EIGENUSDT": {
+"asset_id": "EIGEN",
+"base": "EIGEN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ELSAUSDT": {
+"asset_id": "ELSA",
+"base": "ELSA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ENAUSDT": {
+"asset_id": "ENA",
+"base": "ENA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ENJUSDT": {
+"asset_id": "ENJ",
+"base": "ENJ",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ENSOUSDT": {
+"asset_id": "ENSO",
+"base": "ENSO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ENSUSDT": {
+"asset_id": "ENS",
+"base": "ENS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EOSUSDT": {
+"asset_id": "EOS",
+"base": "EOS",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"EPICUSDT": {
+"asset_id": "EPIC",
+"base": "EPIC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"EPTUSDT": {
+"asset_id": "EPT",
+"base": "EPT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"EQTUSDT": {
+"asset_id": "EQT",
+"base": "EQT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ERAUSDT": {
+"asset_id": "ERA",
+"base": "ERA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ESPORTSUSDT": {
+"asset_id": "ESPORTS",
+"base": "ESPORTS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ESPUSDT": {
+"asset_id": "ESP",
+"base": "ESP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ETCUSDT": {
+"asset_id": "ETC",
+"base": "ETC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ETHFIUSDT": {
+"asset_id": "ETHFI",
+"base": "ETHFI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ETHUSDT": {
+"asset_id": "ETH",
+"base": "ETH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ETHUSDT_261225": {
+"asset_id": "ETH",
+"base": "ETH",
+"contract_type": "CURRENT_QUARTER",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ETHUSDT_270326": {
+"asset_id": "ETH",
+"base": "ETH",
+"contract_type": "NEXT_QUARTER",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ETHWUSDT": {
+"asset_id": "ETHW",
+"base": "ETHW",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EULUSDT": {
+"asset_id": "EUL",
+"base": "EUL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EVAAUSDT": {
+"asset_id": "EVAA",
+"base": "EVAA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"EWJUSDT": {
+"asset_id": "EWJ",
+"base": "EWJ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"EWTUSDT": {
+"asset_id": "EWT",
+"base": "EWT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"EWYUSDT": {
+"asset_id": "EWY",
+"base": "EWY",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"EWZSUSDT": {
+"asset_id": "EWZS",
+"base": "EWZS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"EWZUSDT": {
+"asset_id": "EWZ",
+"base": "EWZ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"FARTCOINUSDT": {
+"asset_id": "FARTCOIN",
+"base": "FARTCOIN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FETUSDT": {
+"asset_id": "FET",
+"base": "FET",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FFUSDT": {
+"asset_id": "FF",
+"base": "FF",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FHEUSDT": {
+"asset_id": "FHE",
+"base": "FHE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FIDAUSDT": {
+"asset_id": "FIDA",
+"base": "FIDA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FIGHTUSDT": {
+"asset_id": "FIGHT",
+"base": "FIGHT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FILUSDT": {
+"asset_id": "FIL",
+"base": "FIL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FIOUSDT": {
+"asset_id": "FIO",
+"base": "FIO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"FISUSDT": {
+"asset_id": "FIS",
+"base": "FIS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"FLEXUSDT": {
+"asset_id": "FLEX",
+"base": "FLEX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"FLMUSDT": {
+"asset_id": "FLM",
+"base": "FLM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"FLNCUSDT": {
+"asset_id": "FLNC",
+"base": "FLNC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"FLOCKUSDT": {
+"asset_id": "FLOCK",
+"base": "FLOCK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FLOWUSDT": {
+"asset_id": "FLOW",
+"base": "FLOW",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FLUIDUSDT": {
+"asset_id": "FLUID",
+"base": "FLUID",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FLUXUSDT": {
+"asset_id": "FLUX",
+"base": "FLUX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FOGOUSDT": {
+"asset_id": "FOGO",
+"base": "FOGO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FOLKSUSDT": {
+"asset_id": "FOLKS",
+"base": "FOLKS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FOOTBALLUSDT": {
+"asset_id": "FOOTBALL",
+"base": "FOOTBALL",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"FORMUSDT": {
+"asset_id": "FORM",
+"base": "FORM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FORTHUSDT": {
+"asset_id": "FORTH",
+"base": "FORTH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"FRAXUSDT": {
+"asset_id": "FRAX",
+"base": "FRAX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FRONTUSDT": {
+"asset_id": "FRONT",
+"base": "FRONT",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"FTMUSDT": {
+"asset_id": "FTM",
+"base": "FTM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"FTTUSDT": {
+"asset_id": "FTT",
+"base": "FTT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"FUNUSDT": {
+"asset_id": "FUN",
+"base": "FUN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"FUSDT": {
+"asset_id": "F",
+"base": "F",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"FWDIUSDT": {
+"asset_id": "FWDI",
+"base": "FWDI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"FXSUSDT": {
+"asset_id": "FXS",
+"base": "FXS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"GAIBUSDT": {
+"asset_id": "GAIB",
+"base": "GAIB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "PENDING_TRADING",
+"underlying_type": "COIN"
+},
+"GALAUSDT": {
+"asset_id": "GALA",
+"base": "GALA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GALUSDT": {
+"asset_id": "GAL",
+"base": "GAL",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"GASUSDT": {
+"asset_id": "GAS",
+"base": "GAS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GDXUSDT": {
+"asset_id": "GDX",
+"base": "GDX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"GENIUSUSDT": {
+"asset_id": "GENIUS",
+"base": "GENIUS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GEVUSDT": {
+"asset_id": "GEV",
+"base": "GEV",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"GHSTUSDT": {
+"asset_id": "GHST",
+"base": "GHST",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"GIGADEVUSDT": {
+"asset_id": "GIGADEV",
+"base": "GIGADEV",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"GIGGLEUSDT": {
+"asset_id": "GIGGLE",
+"base": "GIGGLE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GLMRUSDT": {
+"asset_id": "GLMR",
+"base": "GLMR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"GLMUSDT": {
+"asset_id": "GLM",
+"base": "GLM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GLWUSDT": {
+"asset_id": "GLW",
+"base": "GLW",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"GMEUSDT": {
+"asset_id": "GME",
+"base": "GME",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"GMTUSDT": {
+"asset_id": "GMT",
+"base": "GMT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GMXUSDT": {
+"asset_id": "GMX",
+"base": "GMX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GOATUSDT": {
+"asset_id": "GOAT",
+"base": "GOAT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GOOGLUSDT": {
+"asset_id": "GOOGL",
+"base": "GOOGL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"GPROUSDT": {
+"asset_id": "GPRO",
+"base": "GPRO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"GPSUSDT": {
+"asset_id": "GPS",
+"base": "GPS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GRAMUSDT": {
+"asset_id": "GRAM",
+"base": "GRAM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GRASSUSDT": {
+"asset_id": "GRASS",
+"base": "GRASS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GRIFFAINUSDT": {
+"asset_id": "GRIFFAIN",
+"base": "GRIFFAIN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GRTUSDT": {
+"asset_id": "GRT",
+"base": "GRT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GRVTUSDT": {
+"asset_id": "GRVT",
+"base": "GRVT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GSUSDT": {
+"asset_id": "GS",
+"base": "GS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"GTCUSDT": {
+"asset_id": "GTC",
+"base": "GTC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GTLBUSDT": {
+"asset_id": "GTLB",
+"base": "GTLB",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"GUAUSDT": {
+"asset_id": "GUA",
+"base": "GUA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GUNUSDT": {
+"asset_id": "GUN",
+"base": "GUN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GUSDT": {
+"asset_id": "G",
+"base": "G",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"GWEIUSDT": {
+"asset_id": "GWEI",
+"base": "GWEI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HAEDALUSDT": {
+"asset_id": "HAEDAL",
+"base": "HAEDAL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HANAUSDT": {
+"asset_id": "HANA",
+"base": "HANA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HANMIUSDT": {
+"asset_id": "HANMI",
+"base": "HANMI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "KR_EQUITY"
+},
+"HBARUSDT": {
+"asset_id": "HBAR",
+"base": "HBAR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HDUSDT": {
+"asset_id": "HD",
+"base": "HD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"HEIUSDT": {
+"asset_id": "HEI",
+"base": "HEI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HEMIUSDT": {
+"asset_id": "HEMI",
+"base": "HEMI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HFTUSDT": {
+"asset_id": "HFT",
+"base": "HFT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"HIFIUSDT": {
+"asset_id": "HIFI",
+"base": "HIFI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"HIGHUSDT": {
+"asset_id": "HIGH",
+"base": "HIGH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"HIMSUSDT": {
+"asset_id": "HIMS",
+"base": "HIMS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"HIPPOUSDT": {
+"asset_id": "HIPPO",
+"base": "HIPPO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"HIVEUSDT": {
+"asset_id": "HIVE",
+"base": "HIVE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HK0625USDT": {
+"asset_id": "HK0625",
+"base": "HK0625",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"HK0700USDT": {
+"asset_id": "HK0700",
+"base": "HK0700",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"HK0992USDT": {
+"asset_id": "HK0992",
+"base": "HK0992",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"HK1810USDT": {
+"asset_id": "HK1810",
+"base": "HK1810",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"HMSTRUSDT": {
+"asset_id": "HMSTR",
+"base": "HMSTR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HNTUSDT": {
+"asset_id": "HNT",
+"base": "HNT",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"HOLOUSDT": {
+"asset_id": "HOLO",
+"base": "HOLO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HOMEUSDT": {
+"asset_id": "HOME",
+"base": "HOME",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HOODUSDT": {
+"asset_id": "HOOD",
+"base": "HOOD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"HOOKUSDT": {
+"asset_id": "HOOK",
+"base": "HOOK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"HOTUSDT": {
+"asset_id": "HOT",
+"base": "HOT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HPEUSDT": {
+"asset_id": "HPE",
+"base": "HPE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"HUMAUSDT": {
+"asset_id": "HUMA",
+"base": "HUMA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HUSDT": {
+"asset_id": "H",
+"base": "H",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HUTUSDT": {
+"asset_id": "HUT",
+"base": "HUT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"HYPERUSDT": {
+"asset_id": "HYPER",
+"base": "HYPER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HYPEUSDT": {
+"asset_id": "HYPE",
+"base": "HYPE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"HYUNDAIUSDT": {
+"asset_id": "HYUNDAI",
+"base": "HYUNDAI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "KR_EQUITY"
+},
+"IBKRUSDT": {
+"asset_id": "IBKR",
+"base": "IBKR",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"IBMUSDT": {
+"asset_id": "IBM",
+"base": "IBM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ICNTUSDT": {
+"asset_id": "ICNT",
+"base": "ICNT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ICPUSDT": {
+"asset_id": "ICP",
+"base": "ICP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ICXUSDT": {
+"asset_id": "ICX",
+"base": "ICX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"IDEXUSDT": {
+"asset_id": "IDEX",
+"base": "IDEX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"IDOLUSDT": {
+"asset_id": "IDOL",
+"base": "IDOL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"IDUSDT": {
+"asset_id": "ID",
+"base": "ID",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ILVUSDT": {
+"asset_id": "ILV",
+"base": "ILV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"IMXUSDT": {
+"asset_id": "IMX",
+"base": "IMX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"INITUSDT": {
+"asset_id": "INIT",
+"base": "INIT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"INJUSDT": {
+"asset_id": "INJ",
+"base": "INJ",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"INTCUSDT": {
+"asset_id": "INTC",
+"base": "INTC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"INTWUSDT": {
+"asset_id": "INTW",
+"base": "INTW",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"INUSDT": {
+"asset_id": "IN",
+"base": "IN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"INXUSDT": {
+"asset_id": "INX",
+"base": "INX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"IONQUSDT": {
+"asset_id": "IONQ",
+"base": "IONQ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"IOSTUSDT": {
+"asset_id": "IOST",
+"base": "IOST",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"IOTAUSDT": {
+"asset_id": "IOTA",
+"base": "IOTA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"IOTXUSDT": {
+"asset_id": "IOTX",
+"base": "IOTX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"IOUSDT": {
+"asset_id": "IO",
+"base": "IO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"IPUSDT": {
+"asset_id": "IP",
+"base": "IP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"IRENUSDT": {
+"asset_id": "IREN",
+"base": "IREN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"IRUSDT": {
+"asset_id": "IR",
+"base": "IR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"IRYSUSDT": {
+"asset_id": "IRYS",
+"base": "IRYS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"IWMUSDT": {
+"asset_id": "IWM",
+"base": "IWM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"JASMYUSDT": {
+"asset_id": "JASMY",
+"base": "JASMY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"JCTUSDT": {
+"asset_id": "JCT",
+"base": "JCT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"JELLYJELLYUSDT": {
+"asset_id": "JELLYJELLY",
+"base": "JELLYJELLY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"JOEUSDT": {
+"asset_id": "JOE",
+"base": "JOE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"JPMUSDT": {
+"asset_id": "JPM",
+"base": "JPM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"JSTUSDT": {
+"asset_id": "JST",
+"base": "JST",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"JTOUSDT": {
+"asset_id": "JTO",
+"base": "JTO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"JUPUSDT": {
+"asset_id": "JUP",
+"base": "JUP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KAIAUSDT": {
+"asset_id": "KAIA",
+"base": "KAIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KAITOUSDT": {
+"asset_id": "KAITO",
+"base": "KAITO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KASUSDT": {
+"asset_id": "KAS",
+"base": "KAS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KATUSDT": {
+"asset_id": "KAT",
+"base": "KAT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KAVAUSDT": {
+"asset_id": "KAVA",
+"base": "KAVA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KDAUSDT": {
+"asset_id": "KDA",
+"base": "KDA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"KEEPUSDT": {
+"asset_id": "KEEP",
+"base": "KEEP",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"KERNELUSDT": {
+"asset_id": "KERNEL",
+"base": "KERNEL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KEYUSDT": {
+"asset_id": "KEY",
+"base": "KEY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"KGENUSDT": {
+"asset_id": "KGEN",
+"base": "KGEN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KITEUSDT": {
+"asset_id": "KITE",
+"base": "KITE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KLACUSDT": {
+"asset_id": "KLAC",
+"base": "KLAC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"KLAYUSDT": {
+"asset_id": "KLAY",
+"base": "KLAY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"KMNOUSDT": {
+"asset_id": "KMNO",
+"base": "KMNO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KNCUSDT": {
+"asset_id": "KNC",
+"base": "KNC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KODEX200USDT": {
+"asset_id": "KODEX200",
+"base": "KODEX200",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "KR_EQUITY"
+},
+"KOMAUSDT": {
+"asset_id": "KOMA",
+"base": "KOMA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KORUUSDT": {
+"asset_id": "KORU",
+"base": "KORU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"KOUSDT": {
+"asset_id": "KO",
+"base": "KO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"KSMUSDT": {
+"asset_id": "KSM",
+"base": "KSM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"KSTRUSDT": {
+"asset_id": "KSTR",
+"base": "KSTR",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"KUAISHOUUSDT": {
+"asset_id": "KUAISHOU",
+"base": "KUAISHOU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"LABUSDT": {
+"asset_id": "LAB",
+"base": "LAB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LAUSDT": {
+"asset_id": "LA",
+"base": "LA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LAYERUSDT": {
+"asset_id": "LAYER",
+"base": "LAYER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LDOUSDT": {
+"asset_id": "LDO",
+"base": "LDO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LENDUSDT": {
+"asset_id": "LEND",
+"base": "LEND",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"LEVERUSDT": {
+"asset_id": "LEVER",
+"base": "LEVER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"LGELECTRONICSUSDT": {
+"asset_id": "LGELECTRONICS",
+"base": "LGELECTRONICS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "KR_EQUITY"
+},
+"LIGHTUSDT": {
+"asset_id": "LIGHT",
+"base": "LIGHT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LINAUSDT": {
+"asset_id": "LINA",
+"base": "LINA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"LINEAUSDT": {
+"asset_id": "LINEA",
+"base": "LINEA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LINKUSDT": {
+"asset_id": "LINK",
+"base": "LINK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LISTAUSDT": {
+"asset_id": "LISTA",
+"base": "LISTA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LITEUSDT": {
+"asset_id": "LITE",
+"base": "LITE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"LITUSDT": {
+"asset_id": "LIT",
+"base": "LIT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LLYUSDT": {
+"asset_id": "LLY",
+"base": "LLY",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"LOKAUSDT": {
+"asset_id": "LOKA",
+"base": "LOKA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"LOOMUSDT": {
+"asset_id": "LOOM",
+"base": "LOOM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"LPTUSDT": {
+"asset_id": "LPT",
+"base": "LPT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LQTYUSDT": {
+"asset_id": "LQTY",
+"base": "LQTY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LRCUSDT": {
+"asset_id": "LRC",
+"base": "LRC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"LRCXUSDT": {
+"asset_id": "LRCX",
+"base": "LRCX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"LSKUSDT": {
+"asset_id": "LSK",
+"base": "LSK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LTCUSDT": {
+"asset_id": "LTC",
+"base": "LTC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LUMIAUSDT": {
+"asset_id": "LUMIA",
+"base": "LUMIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LUNA2USDT": {
+"asset_id": "LUNA2",
+"base": "LUNA2",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LUNAUSDT": {
+"asset_id": "LUNA",
+"base": "LUNA",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"LYNUSDT": {
+"asset_id": "LYN",
+"base": "LYN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"LYTEUSDT": {
+"asset_id": "LYTE",
+"base": "LYTE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MAGICUSDT": {
+"asset_id": "MAGIC",
+"base": "MAGIC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MAGMAUSDT": {
+"asset_id": "MAGMA",
+"base": "MAGMA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MANAUSDT": {
+"asset_id": "MANA",
+"base": "MANA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MANTAUSDT": {
+"asset_id": "MANTA",
+"base": "MANTA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MANTRAUSDT": {
+"asset_id": "MANTRA",
+"base": "MANTRA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MARAUSDT": {
+"asset_id": "MARA",
+"base": "MARA",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MARSCOINUSDT": {
+"asset_id": "MARSCOIN",
+"base": "MARSCOIN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MASKUSDT": {
+"asset_id": "MASK",
+"base": "MASK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MATICUSDT": {
+"asset_id": "MATIC",
+"base": "MATIC",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"MAVIAUSDT": {
+"asset_id": "MAVIA",
+"base": "MAVIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MAVUSDT": {
+"asset_id": "MAV",
+"base": "MAV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MBLUSDT": {
+"asset_id": "MBL",
+"base": "MBL",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"MBOXUSDT": {
+"asset_id": "MBOX",
+"base": "MBOX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"MCDUSDT": {
+"asset_id": "MCD",
+"base": "MCD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MDBUSDT": {
+"asset_id": "MDB",
+"base": "MDB",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MDTUSDT": {
+"asset_id": "MDT",
+"base": "MDT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MEGAUSDT": {
+"asset_id": "MEGA",
+"base": "MEGA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MEITUANUSDT": {
+"asset_id": "MEITUAN",
+"base": "MEITUAN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"MELANIAUSDT": {
+"asset_id": "MELANIA",
+"base": "MELANIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MELIUSDT": {
+"asset_id": "MELI",
+"base": "MELI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MEMEFIUSDT": {
+"asset_id": "MEMEFI",
+"base": "MEMEFI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"MEMEUSDT": {
+"asset_id": "MEME",
+"base": "MEME",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MERLUSDT": {
+"asset_id": "MERL",
+"base": "MERL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"METAUSDT": {
+"asset_id": "META",
+"base": "META",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"METISUSDT": {
+"asset_id": "METIS",
+"base": "METIS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"METUSDT": {
+"asset_id": "MET",
+"base": "MET",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MEUSDT": {
+"asset_id": "ME",
+"base": "ME",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MEWUSDT": {
+"asset_id": "MEW",
+"base": "MEW",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MILKUSDT": {
+"asset_id": "MILK",
+"base": "MILK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"MINAUSDT": {
+"asset_id": "MINA",
+"base": "MINA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MINIMAXUSDT": {
+"asset_id": "MINIMAX",
+"base": "MINIMAX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"MIRAUSDT": {
+"asset_id": "MIRA",
+"base": "MIRA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MITOUSDT": {
+"asset_id": "MITO",
+"base": "MITO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"MKRUSDT": {
+"asset_id": "MKR",
+"base": "MKR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"MLNUSDT": {
+"asset_id": "MLN",
+"base": "MLN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"MMTUSDT": {
+"asset_id": "MMT",
+"base": "MMT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MOCAUSDT": {
+"asset_id": "MOCA",
+"base": "MOCA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MONUSDT": {
+"asset_id": "MON",
+"base": "MON",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MOODENGUSDT": {
+"asset_id": "MOODENG",
+"base": "MOODENG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MOONSHOTUSDT": {
+"asset_id": "MOONSHOT",
+"base": "MOONSHOT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "PREMARKET"
+},
+"MORPHOUSDT": {
+"asset_id": "MORPHO",
+"base": "MORPHO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MOVEUSDT": {
+"asset_id": "MOVE",
+"base": "MOVE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MOVRUSDT": {
+"asset_id": "MOVR",
+"base": "MOVR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MPUSDT": {
+"asset_id": "MP",
+"base": "MP",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MRKUSDT": {
+"asset_id": "MRK",
+"base": "MRK",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MRNAUSDT": {
+"asset_id": "MRNA",
+"base": "MRNA",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MRVLUSDT": {
+"asset_id": "MRVL",
+"base": "MRVL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MSFTUSDT": {
+"asset_id": "MSFT",
+"base": "MSFT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MSTRUSDT": {
+"asset_id": "MSTR",
+"base": "MSTR",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MSTUUSDT": {
+"asset_id": "MSTU",
+"base": "MSTU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MTLUSDT": {
+"asset_id": "MTL",
+"base": "MTL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MUBARAKUSDT": {
+"asset_id": "MUBARAK",
+"base": "MUBARAK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MUSDT": {
+"asset_id": "M",
+"base": "M",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"MUUSDT": {
+"asset_id": "MU",
+"base": "MU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MUUUSDT": {
+"asset_id": "MUU",
+"base": "MUU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MVLLUSDT": {
+"asset_id": "MVLL",
+"base": "MVLL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"MYROUSDT": {
+"asset_id": "MYRO",
+"base": "MYRO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"MYXUSDT": {
+"asset_id": "MYX",
+"base": "MYX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NAORISUSDT": {
+"asset_id": "NAORIS",
+"base": "NAORIS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NATGASUSDT": {
+"asset_id": "NATGAS",
+"base": "NATGAS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COMMODITY"
+},
+"NAVERUSDT": {
+"asset_id": "NAVER",
+"base": "NAVER",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "KR_EQUITY"
+},
+"NBISUSDT": {
+"asset_id": "NBIS",
+"base": "NBIS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NEARUSDT": {
+"asset_id": "NEAR",
+"base": "NEAR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NEIROETHUSDT": {
+"asset_id": "NEIROETH",
+"base": "NEIROETH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"NEIROUSDT": {
+"asset_id": "NEIRO",
+"base": "NEIRO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NEOUSDT": {
+"asset_id": "NEO",
+"base": "NEO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NETUSDT": {
+"asset_id": "NET",
+"base": "NET",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NEWTUSDT": {
+"asset_id": "NEWT",
+"base": "NEWT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NFLXUSDT": {
+"asset_id": "NFLX",
+"base": "NFLX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NFPUSDT": {
+"asset_id": "NFP",
+"base": "NFP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"NIGHTUSDT": {
+"asset_id": "NIGHT",
+"base": "NIGHT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NILUSDT": {
+"asset_id": "NIL",
+"base": "NIL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NKEUSDT": {
+"asset_id": "NKE",
+"base": "NKE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NKNUSDT": {
+"asset_id": "NKN",
+"base": "NKN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"NMRUSDT": {
+"asset_id": "NMR",
+"base": "NMR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NOKUSDT": {
+"asset_id": "NOK",
+"base": "NOK",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NOMUSDT": {
+"asset_id": "NOM",
+"base": "NOM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NOTUSDT": {
+"asset_id": "NOT",
+"base": "NOT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"NOWUSDT": {
+"asset_id": "NOW",
+"base": "NOW",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NTRNUSDT": {
+"asset_id": "NTRN",
+"base": "NTRN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"NULSUSDT": {
+"asset_id": "NULS",
+"base": "NULS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"NUUSDT": {
+"asset_id": "NU",
+"base": "NU",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"NVDAUSDT": {
+"asset_id": "NVDA",
+"base": "NVDA",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NVDLUSDT": {
+"asset_id": "NVDL",
+"base": "NVDL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NVOUSDT": {
+"asset_id": "NVO",
+"base": "NVO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"NXPCUSDT": {
+"asset_id": "NXPC",
+"base": "NXPC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OBOLUSDT": {
+"asset_id": "OBOL",
+"base": "OBOL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"OCEANUSDT": {
+"asset_id": "OCEAN",
+"base": "OCEAN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"OGNUSDT": {
+"asset_id": "OGN",
+"base": "OGN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OGUSDT": {
+"asset_id": "OG",
+"base": "OG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OKLOUSDT": {
+"asset_id": "OKLO",
+"base": "OKLO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"OLUSDT": {
+"asset_id": "OL",
+"base": "OL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"OMGUSDT": {
+"asset_id": "OMG",
+"base": "OMG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"OMNIUSDT": {
+"asset_id": "OMNI",
+"base": "OMNI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"OMUSDT": {
+"asset_id": "OM",
+"base": "OM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"ONDOUSDT": {
+"asset_id": "ONDO",
+"base": "ONDO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ONDSUSDT": {
+"asset_id": "ONDS",
+"base": "ONDS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ONEUSDT": {
+"asset_id": "ONE",
+"base": "ONE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ONGUSDT": {
+"asset_id": "ONG",
+"base": "ONG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ONTUSDT": {
+"asset_id": "ONT",
+"base": "ONT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ONUSDT": {
+"asset_id": "ON",
+"base": "ON",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OPENAIUSDT": {
+"asset_id": "OPENAI",
+"base": "OPENAI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "PREMARKET"
+},
+"OPENUSDT": {
+"asset_id": "OPEN",
+"base": "OPEN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OPGUSDT": {
+"asset_id": "OPG",
+"base": "OPG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OPNUSDT": {
+"asset_id": "OPN",
+"base": "OPN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OPUSDT": {
+"asset_id": "OP",
+"base": "OP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ORBSUSDT": {
+"asset_id": "ORBS",
+"base": "ORBS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"ORCAUSDT": {
+"asset_id": "ORCA",
+"base": "ORCA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ORCLUSDT": {
+"asset_id": "ORCL",
+"base": "ORCL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ORDERUSDT": {
+"asset_id": "ORDER",
+"base": "ORDER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ORDIUSDT": {
+"asset_id": "ORDI",
+"base": "ORDI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OURAUSDT": {
+"asset_id": "OURA",
+"base": "OURA",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "PREMARKET"
+},
+"OUSDT": {
+"asset_id": "O",
+"base": "O",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"OXTUSDT": {
+"asset_id": "OXT",
+"base": "OXT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"OXYUSDT": {
+"asset_id": "OXY",
+"base": "OXY",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PANWUSDT": {
+"asset_id": "PANW",
+"base": "PANW",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PARTIUSDT": {
+"asset_id": "PARTI",
+"base": "PARTI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PATHUSDT": {
+"asset_id": "PATH",
+"base": "PATH",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PAXGUSDT": {
+"asset_id": "PAXG",
+"base": "PAXG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PAYPUSDT": {
+"asset_id": "PAYP",
+"base": "PAYP",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PDDUSDT": {
+"asset_id": "PDD",
+"base": "PDD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PENDLEUSDT": {
+"asset_id": "PENDLE",
+"base": "PENDLE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PENGUSDT": {
+"asset_id": "PENG",
+"base": "PENG",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PENGUUSDT": {
+"asset_id": "PENGU",
+"base": "PENGU",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PEOPLEUSDT": {
+"asset_id": "PEOPLE",
+"base": "PEOPLE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PERPUSDT": {
+"asset_id": "PERP",
+"base": "PERP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"PFEUSDT": {
+"asset_id": "PFE",
+"base": "PFE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PHAROSUSDT": {
+"asset_id": "PHAROS",
+"base": "PHAROS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PHAUSDT": {
+"asset_id": "PHA",
+"base": "PHA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PHBUSDT": {
+"asset_id": "PHB",
+"base": "PHB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"PIEVERSEUSDT": {
+"asset_id": "PIEVERSE",
+"base": "PIEVERSE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PIPPINUSDT": {
+"asset_id": "PIPPIN",
+"base": "PIPPIN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PIXELUSDT": {
+"asset_id": "PIXEL",
+"base": "PIXEL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PLAYUSDT": {
+"asset_id": "PLAY",
+"base": "PLAY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PLTRUSDT": {
+"asset_id": "PLTR",
+"base": "PLTR",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PLUMEUSDT": {
+"asset_id": "PLUME",
+"base": "PLUME",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PNUTUSDT": {
+"asset_id": "PNUT",
+"base": "PNUT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"POLUSDT": {
+"asset_id": "POL",
+"base": "POL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"POLYXUSDT": {
+"asset_id": "POLYX",
+"base": "POLYX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PONKEUSDT": {
+"asset_id": "PONKE",
+"base": "PONKE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"PONSUSDT": {
+"asset_id": "PONS",
+"base": "PONS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"POPCATUSDT": {
+"asset_id": "POPCAT",
+"base": "POPCAT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"POPMARTUSDT": {
+"asset_id": "POPMART",
+"base": "POPMART",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"PORT3USDT": {
+"asset_id": "PORT3",
+"base": "PORT3",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"PORTALUSDT": {
+"asset_id": "PORTAL",
+"base": "PORTAL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"POWERUSDT": {
+"asset_id": "POWER",
+"base": "POWER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"POWRUSDT": {
+"asset_id": "POWR",
+"base": "POWR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PREDICTUSDT": {
+"asset_id": "PREDICT",
+"base": "PREDICT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "PREMARKET"
+},
+"PRLUSDT": {
+"asset_id": "PRL",
+"base": "PRL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PROMPTUSDT": {
+"asset_id": "PROMPT",
+"base": "PROMPT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"PROMUSDT": {
+"asset_id": "PROM",
+"base": "PROM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PROVEUSDT": {
+"asset_id": "PROVE",
+"base": "PROVE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PTBUSDT": {
+"asset_id": "PTB",
+"base": "PTB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"PUFFERUSDT": {
+"asset_id": "PUFFER",
+"base": "PUFFER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"PUMPBTCUSDT": {
+"asset_id": "PUMPBTC",
+"base": "PUMPBTC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"PUMPUSDT": {
+"asset_id": "PUMP",
+"base": "PUMP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PUNDIXUSDT": {
+"asset_id": "PUNDIX",
+"base": "PUNDIX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"PYPLUSDT": {
+"asset_id": "PYPL",
+"base": "PYPL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"PYTHUSDT": {
+"asset_id": "PYTH",
+"base": "PYTH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"QCOMUSDT": {
+"asset_id": "QCOM",
+"base": "QCOM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"QNTUSDT": {
+"asset_id": "QNT",
+"base": "QNT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"QNTXUSDT": {
+"asset_id": "QNTX",
+"base": "QNTX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"QQQUSDT": {
+"asset_id": "QQQ",
+"base": "QQQ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"QTUMUSDT": {
+"asset_id": "QTUM",
+"base": "QTUM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"QUICKUSDT": {
+"asset_id": "QUICK",
+"base": "QUICK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"QUSDT": {
+"asset_id": "Q",
+"base": "Q",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RADUSDT": {
+"asset_id": "RAD",
+"base": "RAD",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"RAMUSDT": {
+"asset_id": "RAM",
+"base": "RAM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"RAREUSDT": {
+"asset_id": "RARE",
+"base": "RARE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RAVEUSDT": {
+"asset_id": "RAVE",
+"base": "RAVE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RAYSOLUSDT": {
+"asset_id": "RAYSOL",
+"base": "RAYSOL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RAYUSDT": {
+"asset_id": "RAY",
+"base": "RAY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"RDDTUSDT": {
+"asset_id": "RDDT",
+"base": "RDDT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"RDNTUSDT": {
+"asset_id": "RDNT",
+"base": "RDNT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"RDWUSDT": {
+"asset_id": "RDW",
+"base": "RDW",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"RECALLUSDT": {
+"asset_id": "RECALL",
+"base": "RECALL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"REDUSDT": {
+"asset_id": "RED",
+"base": "RED",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"REEFUSDT": {
+"asset_id": "REEF",
+"base": "REEF",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"REIUSDT": {
+"asset_id": "REI",
+"base": "REI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"RENDERUSDT": {
+"asset_id": "RENDER",
+"base": "RENDER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RENUSDT": {
+"asset_id": "REN",
+"base": "REN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"RESOLVUSDT": {
+"asset_id": "RESOLV",
+"base": "RESOLV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"REUSDT": {
+"asset_id": "RE",
+"base": "RE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"REZUSDT": {
+"asset_id": "REZ",
+"base": "REZ",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RIFUSDT": {
+"asset_id": "RIF",
+"base": "RIF",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RIVERUSDT": {
+"asset_id": "RIVER",
+"base": "RIVER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RIVNUSDT": {
+"asset_id": "RIVN",
+"base": "RIVN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"RKLBUSDT": {
+"asset_id": "RKLB",
+"base": "RKLB",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"RLCUSDT": {
+"asset_id": "RLC",
+"base": "RLC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RLSUSDT": {
+"asset_id": "RLS",
+"base": "RLS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"RNDRUSDT": {
+"asset_id": "RNDR",
+"base": "RNDR",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"ROBOUSDT": {
+"asset_id": "ROBO",
+"base": "ROBO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RONINUSDT": {
+"asset_id": "RONIN",
+"base": "RONIN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ROSEUSDT": {
+"asset_id": "ROSE",
+"base": "ROSE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RPLUSDT": {
+"asset_id": "RPL",
+"base": "RPL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RSRUSDT": {
+"asset_id": "RSR",
+"base": "RSR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RUMUSDT": {
+"asset_id": "RUM",
+"base": "RUM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"RUNEUSDT": {
+"asset_id": "RUNE",
+"base": "RUNE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RVNUSDT": {
+"asset_id": "RVN",
+"base": "RVN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"RVVUSDT": {
+"asset_id": "RVV",
+"base": "RVV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"SAFEUSDT": {
+"asset_id": "SAFE",
+"base": "SAFE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SAGAUSDT": {
+"asset_id": "SAGA",
+"base": "SAGA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SAHARAUSDT": {
+"asset_id": "SAHARA",
+"base": "SAHARA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SAMSUNGEMUSDT": {
+"asset_id": "SAMSUNGEM",
+"base": "SAMSUNGEM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "KR_EQUITY"
+},
+"SAMSUNGUSDT": {
+"asset_id": "SAMSUNG",
+"base": "SAMSUNG",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "KR_EQUITY"
+},
+"SANDUSDT": {
+"asset_id": "SAND",
+"base": "SAND",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SANTOSUSDT": {
+"asset_id": "SANTOS",
+"base": "SANTOS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SAPIENUSDT": {
+"asset_id": "SAPIEN",
+"base": "SAPIEN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SCRTUSDT": {
+"asset_id": "SCRT",
+"base": "SCRT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"SCRUSDT": {
+"asset_id": "SCR",
+"base": "SCR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SCUSDT": {
+"asset_id": "SC",
+"base": "SC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"SECZUSDT": {
+"asset_id": "SECZ",
+"base": "SECZ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SEIUSDT": {
+"asset_id": "SEI",
+"base": "SEI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SENTUSDT": {
+"asset_id": "SENT",
+"base": "SENT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SFPUSDT": {
+"asset_id": "SFP",
+"base": "SFP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SHAZUSDT": {
+"asset_id": "SHAZ",
+"base": "SHAZ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SHELLUSDT": {
+"asset_id": "SHELL",
+"base": "SHELL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SHOPUSDT": {
+"asset_id": "SHOP",
+"base": "SHOP",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SIGNUSDT": {
+"asset_id": "SIGN",
+"base": "SIGN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SIRENUSDT": {
+"asset_id": "SIREN",
+"base": "SIREN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SKATEUSDT": {
+"asset_id": "SKATE",
+"base": "SKATE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"SKDDUSDT": {
+"asset_id": "SKDD",
+"base": "SKDD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SKHYNIXUSDT": {
+"asset_id": "SKHYNIX",
+"base": "SKHYNIX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "KR_EQUITY"
+},
+"SKHYUSDT": {
+"asset_id": "SKHY",
+"base": "SKHY",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SKLUSDT": {
+"asset_id": "SKL",
+"base": "SKL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SKRUSDT": {
+"asset_id": "SKR",
+"base": "SKR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SKUUUSDT": {
+"asset_id": "SKUU",
+"base": "SKUU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SKYAIUSDT": {
+"asset_id": "SKYAI",
+"base": "SKYAI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SKYUSDT": {
+"asset_id": "SKY",
+"base": "SKY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SLERFUSDT": {
+"asset_id": "SLERF",
+"base": "SLERF",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"SLPUSDT": {
+"asset_id": "SLP",
+"base": "SLP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SLXUSDT": {
+"asset_id": "SLX",
+"base": "SLX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SMCIUSDT": {
+"asset_id": "SMCI",
+"base": "SMCI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SMHUSDT": {
+"asset_id": "SMH",
+"base": "SMH",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SMRUSDT": {
+"asset_id": "SMR",
+"base": "SMR",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SNDKUSDT": {
+"asset_id": "SNDK",
+"base": "SNDK",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SNOWUSDT": {
+"asset_id": "SNOW",
+"base": "SNOW",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SNPSUSDT": {
+"asset_id": "SNPS",
+"base": "SNPS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SNTUSDT": {
+"asset_id": "SNT",
+"base": "SNT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"SNXUSDT": {
+"asset_id": "SNX",
+"base": "SNX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SNXXUSDT": {
+"asset_id": "SNXX",
+"base": "SNXX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SOFIUSDT": {
+"asset_id": "SOFI",
+"base": "SOFI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SOLUSDT": {
+"asset_id": "SOL",
+"base": "SOL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SOLVUSDT": {
+"asset_id": "SOLV",
+"base": "SOLV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SOMIUSDT": {
+"asset_id": "SOMI",
+"base": "SOMI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SONICUSDT": {
+"asset_id": "SONIC",
+"base": "SONIC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SONYUSDT": {
+"asset_id": "SONY",
+"base": "SONY",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SOONUSDT": {
+"asset_id": "SOON",
+"base": "SOON",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SOPHUSDT": {
+"asset_id": "SOPH",
+"base": "SOPH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SOXLUSDT": {
+"asset_id": "SOXL",
+"base": "SOXL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SOXSUSDT": {
+"asset_id": "SOXS",
+"base": "SOXS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SPACEUSDT": {
+"asset_id": "SPACE",
+"base": "SPACE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SPCXUSDT": {
+"asset_id": "SPCX",
+"base": "SPCX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SPELLUSDT": {
+"asset_id": "SPELL",
+"base": "SPELL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SPKUSDT": {
+"asset_id": "SPK",
+"base": "SPK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SPORTFUNUSDT": {
+"asset_id": "SPORTFUN",
+"base": "SPORTFUN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SPXUSDT": {
+"asset_id": "SPX",
+"base": "SPX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SPYUSDT": {
+"asset_id": "SPY",
+"base": "SPY",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SQDUSDT": {
+"asset_id": "SQD",
+"base": "SQD",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SQQQUSDT": {
+"asset_id": "SQQQ",
+"base": "SQQQ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SRMUSDT": {
+"asset_id": "SRM",
+"base": "SRM",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"SSVUSDT": {
+"asset_id": "SSV",
+"base": "SSV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"STABLEUSDT": {
+"asset_id": "STABLE",
+"base": "STABLE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"STARUSDT": {
+"asset_id": "STAR",
+"base": "STAR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"STBLUSDT": {
+"asset_id": "STBL",
+"base": "STBL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"STEEMUSDT": {
+"asset_id": "STEEM",
+"base": "STEEM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"STGUSDT": {
+"asset_id": "STG",
+"base": "STG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"STMUSDT": {
+"asset_id": "STM",
+"base": "STM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"STMXUSDT": {
+"asset_id": "STMX",
+"base": "STMX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"STORJUSDT": {
+"asset_id": "STORJ",
+"base": "STORJ",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"STOUSDT": {
+"asset_id": "STO",
+"base": "STO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"STPTUSDT": {
+"asset_id": "STPT",
+"base": "STPT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"STRAXUSDT": {
+"asset_id": "STRAX",
+"base": "STRAX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"STRCUSDT": {
+"asset_id": "STRC",
+"base": "STRC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"STRKUSDT": {
+"asset_id": "STRK",
+"base": "STRK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"STXUSDT": {
+"asset_id": "STX",
+"base": "STX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"STXXUSDT": {
+"asset_id": "STXX",
+"base": "STXX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"SUIUSDT": {
+"asset_id": "SUI",
+"base": "SUI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SUNUSDT": {
+"asset_id": "SUN",
+"base": "SUN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SUPERUSDT": {
+"asset_id": "SUPER",
+"base": "SUPER",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SUSDT": {
+"asset_id": "S",
+"base": "S",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SUSHIUSDT": {
+"asset_id": "SUSHI",
+"base": "SUSHI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SWARMSUSDT": {
+"asset_id": "SWARMS",
+"base": "SWARMS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SWELLUSDT": {
+"asset_id": "SWELL",
+"base": "SWELL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"SXPUSDT": {
+"asset_id": "SXP",
+"base": "SXP",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"SXTUSDT": {
+"asset_id": "SXT",
+"base": "SXT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SYNUSDT": {
+"asset_id": "SYN",
+"base": "SYN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SYRUPUSDT": {
+"asset_id": "SYRUP",
+"base": "SYRUP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"SYSUSDT": {
+"asset_id": "SYS",
+"base": "SYS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"TACUSDT": {
+"asset_id": "TAC",
+"base": "TAC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TAGUSDT": {
+"asset_id": "TAG",
+"base": "TAG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TAIKOUSDT": {
+"asset_id": "TAIKO",
+"base": "TAIKO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TAKEUSDT": {
+"asset_id": "TAKE",
+"base": "TAKE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TANSSIUSDT": {
+"asset_id": "TANSSI",
+"base": "TANSSI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"TAOUSDT": {
+"asset_id": "TAO",
+"base": "TAO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TAUSDT": {
+"asset_id": "TA",
+"base": "TA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TBTUSDT": {
+"asset_id": "TBT",
+"base": "TBT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TEAMUSDT": {
+"asset_id": "TEAM",
+"base": "TEAM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TEMUSDT": {
+"asset_id": "TEM",
+"base": "TEM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TENCENTUSDT": {
+"asset_id": "TENCENT",
+"base": "TENCENT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"TERUSDT": {
+"asset_id": "TER",
+"base": "TER",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"THETAUSDT": {
+"asset_id": "THETA",
+"base": "THETA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"THEUSDT": {
+"asset_id": "THE",
+"base": "THE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TIAUSDT": {
+"asset_id": "TIA",
+"base": "TIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TLMUSDT": {
+"asset_id": "TLM",
+"base": "TLM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TMFUSDT": {
+"asset_id": "TMF",
+"base": "TMF",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TNSRUSDT": {
+"asset_id": "TNSR",
+"base": "TNSR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TOKENUSDT": {
+"asset_id": "TOKEN",
+"base": "TOKEN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"TOMOUSDT": {
+"asset_id": "TOMO",
+"base": "TOMO",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"TONUSDT": {
+"asset_id": "TON",
+"base": "TON",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"TOSHIUSDT": {
+"asset_id": "TOSHI",
+"base": "TOSHI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TOWNSUSDT": {
+"asset_id": "TOWNS",
+"base": "TOWNS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TQQQUSDT": {
+"asset_id": "TQQQ",
+"base": "TQQQ",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TRADOORUSDT": {
+"asset_id": "TRADOOR",
+"base": "TRADOOR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TRBUSDT": {
+"asset_id": "TRB",
+"base": "TRB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TREEUSDT": {
+"asset_id": "TREE",
+"base": "TREE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TRIAUSDT": {
+"asset_id": "TRIA",
+"base": "TRIA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TROYUSDT": {
+"asset_id": "TROY",
+"base": "TROY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"TRUMPUSDT": {
+"asset_id": "TRUMP",
+"base": "TRUMP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TRUSTUSDT": {
+"asset_id": "TRUST",
+"base": "TRUST",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TRUTHUSDT": {
+"asset_id": "TRUTH",
+"base": "TRUTH",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TRUUSDT": {
+"asset_id": "TRU",
+"base": "TRU",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"TRXUSDT": {
+"asset_id": "TRX",
+"base": "TRX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TSLAUSDT": {
+"asset_id": "TSLA",
+"base": "TSLA",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TSLLUSDT": {
+"asset_id": "TSLL",
+"base": "TSLL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TSMUSDT": {
+"asset_id": "TSM",
+"base": "TSM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TSTUSDT": {
+"asset_id": "TST",
+"base": "TST",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TTWOUSDT": {
+"asset_id": "TTWO",
+"base": "TTWO",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TURBOUSDT": {
+"asset_id": "TURBO",
+"base": "TURBO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TURTLEUSDT": {
+"asset_id": "TURTLE",
+"base": "TURTLE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TUSDT": {
+"asset_id": "T",
+"base": "T",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TUTUSDT": {
+"asset_id": "TUT",
+"base": "TUT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TWSTUSDT": {
+"asset_id": "TWST",
+"base": "TWST",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TWTUSDT": {
+"asset_id": "TWT",
+"base": "TWT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"TXNUSDT": {
+"asset_id": "TXN",
+"base": "TXN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"TZAUSDT": {
+"asset_id": "TZA",
+"base": "TZA",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"UAIUSDT": {
+"asset_id": "UAI",
+"base": "UAI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"UBERUSDT": {
+"asset_id": "UBER",
+"base": "UBER",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"UBUSDT": {
+"asset_id": "UB",
+"base": "UB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"UMAUSDT": {
+"asset_id": "UMA",
+"base": "UMA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"UNFIUSDT": {
+"asset_id": "UNFI",
+"base": "UNFI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"UNHUSDT": {
+"asset_id": "UNH",
+"base": "UNH",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"UNITREEUSDT": {
+"asset_id": "UNITREE",
+"base": "UNITREE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "CN_EQUITY"
+},
+"UNIUSDT": {
+"asset_id": "UNI",
+"base": "UNI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"URNMUSDT": {
+"asset_id": "URNM",
+"base": "URNM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"USARUSDT": {
+"asset_id": "USAR",
+"base": "USAR",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"USDBRLUSDT": {
+"asset_id": "USDBRL",
+"base": "USDBRL",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "FX"
+},
+"USDCUSDT": {
+"asset_id": "USDC",
+"base": "USDC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"USDEXUSDT": {
+"asset_id": "USDEX",
+"base": "USDEX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"USELESSUSDT": {
+"asset_id": "USELESS",
+"base": "USELESS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"USTCUSDT": {
+"asset_id": "USTC",
+"base": "USTC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"USUALUSDT": {
+"asset_id": "USUAL",
+"base": "USUAL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"USUSDT": {
+"asset_id": "US",
+"base": "US",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"UVXYUSDT": {
+"asset_id": "UVXY",
+"base": "UVXY",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"UXLINKUSDT": {
+"asset_id": "UXLINK",
+"base": "UXLINK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"VANAUSDT": {
+"asset_id": "VANA",
+"base": "VANA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"VANRYUSDT": {
+"asset_id": "VANRY",
+"base": "VANRY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"VELODROMEUSDT": {
+"asset_id": "VELODROME",
+"base": "VELODROME",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"VELVETUSDT": {
+"asset_id": "VELVET",
+"base": "VELVET",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"VETUSDT": {
+"asset_id": "VET",
+"base": "VET",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"VFYUSDT": {
+"asset_id": "VFY",
+"base": "VFY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"VICUSDT": {
+"asset_id": "VIC",
+"base": "VIC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"VIDTUSDT": {
+"asset_id": "VIDT",
+"base": "VIDT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"VINEUSDT": {
+"asset_id": "VINE",
+"base": "VINE",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"VIRTUALUSDT": {
+"asset_id": "VIRTUAL",
+"base": "VIRTUAL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"VKTXUSDT": {
+"asset_id": "VKTX",
+"base": "VKTX",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"VOXELUSDT": {
+"asset_id": "VOXEL",
+"base": "VOXEL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"VRTUSDT": {
+"asset_id": "VRT",
+"base": "VRT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"VSTUSDT": {
+"asset_id": "VST",
+"base": "VST",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"VTHOUSDT": {
+"asset_id": "VTHO",
+"base": "VTHO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"VUSDT": {
+"asset_id": "V",
+"base": "V",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"VVVUSDT": {
+"asset_id": "VVV",
+"base": "VVV",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WALUSDT": {
+"asset_id": "WAL",
+"base": "WAL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WAVESUSDT": {
+"asset_id": "WAVES",
+"base": "WAVES",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"WAXPUSDT": {
+"asset_id": "WAXP",
+"base": "WAXP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WCTUSDT": {
+"asset_id": "WCT",
+"base": "WCT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WDCUSDT": {
+"asset_id": "WDC",
+"base": "WDC",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"WENUSDT": {
+"asset_id": "WEN",
+"base": "WEN",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"WETUSDT": {
+"asset_id": "WET",
+"base": "WET",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WIFUSDT": {
+"asset_id": "WIF",
+"base": "WIF",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WLDUSDT": {
+"asset_id": "WLD",
+"base": "WLD",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WLFIUSDT": {
+"asset_id": "WLFI",
+"base": "WLFI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WMTUSDT": {
+"asset_id": "WMT",
+"base": "WMT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"WOOUSDT": {
+"asset_id": "WOO",
+"base": "WOO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"WUSDT": {
+"asset_id": "W",
+"base": "W",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XAGUSDT": {
+"asset_id": "XAG",
+"base": "XAG",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COMMODITY"
+},
+"XAIUSDT": {
+"asset_id": "XAI",
+"base": "XAI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XANUSDT": {
+"asset_id": "XAN",
+"base": "XAN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XAUTUSDT": {
+"asset_id": "XAUT",
+"base": "XAUT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XAUUSDT": {
+"asset_id": "XAU",
+"base": "XAU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COMMODITY"
+},
+"XBIUSDT": {
+"asset_id": "XBI",
+"base": "XBI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"XCNUSDT": {
+"asset_id": "XCN",
+"base": "XCN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"XEMUSDT": {
+"asset_id": "XEM",
+"base": "XEM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"XLEUSDT": {
+"asset_id": "XLE",
+"base": "XLE",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"XLMUSDT": {
+"asset_id": "XLM",
+"base": "XLM",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XMRUSDT": {
+"asset_id": "XMR",
+"base": "XMR",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XNYUSDT": {
+"asset_id": "XNY",
+"base": "XNY",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XOMUSDT": {
+"asset_id": "XOM",
+"base": "XOM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"XPDUSDT": {
+"asset_id": "XPD",
+"base": "XPD",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COMMODITY"
+},
+"XPINUSDT": {
+"asset_id": "XPIN",
+"base": "XPIN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XPLUSDT": {
+"asset_id": "XPL",
+"base": "XPL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XPTUSDT": {
+"asset_id": "XPT",
+"base": "XPT",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COMMODITY"
+},
+"XRPUSDT": {
+"asset_id": "XRP",
+"base": "XRP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XTZUSDT": {
+"asset_id": "XTZ",
+"base": "XTZ",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XVGUSDT": {
+"asset_id": "XVG",
+"base": "XVG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"XVSUSDT": {
+"asset_id": "XVS",
+"base": "XVS",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"YALAUSDT": {
+"asset_id": "YALA",
+"base": "YALA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"YBUSDT": {
+"asset_id": "YB",
+"base": "YB",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"YFIIUSDT": {
+"asset_id": "YFII",
+"base": "YFII",
+"contract_type": null,
+"source": "archive",
+"status_now": "ABSENT",
+"underlying_type": null
+},
+"YFIUSDT": {
+"asset_id": "YFI",
+"base": "YFI",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"YGGUSDT": {
+"asset_id": "YGG",
+"base": "YGG",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZAMAUSDT": {
+"asset_id": "ZAMA",
+"base": "ZAMA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZBTUSDT": {
+"asset_id": "ZBT",
+"base": "ZBT",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZCSHUSDT": {
+"asset_id": "ZCSH",
+"base": "ZCSH",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ZECUSDT": {
+"asset_id": "ZEC",
+"base": "ZEC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZENUSDT": {
+"asset_id": "ZEN",
+"base": "ZEN",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZEREBROUSDT": {
+"asset_id": "ZEREBRO",
+"base": "ZEREBRO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZESTUSDT": {
+"asset_id": "ZEST",
+"base": "ZEST",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZETAUSDT": {
+"asset_id": "ZETA",
+"base": "ZETA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZHIPUUSDT": {
+"asset_id": "ZHIPU",
+"base": "ZHIPU",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"ZHONGJIUSDT": {
+"asset_id": "ZHONGJI",
+"base": "ZHONGJI",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "HK_EQUITY"
+},
+"ZILUSDT": {
+"asset_id": "ZIL",
+"base": "ZIL",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZKCUSDT": {
+"asset_id": "ZKC",
+"base": "ZKC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZKJUSDT": {
+"asset_id": "ZKJ",
+"base": "ZKJ",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"ZKPUSDT": {
+"asset_id": "ZKP",
+"base": "ZKP",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZKUSDT": {
+"asset_id": "ZK",
+"base": "ZK",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZMUSDT": {
+"asset_id": "ZM",
+"base": "ZM",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"ZORAUSDT": {
+"asset_id": "ZORA",
+"base": "ZORA",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZRCUSDT": {
+"asset_id": "ZRC",
+"base": "ZRC",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "SETTLING",
+"underlying_type": "COIN"
+},
+"ZROUSDT": {
+"asset_id": "ZRO",
+"base": "ZRO",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZRXUSDT": {
+"asset_id": "ZRX",
+"base": "ZRX",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"ZSUSDT": {
+"asset_id": "ZS",
+"base": "ZS",
+"contract_type": "TRADIFI_PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "EQUITY"
+},
+"\u54c8\u57fa\u7c73USDT": {
+"asset_id": "\u54c8\u57fa\u7c73",
+"base": "\u54c8\u57fa\u7c73",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"\u5e01\u5b89\u4eba\u751fUSDT": {
+"asset_id": "\u5e01\u5b89\u4eba\u751f",
+"base": "\u5e01\u5b89\u4eba\u751f",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"\u6211\u8e0f\u9a6c\u6765\u4e86USDT": {
+"asset_id": "\u6211\u8e0f\u9a6c\u6765\u4e86",
+"base": "\u6211\u8e0f\u9a6c\u6765\u4e86",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"\u725b\u6765USDT": {
+"asset_id": "\u725b\u6765",
+"base": "\u725b\u6765",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+},
+"\u9f99\u867eUSDT": {
+"asset_id": "\u9f99\u867e",
+"base": "\u9f99\u867e",
+"contract_type": "PERPETUAL",
+"source": "exchangeInfo",
+"status_now": "TRADING",
+"underlying_type": "COIN"
+}
+}
