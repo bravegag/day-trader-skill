@@ -129,6 +129,7 @@ polite about it.
 python3 trader-scanner/scan.py universe                                # ~5,900 US stocks, Nasdaq Trader
 python3 trader-scanner/scan.py daily                                   # pre-market setups, whole universe
 python3 trader-scanner/scan.py orb --at 10:15                          # opening-range breakouts so far
+python3 trader-scanner/scan.py crypto --market spot                    # Binance Spot / usdm Futures, INI-configured
 python3 trader-news/news.py --tickers TSLA --hours 12                  # headlines, 8-Ks, today's move
 python3 trader-entry/entry.py check TSLA --setup orb                   # waiting / triggered / expired
 python3 trader-entry/entry.py watch TSLA --every 30                    # bar by bar until it triggers
@@ -199,7 +200,7 @@ wash sales likely. Nothing here is tax advice.
 ## Files
 
 ```
-trader-scanner/     SKILL.md, scan.py
+trader-scanner/     SKILL.md, scan.py, crypto_*.py, binance.example.ini
 trader-news/        SKILL.md, news.py
 trader-entry/       SKILL.md, entry.py
 trader-exit/        SKILL.md, exit.py
