@@ -57,6 +57,7 @@ ORIGINAL_16 = {"BTC", "ETH", "SUI", "INJ", "XRP", "SOL", "BNB", "PAXG", "PENGU",
 ARCHIVE = "https://data.binance.vision"
 S3 = "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision"
 ARCH_PREFIX = {"spot": "data/spot/monthly/klines/", "usdm": "data/futures/um/monthly/klines/"}
+DISCONTINUITY = math.log(2.0)
 NON_COIN = {"EQUITY", "HK_EQUITY", "KR_EQUITY", "CN_EQUITY", "COMMODITY", "INDEX", "FX", "PREMARKET"}
 
 
@@ -251,9 +252,16 @@ def symbol_rows(sym, meta, candles, funding, market, cost, exclude, end_day, lev
     if meta["asset_id"].upper() in exclude:
         return out
     by_day = {day(c.open_ms): c for c in candles}
+    pos = {c.open_ms: k for k, c in enumerate(candles)}
     last_day = day(candles[-1].open_ms)
     delisted = last_day < end_day - 2
     params = {"breakout_close_high": {"lookback": 20}}
+    # DEVIATION 1 (reports/BREAKOUT_HYPOTHESIS_VERDICT.md): a price discontinuity is an open more than 2x away
+    # from the previous close (with or without missing days between them). On a 24/7 market open == previous
+    # close; 18 of 859,263 adjacent Spot pairs break this, all unadjusted leveraged-token consolidations
+    # (~x160,000). Rows whose window or holding period crosses one are excluded from events and benchmark.
+    breaks = [k for k in range(1, len(candles))
+              if abs(math.log(candles[k].open / candles[k - 1].close)) > DISCONTINUITY]
     fund_t = [t for t, _ in funding] if funding else []
     fund_r = [r for _, r in funding] if funding else []
     for i in range(249, len(candles)):
@@ -281,6 +289,12 @@ def symbol_rows(sym, meta, candles, funding, market, cost, exclude, end_day, lev
         e = entry or late_entry
         if e is None or ex is None or ex.open_ms < e.open_ms:
             rec["net"] = None
+            out.append(rec)
+            continue
+        k_exit = pos[ex.open_ms]  # exact index of the exit candle
+        if any(i - 248 <= b <= k_exit for b in breaks):  # a jump between two candles of the window or the hold
+            rec["net"] = None
+            rec["discontinuity"] = True
             out.append(rec)
             continue
         affected = ex.open_ms // D < t + 5
@@ -499,6 +513,8 @@ def cmd_run(a, ini):
            "eligible_symbols": len({r["sym"] for r in rows if lo <= r["day"] <= hi}),
            "signals": len(sig), "trades": sum(1 for r in sig if r.get("trade")),
            "missing_entry": sum(1 for r in sig if r["missing_entry"]),
+           "discontinuity_excluded_symbol_days": sum(1 for r in rows if lo <= r["day"] <= hi and r.get("discontinuity")),
+           "discontinuity_excluded_signals": sum(1 for r in sig if r.get("discontinuity")),
            "delist_affected_trades": sum(1 for r in sig if r.get("trade") and r.get("delist_affected")),
            "gap_affected_trades": sum(1 for r in sig if r.get("trade") and r.get("gap_affected"))}
     not16 = lambda r: r["asset"] not in ORIGINAL_16
