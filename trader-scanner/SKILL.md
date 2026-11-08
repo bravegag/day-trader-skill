@@ -213,7 +213,6 @@ built-in default.
 | --- | --- |
 | `TRADER_CONFIG_FILE` | the INI used when `--config` is not given |
 | `TRADER_OUTPUT_DIR` | stands in for the `trader/` folder: relative `[output] path`, `record_dir` and `[cache] dir` resolve under it |
-| `TRADER_EVIDENCE_DIR` | folder of external evidence files; wins over `[evidence] dir` |
 
 `[output] path` may contain `{market}` so Spot and Futures results sit side by
 side; `[output] candles = N` copies the last N closed candles of each
@@ -224,15 +223,9 @@ candidates). Check
 `echo $TRADER_OUTPUT_DIR` before telling the user where a scan was written:
 the CLI prints the real path on its `Wrote` line.
 
-External evidence (optional, `crypto_evidence.py`): any analytics system may
-drop `trader-evidence` v1 JSON files into the evidence folder. Each candidate
-then carries that source's view per timeframe, copied as is, with a state:
-`current`, `stale` (decided on an older candle than the scan's newest closed
-one), `ahead`, `unavailable` (no view), `missing` (nothing for that asset).
-Only a `current` view is compared with the scan (`agrees`, `disagrees`,
-`neutral`). Report missing or stale evidence as missing or stale, never as
-neutral or as disagreement. Evidence never changes the ranking, and a scan
-without any evidence folder works exactly as before.
+The scan reports its own rules only. It reads no other system's predictions
+and compares itself with none; a downstream tool that wants to compare its
+own views with the scan reads the JSON output.
 
 Mapping requests to commands:
 
@@ -241,29 +234,65 @@ Mapping requests to commands:
 | scan Binance Spot for bullish opportunities | `crypto --market spot`, then show the candidates with bullish rules |
 | scan Binance Futures for breakouts | `crypto --market usdm`, then the `breakout_close_high` (and `utc_orb` if enabled) matches |
 | find oversold SUI ecosystem assets | `crypto --symbols @sui_ecosystem`, then `rsi_oversold` / `oversold_bounce` |
-| strongest bullish candidates with 1D and 1H alignment | `crypto`, then the candidates with `aligned: true` (they rank first) |
+| strongest bullish candidates with 1D and 1H alignment | `crypto`, then the candidates with `rule_agreement: bullish` ("BULLISH RULES: 1d + 1h", they rank first) |
 
 The rules, all on CLOSED candles (the newest closed candle at Binance's server
 time; the open candle is never read). Equity names are not reused for crypto
 rules, so a match always says which definition it used (`origin`, `params`):
 
-| rule | origin | on closed bars of each timeframe |
-| --- | --- | --- |
-| `breakout_close_high` | ported from `breakout_20d` | close above the highest close of the prior 20 bars (20 days on 1d, 20 hours on 1h) |
-| `bull_flag` | ported | up >10 % over 10 bars, then 5 closes inside 5 % |
-| `reclaim_ma` | ported from `reclaim_ma20` | close back above the 20-bar average |
-| `rsi_oversold` | ported from `oversold` | RSI 14 (Wilder) under 30: a condition, not a trigger |
-| `oversold_bounce` | ported | RSI under 30 on the bar before, then an up close |
-| `rvol_expansion` | new | the bar's quote volume at least 2x the 20-bar median (up or down bar) |
-| `momentum_accel` | new | 5-bar return positive and 2 points above the 5 bars before |
-| `utc_orb` | experimental, off | a range from a UTC clock time; crypto has no opening bell |
+| rule | origin | kind | direction | on the newest closed bar of each timeframe |
+| --- | --- | --- | --- | --- |
+| `breakout_close_high` | ported from `breakout_20d` | event | bullish | close above the highest close of the prior 20 bars (20 days on 1d, 20 hours on 1h) |
+| `bull_flag` | ported | state | bullish | up >10 % over 10 bars, then 5 closes inside 5 % |
+| `reclaim_ma` | ported from `reclaim_ma20` | event | bullish | a fresh cross: previous close under the 20-bar SMA of closes, this close over it; gone one candle later |
+| `rsi_oversold` | ported from `oversold` | state | unspecified | RSI 14 (Wilder) under 30: selling so far, no reversal trigger |
+| `oversold_bounce` | ported | event | bullish | RSI under 30 on the bar before, then an up close: a counter-trend bounce attempt |
+| `rvol_expansion` | new | activity | unspecified | quote volume at least 2x the 20-bar median; the bar's up/down sign is evidence (`bar_direction`), never credit |
+| `momentum_accel` | new | state | bullish | 5-bar return positive and 2 points above the 5 bars before; after a decline it is a rebound (`context: rebound_after_decline`), not a trend; a decline that is only slowing never matches |
+| `utc_orb` | experimental, off | event | bullish | a range from a UTC clock time; the hit may be hours old and says whether the newest close still holds (`holds_at_last_close`) |
+
+`event` fires on that candle only, `state` holds at that close, `activity`
+has no direction. There is no bearish rule: this scan looks for bullish
+setups. Per timeframe the matched rules give a `bias`: `bullish`, `bearish`,
+`mixed`, `unspecified` (only observations without a direction) or `no_match`.
+Per market, `rule_agreement` says whether the directional rules agree across
+timeframes: `bullish` (every timeframe, printed "BULLISH RULES: 1d + 1h"),
+`partial_bullish` ("BULLISH RULES: 1d only (1h: no rule matched)"),
+`conflicting`, `unspecified` ("NO DIRECTIONAL RULE"), and the bearish
+mirrors for when a bearish rule exists. A timeframe without a match never
+counts for or against a direction.
+
+The terminal view prints, per market: the agreement line; per timeframe the
+bias, the close time of the evaluated candle, RSI and one `summary` line per
+rule (the same text as the JSON); the live price against the newest
+evaluated close (context after the evaluation, not part of any rule; left
+out in replays).
+
+Output schema `day-trader-skill/crypto-scan` v2 (v1 until 2026-11-07). New:
+per rule `kind` and `summary`; per timeframe `bias`; per market `rule_bias`,
+`rule_agreement`, `bearish_timeframes`, `bullish_rules`, `bearish_rules`,
+`nondirectional_rules`; top-level `scope_note`. Removed: the top-level and
+per-candidate `evidence` keys (external model views are no longer read).
+Changed meanings:
+`rvol_expansion` is `unspecified` (v1: the bar's sign as bullish/bearish),
+`rsi_oversold` is `unspecified` (v1: `condition`), `aligned` is
+`rule_agreement == "bullish"` (v1 counted an up-bar volume spike as bullish),
+`descriptive_score` equals `bullish_rules` (kept for v1 readers), and the
+order is `rule_agreement`, then `bullish_rules`. A reader of v1 that treated
+`rvol_expansion` as directional must stop doing so.
 
 What to tell the user, every time:
 
 - Coverage and freshness first: requested, eligible, scanned, matched; the
   UTC time of the data; COMPLETE or PARTIAL (and what failed); every
   excluded market with its reason (not listed, illiquid, stale, short history).
-- `descriptive_score` is a count of matched bullish rules. It is not a
+- Say what happened, its direction and whether the timeframes agree, in
+  the scan's own words ("BULLISH RULES: 1d + 1h", "1h: no rule matched").
+  Never call a market "aligned" or bullish because of volume or an oversold
+  reading, never call a missing match bearish or neutral, and call a
+  momentum rebound a rebound, not a trend.
+- `bullish_rules` (also `descriptive_score`) counts bullish-direction rule
+  matches. It is not a
   probability, and `estimated_probability` is always null. No rule has a
   demonstrated edge. In the walk-forward check
   (reports/BINANCE_SCANNER_VALIDATION.md) the 1h rules lost money after

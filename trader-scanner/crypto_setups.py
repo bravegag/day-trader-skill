@@ -20,6 +20,29 @@ Origin of each rule, so no name is silently redefined:
 
 A match is a description of the chart, not a forecast. None of these rules has a
 validated edge on crypto; the validation report says what was measured.
+
+What each rule asserts about the newest closed candle (KIND, DIRECTION):
+
+  rule                 kind      direction    what it detects
+  breakout_close_high  event     bullish      that close is the highest close of the last n+1 bars
+  bull_flag            state     bullish      a >impulse_pct run, then flag_bars closes inside flag_range_pct
+  reclaim_ma           event     bullish      a FRESH cross: the previous close was under the n-bar SMA of
+                                              closes, this close is over it. It never carries forward: one
+                                              candle later it is no longer a match, whatever the price does
+  rsi_oversold         state     unspecified  RSI under the threshold: selling so far, no reversal trigger
+  oversold_bounce      event     bullish      an up close after an oversold bar: a counter-trend bounce attempt
+  rvol_expansion       activity  unspecified  heavy quote volume. The bar's own up/down sign is copied as
+                                              evidence (bar_direction) and is never bullish or bearish credit
+  momentum_accel       state     bullish      the last k-bar return is positive and min_delta_pct above the k
+                                              bars before. It cannot fire while the k-bar return is negative
+                                              (a decline that is merely slowing); after a decline it is a
+                                              rebound (context rebound_after_decline), not an established trend
+  utc_orb              event     bullish      the first close above a UTC-anchored range, up to expire_minutes
+                                              old: it carries its age and whether the newest close still holds
+
+event = triggered on that candle only; state = holds at that close over a window ending there;
+activity = something happened, with no direction. There is no bearish rule: the scan looks for
+bullish setups, and a timeframe with no match is "no rule matched", never bearish or neutral.
 """
 
 import os
@@ -45,10 +68,13 @@ ORIGIN = {"breakout_close_high": "ported:breakout_20d", "bull_flag": "ported:bul
           "reclaim_ma": "ported:reclaim_ma20", "rsi_oversold": "ported:oversold",
           "oversold_bounce": "ported:oversold_bounce", "rvol_expansion": "new", "momentum_accel": "new",
           "utc_orb": "experimental"}
-# bullish = a rule whose trigger is an up move; condition = a state worth a look, no trigger
+# The table in the module docstring explains each value. Only bullish and bearish are directional.
 DIRECTION = {"breakout_close_high": "bullish", "bull_flag": "bullish", "reclaim_ma": "bullish",
-             "rsi_oversold": "condition", "oversold_bounce": "bullish", "rvol_expansion": None,
+             "rsi_oversold": "unspecified", "oversold_bounce": "bullish", "rvol_expansion": "unspecified",
              "momentum_accel": "bullish", "utc_orb": "bullish"}
+KIND = {"breakout_close_high": "event", "bull_flag": "state", "reclaim_ma": "event", "rsi_oversold": "state",
+        "oversold_bounce": "event", "rvol_expansion": "activity", "momentum_accel": "state", "utc_orb": "event"}
+DIRECTIONAL = ("bullish", "bearish")
 BAR_SETUPS = ["breakout_close_high", "bull_flag", "reclaim_ma", "rsi_oversold", "oversold_bounce",
               "rvol_expansion", "momentum_accel"]
 
@@ -69,6 +95,53 @@ LABELS = {
 def label(sid, p):
     text, keys = LABELS[sid]
     return text % tuple(p[k] for k in keys)
+
+
+def summary(sid, p, e):
+    """One line saying what the rule saw on this candle, in the rule's own terms (copied into the JSON)."""
+    if sid == "breakout_close_high":
+        return "new %d-bar closing high: close %s is %+.2f%% over %s" % (p["lookback"], _g(e["close"]), e["pct_over"],
+                                                                        _g(e["prior_close_high"]))
+    if sid == "bull_flag":
+        return "flag shape at this close: up %.1f%% over %d bars, then %d closes within %.1f%%" % (
+            e["impulse_pct"], p["impulse_bars"], p["flag_bars"], e["flag_range_pct"])
+    if sid == "reclaim_ma":
+        return "fresh cross on this candle: close %s over the %d-bar SMA %s (%+.2f%%); previous close %s was under %s" % (
+            _g(e["close"]), p["period"], _g(e["ma"]), e["pct_above_ma"], _g(e["prev_close"]), _g(e["prev_ma"]))
+    if sid == "rsi_oversold":
+        return "RSI %d at %.1f, under %g: an oversold state, no reversal trigger" % (p["period"], e["rsi"], p["threshold"])
+    if sid == "oversold_bounce":
+        return "up close %s after RSI %d %.1f on the bar before: a counter-trend bounce attempt" % (
+            _g(e["close"]), p["period"], e["rsi_prev"])
+    if sid == "rvol_expansion":
+        return "quote volume %.1fx the %d-bar median on a%s bar (%+.2f%%): activity, no direction" % (
+            e["rvol"], p["lookback"], {"up": "n up", "down": " down", "flat": " flat"}[e["bar_direction"]],
+            e["bar_change_pct"])
+    if sid == "momentum_accel":
+        what = ("a rebound after a decline: momentum improving, not an established trend"
+                if e["context"] == "rebound_after_decline" else "upward momentum accelerating")
+        return "%d-bar return %+.2f%% vs %+.2f%% the %d bars before (%s)" % (p["bars"], e["ret_last_pct"],
+                                                                            e["ret_prev_pct"], p["bars"], what)
+    if sid == "utc_orb":
+        return "closed over the range high %s %.0f min ago; newest close %s %s" % (
+            _g(e["range_high"]), e["minutes_since"], _g(e["last_close"]),
+            "still over it" if e["holds_at_last_close"] else "is back under it: the breakout has failed since")
+    raise KeyError(sid)
+
+
+def _g(x):
+    return "%.6g" % x
+
+
+def timeframe_bias(hits):
+    """What the matched rules of one timeframe assert: bullish, bearish, mixed (both), unspecified (only
+    non-directional matches) or no_match. No match is never read as bearish or neutral."""
+    dirs = {h["direction"] for h in hits}
+    if "bullish" in dirs and "bearish" in dirs:
+        return "mixed"
+    if "bullish" in dirs or "bearish" in dirs:
+        return "bullish" if "bullish" in dirs else "bearish"
+    return "unspecified" if hits else "no_match"
 
 
 def required_bars(enabled, params):
@@ -137,10 +210,11 @@ def bar_setups(candles, enabled, params):
     c = [k.close for k in candles]
     out = []
 
-    def hit(sid, evidence, direction=None):
+    def hit(sid, evidence):
         p = params[sid]
-        out.append({"id": sid, "label": label(sid, p), "origin": ORIGIN[sid],
-                    "direction": direction or DIRECTION[sid], "params": dict(p), "evidence": evidence})
+        out.append({"id": sid, "label": label(sid, p), "origin": ORIGIN[sid], "kind": KIND[sid],
+                    "direction": DIRECTION[sid], "summary": summary(sid, p, evidence), "params": dict(p),
+                    "evidence": evidence})
 
     for sid in enabled:
         p = params[sid]
@@ -159,7 +233,8 @@ def bar_setups(candles, enabled, params):
             n = p["period"]
             ma, ma_prev = sma(c, n), sma(c[:-1], n)
             if c[-2] < ma_prev and c[-1] > ma:
-                hit(sid, {"close": c[-1], "ma": _r(ma, 8), "prev_close": c[-2], "prev_ma": _r(ma_prev, 8)})
+                hit(sid, {"close": c[-1], "ma": _r(ma, 8), "prev_close": c[-2], "prev_ma": _r(ma_prev, 8),
+                          "pct_above_ma": _r((c[-1] / ma - 1) * 100, 3)})
         elif sid == "rsi_oversold":
             r = wilder_rsi(c, p["period"])
             if r is not None and r < p["threshold"]:
@@ -172,16 +247,16 @@ def bar_setups(candles, enabled, params):
             prior = [k.quote_volume for k in candles[-p["lookback"] - 1:-1]]
             med = median(prior)
             if med > 0 and candles[-1].quote_volume / med >= p["min_rvol"]:
-                up = candles[-1].close > candles[-1].open
-                hit(sid, {"rvol": _r(candles[-1].quote_volume / med, 3), "bar_change_pct":
-                          _r((candles[-1].close / candles[-1].open - 1) * 100, 3)},
-                    "bullish" if up else "bearish")
+                k = candles[-1]
+                hit(sid, {"rvol": _r(k.quote_volume / med, 3), "bar_change_pct": _r((k.close / k.open - 1) * 100, 3),
+                          "bar_direction": "up" if k.close > k.open else "down" if k.close < k.open else "flat"})
         elif sid == "momentum_accel":
             k = p["bars"]
             r1 = c[-1] / c[-1 - k] - 1
             r0 = c[-1 - k] / c[-1 - 2 * k] - 1
             if r1 > 0 and (r1 - r0) * 100 >= p["min_delta_pct"]:
-                hit(sid, {"ret_last_pct": _r(r1 * 100, 3), "ret_prev_pct": _r(r0 * 100, 3)})
+                hit(sid, {"ret_last_pct": _r(r1 * 100, 3), "ret_prev_pct": _r(r0 * 100, 3),
+                          "context": "rebound_after_decline" if r0 < 0 else "acceleration"})
     return out
 
 
@@ -189,6 +264,8 @@ def utc_orb(candles, interval_ms, now_ms, p):
     """EXPERIMENTAL. Crypto has no opening bell; this anchors a 'session' at a UTC clock time
     (00:00 by default, the daily-candle open). Range = closed bars in [anchor, anchor+range);
     a hit = the first later closed bar to CLOSE above the range high, within expire_minutes.
+    The hit is an event that may be several bars old: it carries minutes_since and whether the
+    newest closed bar still closes above the range high (holds_at_last_close).
     -> (hit dict or None, status text)."""
     hh, mm = [int(x) for x in str(p["anchor"]).split(":")]
     day_ms = 86400000
@@ -212,9 +289,12 @@ def utc_orb(candles, interval_ms, now_ms, p):
             age = (now_ms - (t + interval_ms)) / 60000.0
             if age > p["expire_minutes"]:
                 return None, "breakout expired"
-            return {"id": "utc_orb", "label": label("utc_orb", p), "origin": ORIGIN["utc_orb"],
-                    "direction": "bullish", "params": dict(p),
-                    "evidence": {"range_high": hi, "range_low": lo, "close": k.close, "bar_open_ms": t,
-                                 "pct_over": _r((k.close / hi - 1) * 100, 3), "minutes_since": round(age, 1)}}, "hit"
+            last = max((b for b in candles if b.open_ms + interval_ms <= now_ms), key=lambda b: b.open_ms)
+            e = {"range_high": hi, "range_low": lo, "close": k.close, "bar_open_ms": t,
+                 "pct_over": _r((k.close / hi - 1) * 100, 3), "minutes_since": round(age, 1),
+                 "last_close": last.close, "last_bar_open_ms": last.open_ms, "holds_at_last_close": last.close > hi}
+            return {"id": "utc_orb", "label": label("utc_orb", p), "origin": ORIGIN["utc_orb"], "kind": KIND["utc_orb"],
+                    "direction": DIRECTION["utc_orb"], "summary": summary("utc_orb", p, e), "params": dict(p),
+                    "evidence": e}, "hit"
         t += interval_ms
     return None, "no close above the range"

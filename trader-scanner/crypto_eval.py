@@ -75,7 +75,10 @@ def walk(candles, tf, enabled, params, window, horizons, cost):
         key = candles[t + 1].open_ms
         base[key] = fwd
         for h in cs.bar_setups(win, enabled, params):
-            if h["direction"] != "bullish" and h["id"] != "rsi_oversold":
+            # the measured event set of reports/BINANCE_SCANNER_VALIDATION.md: bullish rules, rsi_oversold, and
+            # rvol_expansion on an up bar (direction "bullish" in scan schema v1, "unspecified" plus bar_direction now)
+            if h["direction"] != "bullish" and h["id"] != "rsi_oversold" and not (
+                    h["id"] == "rvol_expansion" and h["evidence"]["bar_direction"] == "up"):
                 continue
             if t - last.get(h["id"], -10 ** 9) < hmax:
                 continue

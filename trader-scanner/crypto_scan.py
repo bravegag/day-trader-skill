@@ -22,7 +22,9 @@ What it does, in order:
      more than max_missing_bars gaps, not mostly zero-volume.
   6. The setups (crypto_setups.py) on closed candles only.
   7. Futures: mark, index, basis and funding for every candidate, open interest for the first ones.
-  8. A deterministic ranking by a descriptive count of matched rules. It is not a probability.
+  8. Per timeframe, the direction the matched rules assert (crypto_setups.timeframe_bias); per market,
+     whether those directions agree across timeframes (rule_agreement); a deterministic, descriptive
+     ranking by that agreement and the count of bullish rules. It is not a probability.
 
 Public endpoints only, no API key, no order endpoint anywhere in the code path.
 """
@@ -41,22 +43,32 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import crypto_evidence as ce  # noqa: E402
 import crypto_providers as cp  # noqa: E402
 import crypto_setups as cs  # noqa: E402
 
 SCHEMA = "day-trader-skill/crypto-scan"
-SCHEMA_VERSION = 1
+# v2: rules carry kind and summary; rvol_expansion and rsi_oversold are direction "unspecified" (v1: rvol took
+# the bar's sign, rsi_oversold was "condition"); per-timeframe bias, rule_agreement and the rule counts are new;
+# aligned and descriptive_score keep their names with v2 meanings (see the SKILL.md, "Output schema"). v2 has no
+# "evidence" keys: the scan reports its own rules only; comparing it with any model is the reader's business.
+SCHEMA_VERSION = 2
 DEFAULT_CONFIG = "trader/binance.ini"
 # Paths only; behaviour stays in the INI. Precedence, highest first: the command-line flag (--config, --out),
 # then the environment, then the INI, then the built-in defaults. TRADER_OUTPUT_DIR stands in for the trader/
 # folder: every relative path of [output] and [cache] resolves under it (an absolute path in the INI is kept).
 ENV_CONFIG_FILE = "TRADER_CONFIG_FILE"      # the INI used when --config is not given
 ENV_OUTPUT_DIR = "TRADER_OUTPUT_DIR"        # where scan results, recordings and the cache go
-ENV_EVIDENCE_DIR = "TRADER_EVIDENCE_DIR"    # external evidence files (crypto_evidence.py); wins over [evidence] dir
 NOTE = "A scan is a list of charts that match a rule, not a list of coins to buy."
-SCORE_NOTE = ("descriptive_score counts matched bullish rules across timeframes. It is not a probability of "
-              "success, and no probability is estimated (estimated_probability is null).")
+SCOPE_NOTE = ("Scope: bullish setup rules, plus observations without a direction (oversold state, volume). There "
+              "are no bearish rules, so a timeframe without a match is \"no rule matched\": not bearish, not neutral.")
+SCORE_NOTE = ("Order: rule agreement across timeframes, then bullish_rules (bullish-direction matches; volume and "
+              "oversold observations are not counted; descriptive_score is the same number). A descriptive ranking, "
+              "not a probability or a validated edge (estimated_probability is null).")
+# rule_agreement values, in ranking order
+AGREEMENT_ORDER = ("bullish", "partial_bullish", "conflicting", "partial_bearish", "bearish", "unspecified", "none")
+AGREEMENT_TEXT = {"bullish": "BULLISH RULES", "bearish": "BEARISH RULES", "partial_bullish": "BULLISH RULES",
+                  "partial_bearish": "BEARISH RULES", "conflicting": "CONFLICTING RULES",
+                  "unspecified": "NO DIRECTIONAL RULE", "none": "NO RULE MATCHED"}
 STABLE_BASES = ("USDC", "FDUSD", "TUSD", "USDP", "DAI", "BUSD", "USDE", "USD1", "USDS", "RLUSD", "XUSD", "BFUSD",
                 "EUR", "EURI", "AEUR", "USDEB", "RWUSD", "PYUSD", "U")
 
@@ -75,7 +87,6 @@ DEFAULTS = {
                 "timeout_seconds": "20", "max_context_requests": "40"},
     "output": {"path": "trader/crypto_watchlist.json", "show": "20", "record_dir": "", "candles": "0",
                "unmatched": "false"},
-    "evidence": {"dir": "trader/evidence"},
     "cache": {"dir": "trader/cache/binance", "exchange_info_ttl_seconds": "3600"},
     "setup.utc_orb": {"enabled": "false", "interval": "15m"},
 }
@@ -149,7 +160,7 @@ class Config(object):
         """sha256 of the effective configuration, minus paths that do not change what is scanned."""
         d = self.as_dict()
         for s, k in (("output", "path"), ("output", "show"), ("output", "record_dir"), ("output", "candles"), ("output", "unmatched"),
-                     ("cache", "dir"), ("evidence", "dir")):
+                     ("cache", "dir")):
             d.get(s, {}).pop(k, None)
         return hashlib.sha256(json.dumps(d, sort_keys=True).encode("utf-8")).hexdigest()[:16]
 
@@ -171,15 +182,6 @@ def resolve_path(path, market=None, env=None):
     if rel == "trader" or rel.startswith("trader" + os.sep):
         rel = rel[len("trader") + 1:]
     return os.path.join(os.path.expanduser(root), rel)
-
-
-def evidence_dir(cfg, env=None):
-    """-> (folder, explicit). TRADER_EVIDENCE_DIR first, else [evidence] dir resolved like an output path."""
-    env = os.environ if env is None else env
-    if env.get(ENV_EVIDENCE_DIR):
-        return os.path.expanduser(env[ENV_EVIDENCE_DIR]), True
-    folder = cfg.get("evidence", "dir")
-    return resolve_path(folder, env=env), folder != DEFAULTS["evidence"]["dir"]
 
 
 def config_path(flag, env=None):
@@ -338,6 +340,27 @@ def scan_timeframe(candles, interval, enabled, cfg):
     return cs.bar_setups(candles, enabled, params), cs.indicators(candles)
 
 
+def rule_agreement(bias, intervals):
+    """Do the directional rule signals agree across the configured timeframes?
+
+    bias: {tf: timeframe bias, or None when the timeframe was not evaluated (excluded or failed)}.
+    -> bullish / bearish   every configured timeframe was evaluated and asserts that direction (two or more)
+       partial_bullish / partial_bearish   some timeframes assert it, none asserts the opposite
+       conflicting   bullish and bearish both asserted (across timeframes or within one)
+       unspecified   rules matched, but none has a direction (volume, oversold state)
+       none          no rule matched
+    A timeframe without a match never counts for or against a direction."""
+    vals = [bias.get(tf) for tf in intervals]
+    bull = any(v in ("bullish", "mixed") for v in vals)
+    bear = any(v in ("bearish", "mixed") for v in vals)
+    if bull and bear:
+        return "conflicting"
+    if bull or bear:
+        side = "bullish" if bull else "bearish"
+        return side if len(vals) >= 2 and all(v == side for v in vals) else "partial_" + side
+    return "unspecified" if "unspecified" in vals else "none"
+
+
 # ---------------------------------------------------------------- the scan
 
 def run_scan(provider, cfg, now_ms=None, log=None):
@@ -451,11 +474,17 @@ def run_scan(provider, cfg, now_ms=None, log=None):
             excluded.append({"requested": inst.asset_id, "symbol": inst.symbol, "reason": "; ".join(reasons)})
             continue
         scanned += 1
+        for v in tfs.values():
+            if v["status"] == "ok":
+                v["bias"] = cs.timeframe_bias(v["setups"])
+        hits = [h for v in tfs.values() for h in v.get("setups", [])]
         bull_tfs = sorted(tf for tf, v in tfs.items() if any(h["direction"] == "bullish" for h in v.get("setups", [])))
-        n_bull = sum(1 for v in tfs.values() for h in v.get("setups", []) if h["direction"] == "bullish")
-        n_all = sum(len(v.get("setups", [])) for v in tfs.values())
-        ok_tfs = [tf for tf in intervals if tfs[tf]["status"] == "ok"]
-        aligned = len(ok_tfs) >= 2 and all(tf in bull_tfs for tf in ok_tfs)
+        bear_tfs = sorted(tf for tf, v in tfs.items() if any(h["direction"] == "bearish" for h in v.get("setups", [])))
+        n_bull = sum(1 for h in hits if h["direction"] == "bullish")
+        n_bear = sum(1 for h in hits if h["direction"] == "bearish")
+        n_all = len(hits)
+        rule_bias = {tf: tfs[tf].get("bias") for tf in intervals}
+        agreement = rule_agreement(rule_bias, intervals)
         if not n_all and not (keep_unmatched is True or (keep_unmatched and (
                 inst.asset_id.upper() in keep_unmatched or inst.symbol.upper() in keep_unmatched))):
             continue
@@ -467,8 +496,10 @@ def run_scan(provider, cfg, now_ms=None, log=None):
             "price_age_seconds": max(0.0, round((now_ms - t.close_ms) / 1000.0, 1)) if t.close_ms and not replay else None,
             "quote_volume_24h": round(t.quote_volume or 0, 2), "trades_24h": t.trades,
             "change_24h_pct": t.price_change_pct, "spread_bps": _r(spread_bps(t), 2),
-            "timeframes": tfs, "bullish_timeframes": bull_tfs, "aligned": aligned,
-            "descriptive_score": n_bull, "matched_rules": n_all, "estimated_probability": None,
+            "timeframes": tfs, "rule_bias": rule_bias, "rule_agreement": agreement,
+            "bullish_timeframes": bull_tfs, "bearish_timeframes": bear_tfs, "aligned": agreement == "bullish",
+            "bullish_rules": n_bull, "bearish_rules": n_bear, "nondirectional_rules": n_all - n_bull - n_bear,
+            "matched_rules": n_all, "descriptive_score": n_bull, "estimated_probability": None,
         })
 
     if provider.market == "usdm" and candidates and not banned:
@@ -477,15 +508,10 @@ def run_scan(provider, cfg, now_ms=None, log=None):
         for c in candidates:
             c["derivatives"] = dict(ctx.get(c["symbol"]) or {}, note="context only: no leverage or execution advice")
 
-    candidates.sort(key=lambda c: (-int(c["aligned"]), -c["descriptive_score"], -c["matched_rules"],
-                                   -c["quote_volume_24h"], c["instrument_id"]))
+    candidates.sort(key=lambda c: (AGREEMENT_ORDER.index(c["rule_agreement"]), -c["bullish_rules"], c["bearish_rules"],
+                                   -c["matched_rules"], -c["quote_volume_24h"], c["instrument_id"]))
     for k, c in enumerate(candidates):
         c["rank"] = k + 1
-    ev_folder, ev_explicit = evidence_dir(cfg)
-    sources, ev_notes = ce.load_dir(ev_folder) if os.path.isdir(ev_folder or "") else ([], [])
-    if ev_explicit and not os.path.isdir(ev_folder or ""):
-        ev_notes.append("no evidence folder at %s" % ev_folder)
-    ce.annotate(candidates + observed, sources)
     excluded.sort(key=lambda e: (e["symbol"] or "", e["requested"] or ""))
     reasons = {}
     for e in excluded:
@@ -503,9 +529,7 @@ def run_scan(provider, cfg, now_ms=None, log=None):
         "coverage": {"requested": requested, "eligible": len(eligible), "scanned": scanned,
                      "excluded": len(excluded), "failed_fetches": len(failed), "candidates": len(candidates)},
         "exclusion_reasons": reasons, "network": stats, "seconds": round(time.time() - t0, 1),
-        "score_note": SCORE_NOTE, "note": NOTE,
-        "evidence": {"dir": ev_folder, "sources": [{k: s[k] for k in ("source", "file", "generated_at")}
-                                                   for s in sources], "notes": ev_notes},
+        "scope_note": SCOPE_NOTE, "score_note": SCORE_NOTE, "note": NOTE,
         "candidates": candidates, "excluded": excluded, "failed": failed,
         "hits": [{"symbol": c["symbol"], "setups": sorted({h["id"] for v in c["timeframes"].values()
                                                            for h in v.get("setups", [])})} for c in candidates],
@@ -589,43 +613,127 @@ def apply_symbols(cfg, text):
 
 
 def render(doc, show):
+    """The terminal view: per market, what happened on each timeframe, its direction, and whether the
+    directional rules agree across timeframes. Every number shown is in the JSON document (the same `summary`,
+    `bias` and `rule_agreement` fields)."""
     cov = doc["coverage"]
     out = []
-    out.append("Binance %s scan, %s UTC%s, closed candles only (%s), %s quote. Config %s."
-               % ("Spot" if doc["market"] == "spot" else "USD-M Futures", doc["created_at"].replace("T", " ")[:16],
-                  " (REPLAY)" if doc["replay"] else "", ", ".join(doc["timeframes"]), doc["quote_asset"],
-                  doc["config_fingerprint"]))
+    closes = {}
+    for c in doc["candidates"]:
+        for tf, v in c["timeframes"].items():
+            if v.get("status") == "ok" and not tf.startswith("orb:"):
+                closes.setdefault(tf, v["last_closed_close"])
+    out.append("Binance %s scan as of %s UTC%s, closed candles only, %s quote. Config %s."
+               % ("Spot" if doc["market"] == "spot" else "USD-M Futures", _when(doc["created_at"]),
+                  " (REPLAY)" if doc["replay"] else "", doc["quote_asset"], doc["config_fingerprint"]))
+    if closes:
+        out.append("Evaluated candles, by their UTC close: %s. Later price moves are not in the rules."
+                   % ", ".join("%s %s" % (tf, _when(closes[tf])) for tf in doc["timeframes"] if tf in closes))
     out.append("Requested %d, eligible %d, scanned %d, %d matched a rule. Status: %s%s."
                % (cov["requested"], cov["eligible"], cov["scanned"], cov["candidates"], doc["status"].upper(),
                   (" (%d fetches failed)" % cov["failed_fetches"]) if cov["failed_fetches"] else ""))
     if doc.get("stopped"):
         out.append("STOPPED: %s" % doc["stopped"])
+    out.append(SCOPE_NOTE)
     for c in doc["candidates"][:show]:
-        parts = []
-        for tf, v in sorted(c["timeframes"].items()):
-            ids = [h["id"] + ("" if h["direction"] != "bearish" else "(down)") for h in v.get("setups", [])]
-            rsi = (v.get("indicators") or {}).get("rsi14")
-            parts.append("%s[%s%s]" % (tf, ",".join(ids) or "-", " rsi %.0f" % rsi if rsi is not None else ""))
-        extra = ""
-        d = c.get("derivatives")
-        if d and d.get("funding_rate_last") is not None:
-            extra = " fund %+.4f%%" % (d["funding_rate_last"] * 100)
-        if c.get("evidence"):
-            extra += "\n      " + ce.cell(c["evidence"])
-        out.append("%3d %-12s %12s  vol24h %7s  %s%s%s" % (
-            c["rank"], c["symbol"], _price(c["last_price"]), _human(c["quote_volume_24h"]),
-            "ALIGNED " if c["aligned"] else "", " ".join(parts), extra))
+        out.append("")
+        out.extend(_render_candidate(c, doc))
     if len(doc["candidates"]) > show:
+        out.append("")
         out.append("... and %d more in the JSON." % (len(doc["candidates"]) - show))
+    out.append("")
     if doc["excluded"]:
         out.append("Excluded %d: %s." % (len(doc["excluded"]), "; ".join(
             "%s (%s)" % (e["symbol"] or e["requested"], e["reason"]) for e in doc["excluded"][:8])
             + (" ..." if len(doc["excluded"]) > 8 else "")))
-    for n in (doc.get("evidence") or {}).get("notes") or []:
-        out.append("Evidence note: %s" % n)
     out.append(SCORE_NOTE)
     out.append(NOTE)
     return "\n".join(out)
+
+
+def _render_candidate(c, doc):
+    """Indented lines for one market."""
+    tfs = [tf for tf in doc["timeframes"] if tf in c["timeframes"]] + sorted(
+        tf for tf in c["timeframes"] if tf.startswith("orb:"))
+    extra = ""
+    d = c.get("derivatives")
+    if d and d.get("funding_rate_last") is not None:
+        extra = "  funding %+.4f%%" % (d["funding_rate_last"] * 100)
+    later = _price_is_later(c, doc)
+    lines = ["%3d  %-12s last %s%s  vol24h %s%s" % (
+        c["rank"], c["symbol"], _price(c["last_price"]),
+        " (priced %s UTC, after the scan time: not point-in-time)" % _when(c.get("price_time")) if later else "",
+        _human(c["quote_volume_24h"]), extra)]
+    lines.append("     %s" % agreement_text(c))
+    for tf in tfs:
+        v = c["timeframes"][tf]
+        if v.get("status") != "ok":
+            lines.append("     %-4s not evaluated: %s" % (tf, v.get("reason")))
+            continue
+        ind = v.get("indicators") or {}
+        facts = ([("candle closed " + _when(v["last_closed_close"]))] if v.get("last_closed_close") else []) + (
+            ["RSI %.0f" % ind["rsi14"]] if ind.get("rsi14") is not None else [])
+        bias = v.get("bias") or cs.timeframe_bias(v.get("setups") or [])
+        head = {"no_match": "no rule matched", "unspecified": "no direction"}.get(bias, bias)
+        lines.append("     %-4s %s%s" % (tf, head, ("  (%s)" % ", ".join(facts)) if facts else ""))
+        for h in v.get("setups") or []:
+            lines.append("           %-19s %s" % (h["id"], h.get("summary") or h.get("label")))
+    live = _live_line(c, doc, tfs)
+    if live:
+        lines.append("     " + live)
+    return lines
+
+
+def agreement_text(c):
+    """What the directional rules assert across timeframes, in words: 'BULLISH RULES: 1d + 1h' only when every
+    evaluated timeframe has a bullish rule and none a bearish one."""
+    agreement = c.get("rule_agreement")
+    bias = c.get("rule_bias") or {}
+    text = AGREEMENT_TEXT.get(agreement, "RULES")
+    side = {"bullish": "bullish", "partial_bullish": "bullish", "bearish": "bearish", "partial_bearish": "bearish"}
+    if agreement in ("bullish", "bearish"):
+        return "%s: %s" % (text, " + ".join(bias))
+    if agreement in side:
+        on = [tf for tf, b in bias.items() if b == side[agreement]]
+        rest = ["%s: %s" % (tf, _bias_words(b)) for tf, b in bias.items() if b != side[agreement]]
+        return "%s: %s only%s" % (text, " + ".join(on), (" (%s)" % "; ".join(rest)) if rest else "")
+    if agreement == "conflicting":
+        return "%s: %s" % (text, ", ".join("%s %s" % (tf, _bias_words(b)) for tf, b in bias.items()))
+    if agreement == "unspecified":
+        return "%s: only observations without a direction (%s)" % (
+            text, ", ".join(tf for tf, b in bias.items() if b == "unspecified"))
+    return text
+
+
+def _bias_words(b):
+    return {"no_match": "no rule matched", "unspecified": "no direction", None: "not evaluated"}.get(b, b)
+
+
+def _live_line(c, doc, tfs):
+    """The live price against the newest evaluated close: context after the evaluation, never part of a rule."""
+    if doc.get("replay") or c.get("last_price") is None or _price_is_later(c, doc):
+        return None
+    ok = [tf for tf in tfs if not tf.startswith("orb:") and c["timeframes"][tf].get("status") == "ok"
+          and (c["timeframes"][tf].get("indicators") or {}).get("close")]
+    if not ok:
+        return None
+    tf = min(ok, key=lambda t: cp.INTERVAL_MS[t])
+    close = c["timeframes"][tf]["indicators"]["close"]
+    return "live %s at %s UTC is %+.2f%% from the %s close %s (after the evaluated candle, not in the rules)" % (
+        _price(c["last_price"]), _when(c.get("price_time")), (c["last_price"] / close - 1) * 100, tf, _price(close))
+
+
+def _price_is_later(c, doc):
+    """A replay, or a recording whose tickers were taken after its candles, prices the market later than the scan."""
+    t = parse_now_utc(c["price_time"]) if c.get("price_time") else None
+    return bool(doc.get("replay")) or (t is not None and t > doc["as_of_ms"] + 60000)
+
+
+def _when(text):
+    """'2026-11-07T19:00:00Z' -> '2026-11-07 19:00' (UTC)."""
+    if not text:
+        return "?"
+    return str(text).replace("T", " ").replace("+00:00", "").rstrip("Z")[:16]
 
 
 def _price(x):

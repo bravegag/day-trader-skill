@@ -21,6 +21,9 @@ cs = cscan.cs
 SDIR = os.path.join(FIX, "trader-scanner")
 SPOT = os.path.join(SDIR, "binance-spot-2026-10-31")   # real Binance Spot answers, recorded 2026-10-31 13:11 UTC
 USDM = os.path.join(SDIR, "binance-usdm-2026-10-31")   # real Binance USD-M Futures answers, same minute
+# real Binance Spot candles as of 2026-11-07 19:18 UTC (the INJ "ALIGNED" scan), recorded by a --now replay at 22:50:
+# the closed candles are Binance's history; the 24h tickers (last price, volume) are those of 22:50, not 19:18
+INJ_CASE = os.path.join(SDIR, "binance-spot-2026-11-07-1918")
 INI = os.path.join(ROOT, "trader-scanner", "binance.example.ini")
 H = 3600000
 D = 86400000
@@ -428,14 +431,15 @@ class Setups(unittest.TestCase):
             cr = set(self.ids(closes, [mapping[k] for k in mapping]))
             self.assertEqual({mapping[t] for t in eq}, cr, trial)
 
-    def test_rvol_direction(self):
+    def test_rvol_is_activity_on_up_and_down_bars(self):
         closes = [100.0] * 30
         vols = [1000.0] * 29 + [5000.0]
-        hits = cs.bar_setups(self.mk(closes[:-1] + [102.0], vols=vols), ["rvol_expansion"], self.P)
-        self.assertEqual(hits[0]["direction"], "bullish")
-        self.assertEqual(hits[0]["evidence"]["rvol"], 5.0)
-        hits = cs.bar_setups(self.mk(closes[:-1] + [98.0], vols=vols), ["rvol_expansion"], self.P)
-        self.assertEqual(hits[0]["direction"], "bearish")
+        for last, bar in ((102.0, "up"), (98.0, "down")):
+            hits = cs.bar_setups(self.mk(closes[:-1] + [last], vols=vols), ["rvol_expansion"], self.P)
+            self.assertEqual((hits[0]["kind"], hits[0]["direction"]), ("activity", "unspecified"))
+            self.assertEqual((hits[0]["evidence"]["rvol"], hits[0]["evidence"]["bar_direction"]), (5.0, bar))
+            self.assertIn("no direction", hits[0]["summary"])
+            self.assertEqual(cs.timeframe_bias(hits), "unspecified")
 
     def test_momentum_accel(self):
         flat_then_up = [100.0] * 25 + [100.0, 100.2, 100.4, 100.6, 100.8] + [102, 104, 106, 108, 110]
@@ -472,6 +476,176 @@ class Setups(unittest.TestCase):
         self.assertEqual(cs.utc_orb(rows[:2] + rows[3:], q, T0 + 12 * q, p)[1], "range has a missing bar")
 
 
+# ---------------------------------------------------------------- direction: what each rule asserts
+
+class Direction(unittest.TestCase):
+    P = Setups.P
+    mk = Setups.mk
+
+    def hits(self, closes, enabled, **kw):
+        return cs.bar_setups(self.mk(closes, **kw), enabled, self.P)
+
+    def test_every_rule_declares_kind_and_direction_and_none_is_bearish(self):
+        self.assertEqual(set(cs.KIND), set(cs.DIRECTION))
+        self.assertEqual(set(cs.BAR_SETUPS) | {"utc_orb"}, set(cs.KIND))
+        self.assertNotIn("bearish", cs.DIRECTION.values())   # the scope note says so; a bearish rule must change it
+        self.assertEqual({sid for sid, d in cs.DIRECTION.items() if d == "unspecified"}, {"rsi_oversold", "rvol_expansion"})
+
+    def test_a_decline_that_is_only_slowing_does_not_match_momentum(self):
+        # last 5 bars -1 %, the 5 before -10 %: downside momentum improved by 9 points, but price still fell
+        closes = [100.0] * 25 + [100.0, 97.5, 95.0, 92.5, 90.0] + [89.82, 89.64, 89.46, 89.28, 89.1]
+        self.assertEqual(self.hits(closes, ["momentum_accel"]), [])
+
+    def test_momentum_after_a_decline_is_called_a_rebound_not_a_trend(self):
+        closes = [100.0] * 25 + [100.0, 97.5, 95.0, 92.5, 90.0] + [90.5, 91.0, 91.5, 92.0, 92.5]
+        h = self.hits(closes, ["momentum_accel"])[0]
+        self.assertEqual((h["kind"], h["direction"], h["evidence"]["context"]), ("state", "bullish", "rebound_after_decline"))
+        self.assertIn("a rebound after a decline: momentum improving, not an established trend", h["summary"])
+        up = [100.0] * 25 + [100.0, 100.2, 100.4, 100.6, 100.8] + [102, 104, 106, 108, 110]
+        self.assertEqual(self.hits(up, ["momentum_accel"])[0]["evidence"]["context"], "acceleration")
+
+    def test_reclaim_is_fresh_only_and_a_failed_reclaim_does_not_match(self):
+        below = [100.0] * 20 + [99.0, 98.0, 97.0, 96.0]
+        fresh = self.hits(below + [101.0], ["reclaim_ma"])
+        self.assertEqual((fresh[0]["kind"], fresh[0]["direction"]), ("event", "bullish"))
+        self.assertIn("fresh cross on this candle", fresh[0]["summary"])
+        self.assertGreater(fresh[0]["evidence"]["pct_above_ma"], 0)
+        # one candle later the price closes back under the average: the earlier reclaim is not carried forward
+        self.assertEqual(self.hits(below + [101.0, 98.0], ["reclaim_ma"]), [])
+        # and staying above the average is a state the rule does not report either
+        self.assertEqual(self.hits(below + [101.0, 101.5], ["reclaim_ma"]), [])
+
+    def test_a_utc_orb_breakout_that_failed_since_says_so(self):
+        p = dict(cs.DEFAULT_PARAMS["utc_orb"])
+        q = 900000
+        closes = [100.0] * 4 + [101.5, 101.0, 99.8]  # range, breakout at 01:00, then back under the range high
+        rows = [cp.Candle(T0 + i * q, T0 + (i + 1) * q - 1, 100, max(100, c) + (0.4 if i < 4 else 0), 99.5, c, 1, 100, 1)
+                for i, c in enumerate(closes)]
+        hit, status = cs.utc_orb(rows, q, T0 + len(rows) * q, p)
+        self.assertEqual(status, "hit")
+        e = hit["evidence"]
+        self.assertEqual((hit["kind"], e["bar_open_ms"], e["minutes_since"]), ("event", T0 + 4 * q, 30.0))
+        self.assertEqual((e["last_close"], e["holds_at_last_close"]), (99.8, False))
+        self.assertIn("back under it: the breakout has failed since", hit["summary"])
+        held, _ = cs.utc_orb(rows[:5], q, T0 + 5 * q, p)
+        self.assertTrue(held["evidence"]["holds_at_last_close"])
+
+    def test_timeframe_bias_never_reads_no_match_as_a_direction(self):
+        bull, bear = {"direction": "bullish"}, {"direction": "bearish"}
+        act = {"direction": "unspecified"}
+        self.assertEqual(cs.timeframe_bias([]), "no_match")
+        self.assertEqual(cs.timeframe_bias([act]), "unspecified")
+        self.assertEqual(cs.timeframe_bias([bull, act]), "bullish")
+        self.assertEqual(cs.timeframe_bias([bear, act]), "bearish")
+        self.assertEqual(cs.timeframe_bias([bull, bear]), "mixed")
+
+    def test_rule_agreement_across_timeframes(self):
+        tfs = ["1d", "1h"]
+        cases = [({"1d": "bullish", "1h": "bullish"}, "bullish"),
+                 ({"1d": "bullish", "1h": "no_match"}, "partial_bullish"),     # a missing match is not bearish
+                 ({"1d": "bullish", "1h": "unspecified"}, "partial_bullish"),  # volume is not bullish
+                 ({"1d": "bullish", "1h": None}, "partial_bullish"),           # 1h not evaluated
+                 ({"1d": "bullish", "1h": "bearish"}, "conflicting"),          # opposing timeframes
+                 ({"1d": "mixed", "1h": "bullish"}, "conflicting"),
+                 ({"1d": "bearish", "1h": "bearish"}, "bearish"),
+                 ({"1d": "no_match", "1h": "bearish"}, "partial_bearish"),
+                 ({"1d": "unspecified", "1h": "no_match"}, "unspecified"),
+                 ({"1d": "no_match", "1h": "no_match"}, "none")]
+        for bias, want in cases:
+            self.assertEqual(cscan.rule_agreement(bias, tfs), want, bias)
+        self.assertEqual(cscan.rule_agreement({"1d": "bullish"}, ["1d"]), "partial_bullish")  # one timeframe is no agreement
+
+    def test_agreement_wording(self):
+        def text(bias):
+            return cscan.agreement_text({"rule_bias": bias, "rule_agreement": cscan.rule_agreement(bias, list(bias))})
+        self.assertEqual(text({"1d": "bullish", "1h": "bullish"}), "BULLISH RULES: 1d + 1h")
+        self.assertEqual(text({"1d": "bullish", "1h": "no_match"}), "BULLISH RULES: 1d only (1h: no rule matched)")
+        self.assertEqual(text({"1d": "no_match", "1h": "bearish"}), "BEARISH RULES: 1h only (1d: no rule matched)")
+        self.assertEqual(text({"1d": "bullish", "1h": "bearish"}), "CONFLICTING RULES: 1d bullish, 1h bearish")
+        self.assertEqual(text({"1d": "no_match", "1h": "unspecified"}),
+                         "NO DIRECTIONAL RULE: only observations without a direction (1h)")
+        self.assertNotIn("ALIGNED", text({"1d": "bullish", "1h": "bullish"}))
+
+
+class InjCase(unittest.TestCase):
+    """The scan of 2026-11-07 19:18 UTC that printed `INJUSDT ALIGNED`, replayed on Binance's recorded candles."""
+
+    @classmethod
+    def setUpClass(cls):
+        with unittest.mock.patch.dict(os.environ, NO_ENV):
+            cls.doc = offline_scan(INJ_CASE, "spot")
+        cls.by = {c["symbol"]: c for c in cls.doc["candidates"]}
+
+    def test_the_same_candidates_as_the_live_scan(self):
+        self.assertEqual(self.doc["created_at"], "2026-11-07T19:18:00Z")
+        self.assertEqual(set(self.by), {"INJUSDT", "ZECUSDT", "PAXGUSDT", "SOLUSDT", "BNBUSDT", "TAOUSDT", "ONDOUSDT"})
+        ids = {s: {tf: [h["id"] for h in v["setups"]] for tf, v in c["timeframes"].items()} for s, c in self.by.items()}
+        self.assertEqual(ids["INJUSDT"], {"1d": ["momentum_accel"], "1h": ["reclaim_ma"]})
+        self.assertEqual(ids["PAXGUSDT"], {"1d": ["rvol_expansion", "momentum_accel"], "1h": []})
+        self.assertEqual(ids["ONDOUSDT"], {"1d": [], "1h": ["rvol_expansion"]})
+
+    def test_closed_candles_only_and_their_timestamps(self):
+        for c in self.doc["candidates"]:
+            self.assertEqual(c["timeframes"]["1h"]["last_closed_open"], "2026-11-07T18:00:00Z")
+            self.assertEqual(c["timeframes"]["1h"]["last_closed_close"], "2026-11-07T19:00:00Z")
+            self.assertEqual(c["timeframes"]["1d"]["last_closed_close"], "2026-11-07T00:00:00Z")
+            # the recording also holds the 19:00 candle (closed by 22:50); at 19:18 it was open and is dropped
+            self.assertEqual(c["timeframes"]["1h"]["quality"]["incomplete_dropped"], 1)
+        text = cscan.render(self.doc, 7)
+        self.assertIn("Evaluated candles, by their UTC close: 1d 2026-11-07 00:00, 1h 2026-11-07 19:00.", text)
+        self.assertIn("(candle closed 2026-11-07 19:00, RSI 53)", text)
+
+    def test_inj_rules_are_bullish_on_both_timeframes_and_say_exactly_what_they_saw(self):
+        inj = self.by["INJUSDT"]
+        self.assertEqual((inj["rule_agreement"], inj["rule_bias"]), ("bullish", {"1d": "bullish", "1h": "bullish"}))
+        rc = inj["timeframes"]["1h"]["setups"][0]
+        self.assertEqual((rc["evidence"]["close"], rc["evidence"]["ma"], rc["evidence"]["prev_close"]), (8.271, 8.2459, 8.101))
+        self.assertIn("fresh cross on this candle: close 8.271 over the 20-bar SMA 8.2459 (+0.30%)", rc["summary"])
+        mo = inj["timeframes"]["1d"]["setups"][0]
+        self.assertEqual(mo["evidence"]["context"], "rebound_after_decline")
+
+    def test_volume_gets_no_bullish_credit(self):
+        paxg, ondo = self.by["PAXGUSDT"], self.by["ONDOUSDT"]
+        rv = paxg["timeframes"]["1d"]["setups"][0]
+        self.assertEqual((rv["direction"], rv["evidence"]["bar_direction"]), ("unspecified", "down"))
+        self.assertEqual((paxg["bullish_rules"], paxg["nondirectional_rules"]), (1, 1))  # momentum only
+        self.assertEqual((ondo["rule_agreement"], ondo["bullish_rules"], ondo["aligned"]), ("unspecified", 0, False))
+        self.assertEqual(self.doc["candidates"][-1]["symbol"], "ONDOUSDT")   # activity only ranks last
+
+    def test_cli_says_what_the_json_says(self):
+        text = cscan.render(self.doc, 10)
+        self.assertNotIn("ALIGNED", text)
+        self.assertNotIn("(down)", text)
+        for c in self.doc["candidates"]:
+            self.assertIn(cscan.agreement_text(c), text)
+            for tf, v in c["timeframes"].items():
+                for h in v["setups"]:
+                    self.assertIn(h["summary"], text)
+        self.assertIn("BULLISH RULES: 1d + 1h", text)
+        self.assertIn("BULLISH RULES: 1d only (1h: no rule matched)", text)
+        self.assertIn("NO DIRECTIONAL RULE: only observations without a direction (1h)", text)
+        self.assertIn("no bearish rules", text)
+        # the recording's tickers are from 22:50: the price is flagged and no live comparison is drawn
+        self.assertIn("after the scan time: not point-in-time", text)
+        self.assertNotIn("from the 1h close", text)
+
+    def test_a_live_price_is_compared_with_the_evaluated_close(self):
+        c = copy.deepcopy(self.by["INJUSDT"])
+        c["last_price"], c["price_time"] = 8.216, "2026-11-07T19:17:59Z"
+        line = cscan._live_line(c, self.doc, ["1d", "1h"])
+        self.assertEqual(line, "live 8.2160 at 2026-11-07 19:17 UTC is -0.66% from the 1h close 8.2710 "
+                               "(after the evaluated candle, not in the rules)")
+
+    def test_a_futures_volume_spike_no_longer_makes_hype_aligned(self):
+        """Recorded 2026-10-31: v1 ranked HYPEUSDT first and ALIGNED because its only 1h match was an up-bar volume spike."""
+        with unittest.mock.patch.dict(os.environ, NO_ENV):
+            hype = next(c for c in offline_scan(USDM, "usdm")["candidates"] if c["symbol"] == "HYPEUSDT")
+        self.assertEqual([h["id"] for h in hype["timeframes"]["1h"]["setups"]], ["rvol_expansion"])
+        self.assertEqual((hype["rule_bias"]["1h"], hype["rule_agreement"], hype["aligned"]),
+                         ("unspecified", "partial_bullish", False))
+        self.assertEqual(cscan.agreement_text(hype), "BULLISH RULES: 1d only (1h: no direction)")
+
+
 # ---------------------------------------------------------------- end to end, offline
 
 class Contract(unittest.TestCase):
@@ -484,15 +658,17 @@ class Contract(unittest.TestCase):
         self.assertEqual(a, b)
         self.assertEqual(a["status"], "complete")
         self.assertEqual(a["created_at"], "2026-10-31T13:11:25Z")
+        # v1 ranked BNBUSDT 5th on an up-bar volume spike counted as bullish; in v2 volume has no direction
         self.assertEqual([c["symbol"] for c in a["candidates"]],
-                         ["ZECUSDT", "ONDOUSDT", "ETHUSDT", "SOLUSDT", "BNBUSDT", "INJUSDT", "PENGUUSDT", "PAXGUSDT"])
+                         ["ZECUSDT", "ONDOUSDT", "ETHUSDT", "SOLUSDT", "INJUSDT", "PENGUUSDT", "PAXGUSDT", "BNBUSDT"])
         top = a["candidates"][0]
         self.assertTrue(top["aligned"])
+        self.assertEqual(top["rule_agreement"], "bullish")
         self.assertEqual([h["id"] for h in top["timeframes"]["1h"]["setups"]], ["breakout_close_high"])
 
     def test_futures_example_carries_derivatives_context(self):
         d = offline_scan(USDM, "usdm")
-        self.assertEqual(d["candidates"][0]["symbol"], "HYPEUSDT")
+        self.assertEqual(d["candidates"][0]["symbol"], "ZECUSDT")
         ctx = d["candidates"][0]["derivatives"]
         for k in ("mark_price", "index_price", "basis_bps", "funding_rate_last", "next_funding_time",
                   "open_interest", "open_interest_notional"):
@@ -505,16 +681,26 @@ class Contract(unittest.TestCase):
                   "config_fingerprint", "status", "coverage", "candidates", "excluded", "failed", "hits",
                   "score_note", "note"):
             self.assertIn(k, d)
-        self.assertEqual((d["schema"], d["schema_version"]), ("day-trader-skill/crypto-scan", 1))
+        self.assertEqual((d["schema"], d["schema_version"]), ("day-trader-skill/crypto-scan", 2))
+        self.assertIn("no bearish rules", d["scope_note"])
         for c in d["candidates"]:
             for k in ("rank", "instrument_id", "exchange", "market", "symbol", "asset_id", "last_price",
                       "price_time", "price_age_seconds", "quote_volume_24h", "timeframes", "aligned",
+                      "rule_bias", "rule_agreement", "bullish_rules", "bearish_rules", "nondirectional_rules",
                       "descriptive_score", "estimated_probability"):
                 self.assertIn(k, c)
             self.assertIsNone(c["estimated_probability"])
+            self.assertEqual(c["aligned"], c["rule_agreement"] == "bullish")
+            self.assertEqual(c["descriptive_score"], c["bullish_rules"])
+            self.assertEqual(c["bullish_rules"] + c["bearish_rules"] + c["nondirectional_rules"], c["matched_rules"])
             for tf, v in c["timeframes"].items():
                 self.assertTrue(v["last_closed_close"].endswith("Z"))
                 self.assertLessEqual(v["last_closed_close"], d["created_at"])
+                self.assertEqual(v["bias"], c["rule_bias"][tf])
+                for h in v["setups"]:
+                    self.assertIn(h["kind"], ("event", "state", "activity"))
+                    self.assertIn(h["direction"], ("bullish", "bearish", "unspecified"))
+                    self.assertTrue(h["summary"])
         self.assertEqual([c["rank"] for c in d["candidates"]], list(range(1, len(d["candidates"]) + 1)))
         self.assertEqual(d["hits"][0]["symbol"], d["candidates"][0]["symbol"])
         json.dumps(d, allow_nan=False)
@@ -633,23 +819,15 @@ class Contract(unittest.TestCase):
             cscan.parse_now_utc("yesterday")
 
 
-# ---------------------------------------------------------------- paths and external evidence
+# ---------------------------------------------------------------- paths, standalone
 
-ce = cscan.ce
-NO_ENV = {k: "" for k in (cscan.ENV_CONFIG_FILE, cscan.ENV_OUTPUT_DIR, cscan.ENV_EVIDENCE_DIR)}
-
-
-def evidence_file(folder, name, assets, version=1, source="ext"):
-    with open(os.path.join(folder, name), "w") as fh:
-        json.dump({"schema": "trader-evidence", "schema_version": version, "source": source,
-                   "generated_at": "2026-10-31T13:00:00Z", "assets": assets}, fh)
+NO_ENV = {k: "" for k in (cscan.ENV_CONFIG_FILE, cscan.ENV_OUTPUT_DIR)}
 
 
-class PathsAndEvidence(unittest.TestCase):
+class PathsAndStandalone(unittest.TestCase):
     def test_paths_without_environment_are_unchanged(self):
         self.assertEqual(cscan.resolve_path("trader/crypto_watchlist.json", "spot", env={}), "trader/crypto_watchlist.json")
         self.assertEqual(cscan.resolve_path("trader/scan-{market}.json", "usdm", env={}), "trader/scan-usdm.json")
-        self.assertEqual(cscan.evidence_dir(cfg(), env={}), ("trader/evidence", False))
         self.assertIsNone(cscan.config_path(None, env={}) if not os.path.exists(cscan.DEFAULT_CONFIG) else None)
 
     def test_output_dir_moves_the_trader_folder_but_not_absolute_paths(self):
@@ -659,14 +837,11 @@ class PathsAndEvidence(unittest.TestCase):
         self.assertEqual(cscan.resolve_path("trader/cache/binance", None, env=env), "/data/desk/cache/binance")
         self.assertEqual(cscan.resolve_path("other/x.json", None, env=env), "/data/desk/other/x.json")
         self.assertEqual(cscan.resolve_path("/abs/x.json", None, env=env), "/abs/x.json")
-        self.assertEqual(cscan.evidence_dir(cfg(), env=env), ("/data/desk/evidence", False))
 
     def test_precedence_flag_then_environment_then_ini(self):
-        env = {cscan.ENV_CONFIG_FILE: "/etc/x.ini", cscan.ENV_EVIDENCE_DIR: "/ev", cscan.ENV_OUTPUT_DIR: "/o"}
+        env = {cscan.ENV_CONFIG_FILE: "/etc/x.ini", cscan.ENV_OUTPUT_DIR: "/o"}
         self.assertEqual(cscan.config_path("mine.ini", env=env), "mine.ini")
         self.assertEqual(cscan.config_path(None, env=env), "/etc/x.ini")
-        self.assertEqual(cscan.evidence_dir(cfg("[evidence]\ndir = /ini/ev\n"), env=env), ("/ev", True))
-        self.assertEqual(cscan.evidence_dir(cfg("[evidence]\ndir = /ini/ev\n"), env={}), ("/ini/ev", True))
 
     def test_cli_writes_under_the_output_dir_with_the_environment_config(self):
         tmp = tempfile.mkdtemp()
@@ -682,17 +857,9 @@ class PathsAndEvidence(unittest.TestCase):
             self.assertIn("Wrote %s" % path, text)
             with open(path) as fh:
                 doc = json.load(fh)
-            self.assertEqual((doc["config_source"], doc["evidence"]["dir"]), (ini, os.path.join(tmp, "desk", "evidence")))
-            self.assertEqual(doc["evidence"]["sources"], [])
+            self.assertEqual(doc["config_source"], ini)
         finally:
             shutil.rmtree(tmp)
-
-    def test_standalone_scan_has_no_evidence_and_the_same_ranking(self):
-        with unittest.mock.patch.dict(os.environ, NO_ENV):
-            d = offline_scan(SPOT, "spot")
-        self.assertEqual(d["evidence"], {"dir": "trader/evidence", "sources": [], "notes": []})
-        self.assertTrue(all(c["evidence"] == {} for c in d["candidates"]))
-        self.assertTrue(all("candles" not in v for c in d["candidates"] for v in c["timeframes"].values()))
 
     def test_candles_are_copied_when_asked(self):
         with unittest.mock.patch.dict(os.environ, NO_ENV):
@@ -720,52 +887,14 @@ class PathsAndEvidence(unittest.TestCase):
         with self.assertRaises(cscan.CryptoScanError):
             cscan.unmatched_filter(cfg("[output]\nunmatched = @nope\n"))
 
-    def test_evidence_states_and_ranking_unchanged(self):
+    def test_the_scan_reports_only_its_own_rules(self):
+        """No external model views: no evidence module, no evidence keys, and the text names no outside system."""
+        self.assertFalse(os.path.exists(os.path.join(ROOT, "trader-scanner", "crypto_evidence.py")))
         with unittest.mock.patch.dict(os.environ, NO_ENV):
-            base = offline_scan(SPOT, "spot")
-        first = base["candidates"][0]
-        a, close_1d = first["asset_id"], first["timeframes"]["1d"]["last_closed_close"]
-        close_1h = first["timeframes"]["1h"]["last_closed_close"]
-        b = base["candidates"][1]["asset_id"]
-        tmp = tempfile.mkdtemp()
-        try:
-            evidence_file(tmp, "a.json", {
-                a: {"timeframes": {"1d": {"direction": -1, "label": "SELL", "decision_close": close_1d,
-                                          "details": {"win_rate": 0.55, "trades": 40}},
-                                   "1h": {"direction": 2, "label": "STRONG BUY", "decision_close": "2026-10-31T09:00:00Z"}}},
-                b: {"timeframes": {"1d": {"direction": None, "label": "UNAVAILABLE", "decision_close": close_1d}}}})
-            evidence_file(tmp, "old.json", {}, version=7, source="future")
-            with open(os.path.join(tmp, "other.json"), "w") as fh:
-                json.dump({"not": "evidence"}, fh)
-            with unittest.mock.patch.dict(os.environ, dict(NO_ENV, TRADER_EVIDENCE_DIR=tmp)):
-                d = offline_scan(SPOT, "spot")
-        finally:
-            shutil.rmtree(tmp)
-        self.assertEqual([c["symbol"] for c in d["candidates"]], [c["symbol"] for c in base["candidates"]])
-        self.assertEqual([s["source"] for s in d["evidence"]["sources"]], ["ext"])
-        self.assertEqual(len(d["evidence"]["notes"]), 1)
-        self.assertIn("incompatible schema_version 7", d["evidence"]["notes"][0])
-        ev = d["candidates"][0]["evidence"]["ext"]["timeframes"]
-        self.assertEqual(ev["1d"]["state"], "current")
-        self.assertEqual(ev["1d"]["details"], {"win_rate": 0.55, "trades": 40})
-        self.assertEqual(ev["1d"].get("relation"), "disagrees" if "1d" in first["bullish_timeframes"] else None)
-        behind = (cscan.parse_now_utc(close_1h) - cscan.parse_now_utc("2026-10-31T09:00:00Z")) // H
-        self.assertEqual((ev["1h"]["state"], ev["1h"]["candles_behind"]), ("stale", behind))
-        self.assertNotIn("relation", ev["1h"])
-        ev_b = d["candidates"][1]["evidence"]["ext"]["timeframes"]
-        self.assertEqual((ev_b["1d"]["state"], ev_b["1h"]["state"]), ("unavailable", "missing"))
-        self.assertTrue(all(c["evidence"]["ext"]["timeframes"]["1d"]["state"] == "missing"
-                            for c in d["candidates"][2:] if c["asset_id"] not in (a, b)))
-        self.assertIn("ext: 1d SELL current", cscan.render(d, 1))
-
-    def test_assess_is_never_neutral_when_missing_or_stale(self):
-        self.assertEqual(ce.assess(None, "1h", 0, True), {"state": "missing"})
-        stale = ce.assess({"direction": -2, "decision_close": "2026-10-31T00:00:00Z"}, "1h", T0 + 3 * H, True)
-        self.assertEqual((stale["state"], stale["candles_behind"], "relation" in stale), ("stale", 3, False))
-        ahead = ce.assess({"direction": 1, "decision_close": "2026-10-31T02:00:00Z"}, "1h", T0, True)
-        self.assertEqual((ahead["state"], ahead["candles_behind"]), ("ahead", -2))
-        neutral = ce.assess({"direction": 0, "decision_close": "2026-10-31T00:00:00Z"}, "1d", T0, True)
-        self.assertEqual(neutral["relation"], "neutral")
+            d = offline_scan(SPOT, "spot")
+        self.assertNotIn("evidence", d)
+        self.assertTrue(all("evidence" not in c for c in d["candidates"]))
+        self.assertEqual([c["symbol"] for c in d["candidates"]][:2], ["ZECUSDT", "ONDOUSDT"])
 
     def test_scanner_is_standalone_and_points_at_no_other_project(self):
         import ast
@@ -789,6 +918,9 @@ class PathsAndEvidence(unittest.TestCase):
                 with open(path, encoding="utf-8") as fh:
                     text = fh.read()
                 self.assertIsNone(re.search(r"(/home/|/Users/|~/code)", text), "%s names a machine path" % f)
+                # one-way dependency: other systems may read the scan; the scanner knows none of them
+                self.assertIsNone(re.search(r"(?i)(gold.?digger|\bGD\b|trader-evidence|EVIDENCE_DIR)", text),
+                                  "%s names an outside system" % f)
 
 
 if __name__ == "__main__":
